@@ -1,0 +1,578 @@
+[
+  {
+    "slug": "python-execution",
+    "experience": "Python: How Code Becomes State",
+    "title": "Trace the program state",
+    "prompt": "After `x = [1, 2]` and `y = x`, what happens when `y.append(3)`?",
+    "options": [
+      "Only y changes",
+      "Both x and y show [1, 2, 3]",
+      "Python raises an error",
+      "x becomes None"
+    ],
+    "answer": 1,
+    "explanation": "Both names refer to the same mutable list object.",
+    "visualType": "python",
+    "keyword": "Python"
+  },
+  {
+    "slug": "python-functions",
+    "experience": "Functions & Reusable Reasoning",
+    "title": "Trace the program state",
+    "prompt": "After `x = [1, 2]` and `y = x`, what happens when `y.append(3)`?",
+    "options": [
+      "Only y changes",
+      "Both x and y show [1, 2, 3]",
+      "Python raises an error",
+      "x becomes None"
+    ],
+    "answer": 1,
+    "explanation": "Both names refer to the same mutable list object.",
+    "visualType": "python",
+    "keyword": "Functions"
+  },
+  {
+    "slug": "python-collections",
+    "experience": "Choosing Python Collections",
+    "title": "Trace the program state",
+    "prompt": "After `x = [1, 2]` and `y = x`, what happens when `y.append(3)`?",
+    "options": [
+      "Only y changes",
+      "Both x and y show [1, 2, 3]",
+      "Python raises an error",
+      "x becomes None"
+    ],
+    "answer": 1,
+    "explanation": "Both names refer to the same mutable list object.",
+    "visualType": "python",
+    "keyword": "Collections"
+  },
+  {
+    "slug": "pandas-table-thinking",
+    "experience": "pandas & Table Thinking",
+    "title": "Choose the safe table operation",
+    "prompt": "You need one row per customer before joining to a customer-level target. What should you verify first?",
+    "options": [
+      "The colour palette",
+      "The row grain / key uniqueness",
+      "The font size",
+      "The file extension"
+    ],
+    "answer": 1,
+    "explanation": "Grain and key uniqueness determine whether the join duplicates observations.",
+    "visualType": "table",
+    "keyword": "pandas"
+  },
+  {
+    "slug": "sql-query-flow",
+    "experience": "SQL Query Flow",
+    "title": "Choose the SQL operation",
+    "prompt": "You need revenue by region after filtering cancelled orders. Which order is logically safest?",
+    "options": [
+      "GROUP BY then WHERE",
+      "WHERE then GROUP BY",
+      "SELECT only",
+      "ORDER BY then JOIN"
+    ],
+    "answer": 1,
+    "explanation": "Filter invalid rows before aggregation so grouped values describe the intended population.",
+    "visualType": "sql",
+    "keyword": "SQL"
+  },
+  {
+    "slug": "excel-model-thinking",
+    "experience": "Excel as an Analytical Model",
+    "title": "Choose the spreadsheet tool",
+    "prompt": "You need a reusable import-clean-refresh workflow from a CSV. Which tool fits best?",
+    "options": [
+      "Manual copy/paste",
+      "Power Query",
+      "Cell colouring",
+      "Goal Seek"
+    ],
+    "answer": 1,
+    "explanation": "Power Query records transformation steps and supports refresh.",
+    "visualType": "spreadsheet",
+    "keyword": "Excel"
+  },
+  {
+    "slug": "missing-data",
+    "experience": "Missing Data Decisions",
+    "title": "Choose an imputation strategy",
+    "prompt": "Income is skewed with strong outliers and 8% values missing. Which simple baseline is usually safer than mean imputation?",
+    "options": [
+      "Median",
+      "Zero without checking",
+      "Random label",
+      "Drop the target"
+    ],
+    "answer": 0,
+    "explanation": "Median is less sensitive to extreme values, though the missingness mechanism still matters.",
+    "visualType": "missing",
+    "keyword": "Missing Data"
+  },
+  {
+    "slug": "scaling",
+    "experience": "Scaling & Distance",
+    "title": "Spot the preprocessing rule",
+    "prompt": "Which workflow avoids scaling leakage?",
+    "options": [
+      "Fit scaler on all rows",
+      "Fit scaler on training rows and transform validation/test",
+      "Fit separate scalers on train and test",
+      "Scale after evaluating"
+    ],
+    "answer": 1,
+    "explanation": "Preprocessing parameters must be learned from training evidence only.",
+    "visualType": "scaling",
+    "keyword": "Scaling"
+  },
+  {
+    "slug": "categorical-encoding",
+    "experience": "Categorical Encoding",
+    "title": "Choose an encoding",
+    "prompt": "A nominal colour feature has values red, blue and green with no natural order. Which default encoding is safer than integer 1/2/3?",
+    "options": [
+      "One-hot encoding",
+      "Arbitrary ordinal encoding",
+      "Target leakage",
+      "Sort by row number"
+    ],
+    "answer": 0,
+    "explanation": "One-hot encoding avoids introducing an artificial numeric ordering for nominal categories.",
+    "visualType": "table",
+    "keyword": "Categorical Encoding"
+  },
+  {
+    "slug": "eda",
+    "experience": "Exploratory Data Analysis",
+    "title": "Interpret EDA carefully",
+    "prompt": "Two variables have strong correlation. Which conclusion is safest?",
+    "options": [
+      "One definitely causes the other",
+      "They move together in this sample; causality needs stronger design/evidence",
+      "The model is production-ready",
+      "Missing values are impossible"
+    ],
+    "answer": 1,
+    "explanation": "EDA reveals patterns and hypotheses, not automatic causal identification.",
+    "visualType": "distribution",
+    "keyword": "EDA"
+  },
+  {
+    "slug": "visual-storytelling",
+    "experience": "Visualisation & Storytelling",
+    "title": "Choose an honest visual",
+    "prompt": "Which change is most likely to mislead viewers about the magnitude of a small difference?",
+    "options": [
+      "Truncating the bar-chart axis far above zero without clear justification",
+      "Labelling units",
+      "Showing source notes",
+      "Using accessible colours"
+    ],
+    "answer": 0,
+    "explanation": "For magnitude comparisons, a severely truncated bar baseline can exaggerate differences.",
+    "visualType": "plot",
+    "keyword": "Visualisation"
+  },
+  {
+    "slug": "train-validation-test",
+    "experience": "Train, Validation & Test",
+    "title": "Protect the final test set",
+    "prompt": "What is the role of the final test set?",
+    "options": [
+      "Repeated hyperparameter tuning",
+      "A final independent estimate after model-development choices are complete",
+      "Fitting the scaler",
+      "Choosing features after seeing results"
+    ],
+    "answer": 1,
+    "explanation": "The test set should represent independent final evidence, not a development feedback loop.",
+    "visualType": "split",
+    "keyword": "Validation"
+  },
+  {
+    "slug": "cross-validation",
+    "experience": "Cross-Validation",
+    "title": "Choose the right CV",
+    "prompt": "Three recordings belong to each participant. Which CV method best prevents participant leakage?",
+    "options": [
+      "Ordinary row K-Fold",
+      "Group-aware folds by participant",
+      "Shuffle all epochs independently",
+      "Leave the same participant in train and validation"
+    ],
+    "answer": 1,
+    "explanation": "Group-aware validation keeps all observations from one entity on the same side of a fold.",
+    "visualType": "split",
+    "keyword": "Cross-Validation"
+  },
+  {
+    "slug": "data-leakage",
+    "experience": "Data Leakage",
+    "title": "Spot leakage",
+    "prompt": "Which preprocessing workflow leaks validation information?",
+    "options": [
+      "Fit imputer inside each training fold",
+      "Fit scaler on the entire dataset before cross-validation",
+      "Use a pipeline inside CV",
+      "Keep test labels hidden"
+    ],
+    "answer": 1,
+    "explanation": "Fitting preprocessing before the split allows held-out rows to influence learned transformation parameters.",
+    "visualType": "split",
+    "keyword": "Data Leakage"
+  },
+  {
+    "slug": "linear-regression",
+    "experience": "Linear Regression",
+    "title": "Diagnose linear regression",
+    "prompt": "Residuals show a strong U-shaped pattern against fitted values. What does this suggest?",
+    "options": [
+      "The linear form is missing nonlinearity",
+      "Perfect model specification",
+      "Classification imbalance",
+      "No need for validation"
+    ],
+    "answer": 0,
+    "explanation": "Systematic residual shape indicates that the linear mean function is not capturing the relationship.",
+    "visualType": "regression",
+    "keyword": "Linear Regression"
+  },
+  {
+    "slug": "logistic-regression",
+    "experience": "Logistic Regression",
+    "title": "Interpret logistic regression",
+    "prompt": "What does logistic regression model linearly before the sigmoid transformation?",
+    "options": [
+      "The log-odds of the positive class",
+      "Raw cluster labels",
+      "Tree depth",
+      "Euclidean distance only"
+    ],
+    "answer": 0,
+    "explanation": "The linear predictor is mapped to probability through the logistic link.",
+    "visualType": "classification",
+    "keyword": "Logistic Regression"
+  },
+  {
+    "slug": "decision-tree",
+    "experience": "Decision Trees",
+    "title": "Control tree complexity",
+    "prompt": "Validation error rises while training error keeps falling as depth increases. What should you do first?",
+    "options": [
+      "Increase depth indefinitely",
+      "Reduce/prune depth or regularise",
+      "Use the test set to choose depth",
+      "Duplicate training rows"
+    ],
+    "answer": 1,
+    "explanation": "The pattern is consistent with overfitting.",
+    "visualType": "tree",
+    "keyword": "Decision Tree"
+  },
+  {
+    "slug": "random-forest",
+    "experience": "Random Forest",
+    "title": "Reason about an ensemble",
+    "prompt": "Why does a Random Forest randomise both rows and candidate features?",
+    "options": [
+      "To make trees identical",
+      "To decorrelate tree errors before averaging",
+      "To remove labels",
+      "To avoid prediction"
+    ],
+    "answer": 1,
+    "explanation": "Diversity among competent trees makes averaging more effective.",
+    "visualType": "forest",
+    "keyword": "Random Forest"
+  },
+  {
+    "slug": "boosting",
+    "experience": "Gradient Boosting",
+    "title": "Reason about boosting",
+    "prompt": "What does a new boosting learner usually focus on?",
+    "options": [
+      "Previously hard/residual errors",
+      "Only the easiest examples forever",
+      "Random test labels",
+      "The validation set target"
+    ],
+    "answer": 0,
+    "explanation": "Boosting adds learners that correct errors left by the current ensemble.",
+    "visualType": "boosting",
+    "keyword": "Boosting"
+  },
+  {
+    "slug": "knn",
+    "experience": "K-Nearest Neighbours",
+    "title": "Choose k",
+    "prompt": "What is the usual effect of increasing k in KNN?",
+    "options": [
+      "More local/jagged boundary",
+      "Smoother boundary with more averaging",
+      "No change ever",
+      "Turns it into linear regression"
+    ],
+    "answer": 1,
+    "explanation": "Larger neighbourhoods reduce local variance but can increase bias.",
+    "visualType": "knn",
+    "keyword": "KNN"
+  },
+  {
+    "slug": "svm",
+    "experience": "Support Vector Machines",
+    "title": "Interpret C",
+    "prompt": "Increasing C in a soft-margin SVM generally makes violations\u2026",
+    "options": [
+      "Less costly",
+      "More costly",
+      "Impossible to measure",
+      "Equivalent to adding clusters"
+    ],
+    "answer": 1,
+    "explanation": "Higher C penalises margin violations more strongly.",
+    "visualType": "svm",
+    "keyword": "SVM"
+  },
+  {
+    "slug": "kmeans",
+    "experience": "K-Means Clustering",
+    "title": "Choose k responsibly",
+    "prompt": "Which approach is better than selecting k only by eye?",
+    "options": [
+      "Combine domain meaning with diagnostics such as silhouette",
+      "Always choose k=2",
+      "Use classification accuracy",
+      "Use the test labels during clustering"
+    ],
+    "answer": 0,
+    "explanation": "Cluster count should combine structure diagnostics and domain interpretability.",
+    "visualType": "kmeans",
+    "keyword": "K-Means"
+  },
+  {
+    "slug": "pca",
+    "experience": "Principal Component Analysis",
+    "title": "Reason about PCA",
+    "prompt": "What does the first principal component maximise?",
+    "options": [
+      "Class accuracy directly",
+      "Variance of projected data subject to the component constraints",
+      "Number of missing values",
+      "Tree depth"
+    ],
+    "answer": 1,
+    "explanation": "PCA finds orthogonal directions that capture as much variance as possible; it does not use class labels.",
+    "visualType": "pca",
+    "keyword": "PCA"
+  },
+  {
+    "slug": "classification-metrics",
+    "experience": "Classification Metrics",
+    "title": "Choose the decision policy",
+    "prompt": "A screening system must miss as few positive cases as possible. Which metric deserves special attention?",
+    "options": [
+      "Recall / sensitivity",
+      "Specificity only",
+      "R\u00b2",
+      "Silhouette"
+    ],
+    "answer": 0,
+    "explanation": "Recall measures the fraction of actual positives detected.",
+    "visualType": "classification",
+    "keyword": "Classification Metrics"
+  },
+  {
+    "slug": "regression-metrics",
+    "experience": "Regression Metrics & Residuals",
+    "title": "Read the residual signal",
+    "prompt": "Residual spread increases as predictions increase. What pattern is this?",
+    "options": [
+      "Heteroscedasticity",
+      "Perfect calibration",
+      "Class imbalance",
+      "Label encoding"
+    ],
+    "answer": 0,
+    "explanation": "Changing residual variance suggests heteroscedasticity and may affect uncertainty/metric interpretation.",
+    "visualType": "regression",
+    "keyword": "Regression Metrics"
+  },
+  {
+    "slug": "bias-variance",
+    "experience": "Bias, Variance & Learning Curves",
+    "title": "Diagnose high variance",
+    "prompt": "Training error is very low but validation error is much higher. Which diagnosis is most plausible?",
+    "options": [
+      "High variance / overfitting",
+      "Guaranteed underfitting",
+      "Perfect generalisation",
+      "No evaluation issue"
+    ],
+    "answer": 0,
+    "explanation": "A large train\u2013validation gap is a classic high-variance signal.",
+    "visualType": "regression",
+    "keyword": "Bias Variance"
+  },
+  {
+    "slug": "regularisation",
+    "experience": "Regularisation",
+    "title": "Reason about regularisation",
+    "prompt": "What is the usual purpose of increasing regularisation strength?",
+    "options": [
+      "Allow arbitrarily large coefficients",
+      "Discourage overly complex parameter values to improve generalisation",
+      "Use the test set more often",
+      "Create more missing values"
+    ],
+    "answer": 1,
+    "explanation": "Regularisation trades some training fit for simpler parameter values and often lower variance.",
+    "visualType": "scaling",
+    "keyword": "Regularisation"
+  },
+  {
+    "slug": "hyperparameter-optimisation",
+    "experience": "Hyperparameter Optimisation",
+    "title": "Protect evaluation",
+    "prompt": "Where should hyperparameter search occur?",
+    "options": [
+      "Inside training/validation workflow, keeping final test untouched",
+      "On the final test set repeatedly",
+      "Before defining a metric",
+      "After deployment only"
+    ],
+    "answer": 0,
+    "explanation": "The final test set should remain independent of model selection.",
+    "visualType": "hpo",
+    "keyword": "Hyperparameter Optimisation"
+  },
+  {
+    "slug": "calibration",
+    "experience": "Probability Calibration & Thresholds",
+    "title": "Read calibration",
+    "prompt": "Among cases predicted near 0.8 probability, only about 0.5 are positive. The model is\u2026",
+    "options": [
+      "Over-confident / poorly calibrated in that region",
+      "Perfectly calibrated",
+      "A clustering model",
+      "Necessarily causal"
+    ],
+    "answer": 0,
+    "explanation": "Calibration compares predicted probability with observed frequency.",
+    "visualType": "classification",
+    "keyword": "Calibration"
+  },
+  {
+    "slug": "explainability",
+    "experience": "Explainability & Model Interpretation",
+    "title": "Interpret an explanation",
+    "prompt": "A SHAP or permutation-importance result shows a feature matters to predictions. What can you safely conclude?",
+    "options": [
+      "The feature is causally responsible",
+      "The model relies on that feature under the explanation assumptions",
+      "The dataset is unbiased",
+      "The feature should always be removed"
+    ],
+    "answer": 1,
+    "explanation": "Model explanations describe predictive behaviour, not causal truth.",
+    "visualType": "pca",
+    "keyword": "Explainability"
+  },
+  {
+    "slug": "uncertainty",
+    "experience": "Predictive Uncertainty",
+    "title": "Interpret prediction intervals",
+    "prompt": "A nominal 90% prediction interval is well calibrated when, over comparable future cases\u2026",
+    "options": [
+      "About 90% of outcomes fall inside the intervals",
+      "Every interval has zero width",
+      "The point prediction is always exact",
+      "Training error is zero"
+    ],
+    "answer": 0,
+    "explanation": "Coverage is a repeated-sample property: interval calibration concerns how often future outcomes are contained.",
+    "visualType": "regression",
+    "keyword": "Uncertainty"
+  },
+  {
+    "slug": "time-series",
+    "experience": "Time-Series Forecasting",
+    "title": "Protect time order",
+    "prompt": "Which validation approach is safest for a forecasting model?",
+    "options": [
+      "Random shuffle across all dates",
+      "Rolling or expanding temporal split",
+      "Tune on future test observations",
+      "Sort after evaluation"
+    ],
+    "answer": 1,
+    "explanation": "Forecast validation must preserve chronology so future information does not leak backward.",
+    "visualType": "timeseries",
+    "keyword": "Time Series"
+  },
+  {
+    "slug": "neural-network",
+    "experience": "Neural Networks & Backpropagation",
+    "title": "Tune learning rate",
+    "prompt": "If loss oscillates or explodes immediately, which parameter is a prime suspect?",
+    "options": [
+      "Learning rate too high",
+      "Number of column names",
+      "CSV delimiter only",
+      "Class label spelling only"
+    ],
+    "answer": 0,
+    "explanation": "Oversized updates can overshoot useful regions of the loss surface.",
+    "visualType": "nn",
+    "keyword": "Neural Network"
+  },
+  {
+    "slug": "attention",
+    "experience": "Attention & Transformers",
+    "title": "Interpret attention",
+    "prompt": "What is safest to say about a high attention weight?",
+    "options": [
+      "It proves causal importance",
+      "It indicates stronger weighting in that attention computation",
+      "It guarantees correctness",
+      "It replaces validation"
+    ],
+    "answer": 1,
+    "explanation": "Attention weights describe weighting, not necessarily causal explanation.",
+    "visualType": "attention",
+    "keyword": "Attention"
+  },
+  {
+    "slug": "gnn",
+    "experience": "Graph Neural Networks",
+    "title": "Reason about message passing",
+    "prompt": "After two GNN layers, a node can usually incorporate information from\u2026",
+    "options": [
+      "Only itself",
+      "Up to roughly two-hop neighbours",
+      "Every graph in the world",
+      "Only labels"
+    ],
+    "answer": 1,
+    "explanation": "Each message-passing layer expands the receptive field by about one hop.",
+    "visualType": "graph",
+    "keyword": "Graph Neural Network"
+  },
+  {
+    "slug": "deployment-drift",
+    "experience": "Deployment, Drift & Monitoring",
+    "title": "Diagnose drift",
+    "prompt": "Feature distributions change but P(y|x) appears stable. What kind of shift is this closest to?",
+    "options": [
+      "Data / covariate drift",
+      "Guaranteed concept drift",
+      "Perfect calibration",
+      "Label encoding"
+    ],
+    "answer": 0,
+    "explanation": "Input distributions can drift without the predictive relationship changing. Concept drift specifically changes the relationship between inputs and outcome.",
+    "visualType": "drift",
+    "keyword": "Monitoring"
+  }
+]

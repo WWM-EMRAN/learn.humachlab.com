@@ -1,0 +1,11 @@
+HumachLearn
+Canonical version: DV1.1.6
+Baseline: DV1.0.0
+Carries forward: DV1.1.2 Phase-2 correlation and reusable Code ↔ Visualisation features
+DV1.1.6 scope:
+- Keeps the complete DV1.1.5 instructional and interactive site unchanged except for the requested content-presentation refinements
+- Uses dynamic, clickable process flows only where the topic benefits from a sequential mechanism
+- Expands the Textbook walkthrough with deeper mechanism/evidence explanations
+- Adds selected topic-specific visual demonstrations where they materially improve understanding
+- Adds step-level explanatory comments to runnable code examples across the site
+- Updates site version labels to DV1.1.6

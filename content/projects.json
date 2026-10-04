@@ -1,0 +1,647 @@
+[
+  {
+    "slug": "humach-retail",
+    "title": "Humach Retail: Sales Analytics",
+    "track": "Data Analytics",
+    "dataset": "mini_sales.csv",
+    "summary": "Turn a compact sales table into defensible business evidence with aggregation, grain checks and visual reasoning.",
+    "tasks": [
+      {
+        "type": "number",
+        "q": "How many rows are in the sales table?",
+        "answer": 8,
+        "tol": 0,
+        "hint": "Count data rows, not the header."
+      },
+      {
+        "type": "number",
+        "q": "What is total revenue across all rows?",
+        "answer": 985,
+        "tol": 0.01,
+        "hint": "Sum the revenue column."
+      },
+      {
+        "type": "number",
+        "q": "What is revenue per order across the whole table?",
+        "answer": 41.0416667,
+        "tol": 0.02,
+        "hint": "Total revenue divided by total orders."
+      },
+      {
+        "type": "choice",
+        "q": "Before joining another table, what should you confirm about this table?",
+        "options": [
+          "The row grain and key uniqueness",
+          "The logo colour",
+          "The browser theme"
+        ],
+        "answer": 0,
+        "hint": "Joins are only safe when you understand what one row represents."
+      },
+      {
+        "type": "text",
+        "q": "Write a two-sentence recommendation that cites at least one numerical result.",
+        "min": 45,
+        "keywords": [
+          "revenue"
+        ],
+        "hint": "State the evidence first, then the action."
+      }
+    ]
+  },
+  {
+    "slug": "humach-retention",
+    "title": "Humach Retention: Customer Risk",
+    "track": "Machine Learning",
+    "dataset": "mini_customers.csv",
+    "summary": "Frame a retention problem, define legal features and reason about validation, calibration and actionable interventions.",
+    "tasks": [
+      {
+        "type": "number",
+        "q": "How many customer rows are present?",
+        "answer": 12,
+        "tol": 0,
+        "hint": "Count customer rows."
+      },
+      {
+        "type": "number",
+        "q": "How many customers are labelled \u201cAt risk\u201d?",
+        "answer": 3,
+        "tol": 0,
+        "hint": "Count rows where segment is At risk."
+      },
+      {
+        "type": "number",
+        "q": "What is mean spend across customers?",
+        "answer": 131.9166667,
+        "tol": 0.02,
+        "hint": "Average the spend column."
+      },
+      {
+        "type": "choice",
+        "q": "If multiple records per customer existed, which validation design would protect independence?",
+        "options": [
+          "Random row K-Fold",
+          "Group split by customer",
+          "Tune on test set"
+        ],
+        "answer": 1,
+        "hint": "Keep each entity in only one fold."
+      },
+      {
+        "type": "text",
+        "q": "Describe one ethical limitation of using a retention-risk score to target customers.",
+        "min": 40,
+        "keywords": [
+          "bias",
+          "fair",
+          "privacy",
+          "proxy",
+          "harm"
+        ],
+        "hint": "Consider proxies, unequal treatment, privacy or unintended harm."
+      }
+    ]
+  },
+  {
+    "slug": "humach-energy",
+    "title": "Humach Energy: Demand Forecasting",
+    "track": "Data Science",
+    "dataset": "mini_energy.csv",
+    "summary": "Use temporal structure, lag reasoning and legal forecasting validation to predict demand without peeking into the future.",
+    "tasks": [
+      {
+        "type": "number",
+        "q": "How many hourly observations are in the dataset?",
+        "answer": 48,
+        "tol": 0,
+        "hint": "There are two complete days of hourly observations."
+      },
+      {
+        "type": "number",
+        "q": "What is the maximum demand (MW) in the dataset?",
+        "answer": 494.4,
+        "tol": 0.05,
+        "hint": "Inspect demand_mw."
+      },
+      {
+        "type": "number",
+        "q": "What is average renewable share (%)?",
+        "answer": 38.0,
+        "tol": 0.05,
+        "hint": "Average renewable_share_pct."
+      },
+      {
+        "type": "choice",
+        "q": "Which split is safest for a forecast?",
+        "options": [
+          "Random shuffle",
+          "Chronological / rolling split",
+          "Duplicate future rows into training"
+        ],
+        "answer": 1,
+        "hint": "Future observations must not influence earlier training."
+      },
+      {
+        "type": "text",
+        "q": "Name one lagged or rolling feature you would create and explain why.",
+        "min": 35,
+        "keywords": [
+          "lag",
+          "rolling",
+          "previous",
+          "hour"
+        ],
+        "hint": "Use only information available before the forecast time."
+      }
+    ]
+  },
+  {
+    "slug": "humach-health",
+    "title": "Humach Health: Risk Screening",
+    "track": "Data Science",
+    "dataset": "mini_health.csv",
+    "summary": "Handle missing clinical values, prioritise sensitivity and reason about calibration in a screening setting.",
+    "tasks": [
+      {
+        "type": "number",
+        "q": "How many BMI values are missing?",
+        "answer": 3,
+        "tol": 0,
+        "hint": "Count blank bmi cells."
+      },
+      {
+        "type": "number",
+        "q": "How many patients have risk=1?",
+        "answer": 10,
+        "tol": 0,
+        "hint": "Count the binary risk target."
+      },
+      {
+        "type": "choice",
+        "q": "For a skewed numeric feature with outliers, which simple imputation baseline is often safer than the mean?",
+        "options": [
+          "Median",
+          "Arbitrary zero",
+          "Use test-set mean"
+        ],
+        "answer": 0,
+        "hint": "Choose a statistic less sensitive to extreme values."
+      },
+      {
+        "type": "choice",
+        "q": "For initial screening where missed positives are costly, which metric is especially important?",
+        "options": [
+          "Recall / sensitivity",
+          "R\u00b2",
+          "Silhouette"
+        ],
+        "answer": 0,
+        "hint": "Focus on false negatives."
+      },
+      {
+        "type": "text",
+        "q": "Explain why fitting an imputer on all patients before cross-validation is unsafe.",
+        "min": 45,
+        "keywords": [
+          "leak",
+          "validation",
+          "training"
+        ],
+        "hint": "Think about information crossing fold boundaries."
+      }
+    ]
+  },
+  {
+    "slug": "humach-finance",
+    "title": "Humach Finance: Fraud Triage",
+    "track": "Machine Learning",
+    "dataset": "mini_finance.csv",
+    "summary": "Work with rare-event detection, threshold trade-offs and cost-aware evaluation.",
+    "tasks": [
+      {
+        "type": "number",
+        "q": "How many transactions are in the dataset?",
+        "answer": 60,
+        "tol": 0,
+        "hint": "Count rows."
+      },
+      {
+        "type": "number",
+        "q": "How many transactions are labelled fraud?",
+        "answer": 6,
+        "tol": 0,
+        "hint": "Count fraud=1."
+      },
+      {
+        "type": "number",
+        "q": "What is the largest transaction amount?",
+        "answer": 1841,
+        "tol": 0.01,
+        "hint": "Find max(amount)."
+      },
+      {
+        "type": "choice",
+        "q": "For rare fraud, which evaluation view is often more informative than accuracy alone?",
+        "options": [
+          "Precision\u2013Recall",
+          "R\u00b2 residual plot",
+          "Silhouette"
+        ],
+        "answer": 0,
+        "hint": "Rare positives make accuracy misleading."
+      },
+      {
+        "type": "text",
+        "q": "Describe the business trade-off in lowering the fraud threshold.",
+        "min": 45,
+        "keywords": [
+          "false",
+          "recall",
+          "precision",
+          "review"
+        ],
+        "hint": "More alerts catch more fraud but increase false positives/manual review."
+      }
+    ]
+  },
+  {
+    "slug": "humach-hr",
+    "title": "Humach HR: Attrition Analysis",
+    "track": "Data Analytics",
+    "dataset": "mini_hr.csv",
+    "summary": "Analyse attrition drivers while separating predictive association from causal or fair employment decisions.",
+    "tasks": [
+      {
+        "type": "number",
+        "q": "How many employees are in the dataset?",
+        "answer": 50,
+        "tol": 0,
+        "hint": "Count rows."
+      },
+      {
+        "type": "number",
+        "q": "How many employees have attrition=1?",
+        "answer": 9,
+        "tol": 0,
+        "hint": "Count the target column."
+      },
+      {
+        "type": "number",
+        "q": "What is mean satisfaction?",
+        "answer": 3.0,
+        "tol": 0.01,
+        "hint": "Average satisfaction."
+      },
+      {
+        "type": "choice",
+        "q": "Which statement is safest?",
+        "options": [
+          "Feature importance proves causal reason for leaving",
+          "Association can support investigation but not causal claims",
+          "A model removes fairness concerns"
+        ],
+        "answer": 1,
+        "hint": "Prediction and causation are different questions."
+      },
+      {
+        "type": "text",
+        "q": "Name one fairness or governance check before using attrition predictions operationally.",
+        "min": 40,
+        "keywords": [
+          "fair",
+          "group",
+          "bias",
+          "privacy",
+          "audit"
+        ],
+        "hint": "Think protected groups, proxies, review and purpose limitation."
+      }
+    ]
+  },
+  {
+    "slug": "humach-marketing",
+    "title": "Humach Marketing: Campaign Efficiency",
+    "track": "Data Analytics",
+    "dataset": "mini_marketing.csv",
+    "summary": "Compare channels with cost-aware metrics and avoid confusing volume with efficiency.",
+    "tasks": [
+      {
+        "type": "number",
+        "q": "How many campaigns are in the dataset?",
+        "answer": 48,
+        "tol": 0,
+        "hint": "Count rows."
+      },
+      {
+        "type": "number",
+        "q": "What is total campaign spend?",
+        "answer": 81888,
+        "tol": 0.01,
+        "hint": "Sum spend."
+      },
+      {
+        "type": "choice",
+        "q": "Which channel has the highest aggregate ROAS in this miniature dataset?",
+        "options": [
+          "Email",
+          "Display",
+          "Social",
+          "Search"
+        ],
+        "answer": 0,
+        "hint": "Aggregate revenue and spend by channel, then divide."
+      },
+      {
+        "type": "choice",
+        "q": "Which metric directly captures revenue earned per unit of spend?",
+        "options": [
+          "ROAS = revenue / spend",
+          "Raw impressions",
+          "Row count"
+        ],
+        "answer": 0,
+        "hint": "Normalise revenue by cost."
+      },
+      {
+        "type": "text",
+        "q": "Explain why the channel with most conversions may not be the best channel.",
+        "min": 40,
+        "keywords": [
+          "cost",
+          "spend",
+          "revenue",
+          "efficiency"
+        ],
+        "hint": "Compare outcomes to the resources used."
+      }
+    ]
+  },
+  {
+    "slug": "humach-mobility",
+    "title": "Humach Mobility: Trip Demand",
+    "track": "Data Science",
+    "dataset": "mini_mobility.csv",
+    "summary": "Engineer temporal/weather features and reason about demand patterns without leaking future trip counts.",
+    "tasks": [
+      {
+        "type": "number",
+        "q": "How many hourly records are provided?",
+        "answer": 48,
+        "tol": 0,
+        "hint": "Count rows."
+      },
+      {
+        "type": "number",
+        "q": "How many records have rain=1?",
+        "answer": 4,
+        "tol": 0,
+        "hint": "Count rainy observations."
+      },
+      {
+        "type": "number",
+        "q": "What is mean trip demand?",
+        "answer": 43.875,
+        "tol": 0.01,
+        "hint": "Average trips."
+      },
+      {
+        "type": "choice",
+        "q": "Which feature is legal for forecasting the next hour if known in advance?",
+        "options": [
+          "Future observed trip count",
+          "Forecast/known temperature",
+          "Next hour realised target copied from data"
+        ],
+        "answer": 1,
+        "hint": "Only information available at prediction time is legal."
+      },
+      {
+        "type": "text",
+        "q": "Propose one cyclical time feature for hour-of-day.",
+        "min": 30,
+        "keywords": [
+          "sin",
+          "cos",
+          "cyclic",
+          "hour"
+        ],
+        "hint": "Represent 23:00 and 00:00 as neighbours."
+      }
+    ]
+  },
+  {
+    "slug": "humach-manufacturing",
+    "title": "Humach Manufacturing: Predictive Maintenance",
+    "track": "Machine Learning",
+    "dataset": "mini_manufacturing.csv",
+    "summary": "Detect early failure signals from sensors and reason about recall, false alarms and drift.",
+    "tasks": [
+      {
+        "type": "number",
+        "q": "How many sensor rows are present?",
+        "answer": 60,
+        "tol": 0,
+        "hint": "Count rows."
+      },
+      {
+        "type": "number",
+        "q": "How many rows are labelled failure_next_24h=1?",
+        "answer": 3,
+        "tol": 0,
+        "hint": "Count positive targets."
+      },
+      {
+        "type": "number",
+        "q": "What is the maximum vibration value?",
+        "answer": 3.68,
+        "tol": 0.01,
+        "hint": "Find max(vibration)."
+      },
+      {
+        "type": "choice",
+        "q": "If vibration sensors are recalibrated, what should you monitor?",
+        "options": [
+          "Feature distribution drift",
+          "Only logo rotation",
+          "Course completion"
+        ],
+        "answer": 0,
+        "hint": "Input distributions can shift even before labels arrive."
+      },
+      {
+        "type": "text",
+        "q": "Describe one operational cost of false positives in predictive maintenance.",
+        "min": 35,
+        "keywords": [
+          "maintenance",
+          "downtime",
+          "inspection",
+          "cost"
+        ],
+        "hint": "Think unnecessary inspections, parts or downtime."
+      }
+    ]
+  },
+  {
+    "slug": "humach-research",
+    "title": "Humach Research: Repeated-Participant Study",
+    "track": "Research ML",
+    "dataset": "mini_research.csv",
+    "summary": "Design participant-safe validation for repeated measurements and recognise subject leakage.",
+    "tasks": [
+      {
+        "type": "number",
+        "q": "How many observation rows are present?",
+        "answer": 60,
+        "tol": 0,
+        "hint": "20 participants \u00d7 3 nights."
+      },
+      {
+        "type": "number",
+        "q": "How many unique subjects are present?",
+        "answer": 20,
+        "tol": 0,
+        "hint": "Count unique subject_id values."
+      },
+      {
+        "type": "number",
+        "q": "How many unique subjects have a positive label?",
+        "answer": 7,
+        "tol": 0,
+        "hint": "Take one label per subject, then count positives."
+      },
+      {
+        "type": "choice",
+        "q": "Which split is appropriate?",
+        "options": [
+          "Random rows across folds",
+          "Group folds by subject_id",
+          "Tune on held-out test participants"
+        ],
+        "answer": 1,
+        "hint": "All nights from one participant stay together."
+      },
+      {
+        "type": "text",
+        "q": "Explain why row-level random splitting can inflate performance here.",
+        "min": 45,
+        "keywords": [
+          "same",
+          "subject",
+          "leak",
+          "similar"
+        ],
+        "hint": "The model can see highly related records from the same person in training."
+      }
+    ]
+  },
+  {
+    "slug": "humach-vision",
+    "title": "Humach Vision: Image Classification Audit",
+    "track": "Deep Learning",
+    "dataset": "mini_vision.csv",
+    "summary": "Audit image metadata, split integrity and class balance before training a vision model.",
+    "tasks": [
+      {
+        "type": "number",
+        "q": "How many image metadata rows are provided?",
+        "answer": 40,
+        "tol": 0,
+        "hint": "Count rows."
+      },
+      {
+        "type": "number",
+        "q": "How many images are in the test split?",
+        "answer": 8,
+        "tol": 0,
+        "hint": "Count split=test."
+      },
+      {
+        "type": "number",
+        "q": "How many images are labelled dog?",
+        "answer": 14,
+        "tol": 0,
+        "hint": "Count class=dog."
+      },
+      {
+        "type": "choice",
+        "q": "What is a dangerous split issue for near-duplicate images?",
+        "options": [
+          "Duplicates across train and test",
+          "Consistent image size",
+          "Documented labels"
+        ],
+        "answer": 0,
+        "hint": "Near duplicates can leak visual identity across splits."
+      },
+      {
+        "type": "text",
+        "q": "Name one augmentation that could be reasonable and one that might change label semantics.",
+        "min": 45,
+        "keywords": [
+          "flip",
+          "crop",
+          "rotate",
+          "colour",
+          "augmentation"
+        ],
+        "hint": "Augmentation must preserve the class meaning."
+      }
+    ]
+  },
+  {
+    "slug": "humach-graph",
+    "title": "Humach Graph: Node Classification",
+    "track": "Graph ML",
+    "dataset": "mini_graph.csv",
+    "summary": "Reason about graph structure, node features, message passing and leakage across connected data.",
+    "tasks": [
+      {
+        "type": "number",
+        "q": "How many nodes are in the node table?",
+        "answer": 30,
+        "tol": 0,
+        "hint": "Count node rows."
+      },
+      {
+        "type": "number",
+        "q": "How many nodes have target=1?",
+        "answer": 10,
+        "tol": 0,
+        "hint": "Count positives."
+      },
+      {
+        "type": "number",
+        "q": "What is mean node degree?",
+        "answer": 5.5666667,
+        "tol": 0.02,
+        "hint": "Average degree."
+      },
+      {
+        "type": "choice",
+        "q": "After two message-passing layers, a node representation can depend on approximately\u2026",
+        "options": [
+          "Only itself",
+          "Two-hop neighbourhood",
+          "Only test labels"
+        ],
+        "answer": 1,
+        "hint": "Each layer expands the receptive field."
+      },
+      {
+        "type": "text",
+        "q": "Describe one way a random node split can leak information in a graph setting.",
+        "min": 45,
+        "keywords": [
+          "edge",
+          "neighbor",
+          "neighbour",
+          "connected",
+          "leak"
+        ],
+        "hint": "Training and test nodes may be directly connected or share structural information."
+      }
+    ]
+  }
+]

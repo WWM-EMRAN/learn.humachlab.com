@@ -1,0 +1,361 @@
+{
+  "nodes": [
+    {
+      "id": "python-execution",
+      "title": "Python: How Code Becomes State",
+      "category": "Programming"
+    },
+    {
+      "id": "python-functions",
+      "title": "Functions & Reusable Reasoning",
+      "category": "Programming"
+    },
+    {
+      "id": "python-collections",
+      "title": "Choosing Python Collections",
+      "category": "Programming"
+    },
+    {
+      "id": "pandas-table-thinking",
+      "title": "pandas & Table Thinking",
+      "category": "Programming"
+    },
+    {
+      "id": "sql-query-flow",
+      "title": "SQL Query Flow",
+      "category": "Data Analytics"
+    },
+    {
+      "id": "excel-model-thinking",
+      "title": "Excel as an Analytical Model",
+      "category": "Data Analytics"
+    },
+    {
+      "id": "missing-data",
+      "title": "Missing Data Decisions",
+      "category": "Data Preparation"
+    },
+    {
+      "id": "scaling",
+      "title": "Scaling & Distance",
+      "category": "Data Preparation"
+    },
+    {
+      "id": "categorical-encoding",
+      "title": "Categorical Encoding",
+      "category": "Data Preparation"
+    },
+    {
+      "id": "eda",
+      "title": "Exploratory Data Analysis",
+      "category": "Data Analytics"
+    },
+    {
+      "id": "visual-storytelling",
+      "title": "Visualisation & Storytelling",
+      "category": "Data Analytics"
+    },
+    {
+      "id": "train-validation-test",
+      "title": "Train, Validation & Test",
+      "category": "Experiment Design"
+    },
+    {
+      "id": "cross-validation",
+      "title": "Cross-Validation",
+      "category": "Experiment Design"
+    },
+    {
+      "id": "data-leakage",
+      "title": "Data Leakage",
+      "category": "Experiment Design"
+    },
+    {
+      "id": "linear-regression",
+      "title": "Linear Regression",
+      "category": "Machine Learning"
+    },
+    {
+      "id": "logistic-regression",
+      "title": "Logistic Regression",
+      "category": "Machine Learning"
+    },
+    {
+      "id": "decision-tree",
+      "title": "Decision Trees",
+      "category": "Machine Learning"
+    },
+    {
+      "id": "random-forest",
+      "title": "Random Forest",
+      "category": "Machine Learning"
+    },
+    {
+      "id": "boosting",
+      "title": "Gradient Boosting",
+      "category": "Machine Learning"
+    },
+    {
+      "id": "knn",
+      "title": "K-Nearest Neighbours",
+      "category": "Machine Learning"
+    },
+    {
+      "id": "svm",
+      "title": "Support Vector Machines",
+      "category": "Machine Learning"
+    },
+    {
+      "id": "kmeans",
+      "title": "K-Means Clustering",
+      "category": "Machine Learning"
+    },
+    {
+      "id": "pca",
+      "title": "Principal Component Analysis",
+      "category": "Machine Learning"
+    },
+    {
+      "id": "classification-metrics",
+      "title": "Classification Metrics",
+      "category": "Evaluation"
+    },
+    {
+      "id": "regression-metrics",
+      "title": "Regression Metrics & Residuals",
+      "category": "Evaluation"
+    },
+    {
+      "id": "bias-variance",
+      "title": "Bias, Variance & Learning Curves",
+      "category": "Evaluation"
+    },
+    {
+      "id": "regularisation",
+      "title": "Regularisation",
+      "category": "Optimisation"
+    },
+    {
+      "id": "hyperparameter-optimisation",
+      "title": "Hyperparameter Optimisation",
+      "category": "Optimisation"
+    },
+    {
+      "id": "calibration",
+      "title": "Probability Calibration & Thresholds",
+      "category": "Evaluation"
+    },
+    {
+      "id": "explainability",
+      "title": "Explainability & Model Interpretation",
+      "category": "Interpretation"
+    },
+    {
+      "id": "uncertainty",
+      "title": "Predictive Uncertainty",
+      "category": "Evaluation"
+    },
+    {
+      "id": "time-series",
+      "title": "Time-Series Forecasting",
+      "category": "Machine Learning"
+    },
+    {
+      "id": "neural-network",
+      "title": "Neural Networks & Backpropagation",
+      "category": "Deep Learning"
+    },
+    {
+      "id": "attention",
+      "title": "Attention & Transformers",
+      "category": "Deep Learning"
+    },
+    {
+      "id": "gnn",
+      "title": "Graph Neural Networks",
+      "category": "Graph ML"
+    },
+    {
+      "id": "deployment-drift",
+      "title": "Deployment, Drift & Monitoring",
+      "category": "Production"
+    }
+  ],
+  "edges": [
+    {
+      "source": "python-execution",
+      "target": "python-functions",
+      "type": "related"
+    },
+    {
+      "source": "python-execution",
+      "target": "python-collections",
+      "type": "related"
+    },
+    {
+      "source": "python-collections",
+      "target": "pandas-table-thinking",
+      "type": "related"
+    },
+    {
+      "source": "pandas-table-thinking",
+      "target": "eda",
+      "type": "related"
+    },
+    {
+      "source": "sql-query-flow",
+      "target": "eda",
+      "type": "related"
+    },
+    {
+      "source": "excel-model-thinking",
+      "target": "eda",
+      "type": "related"
+    },
+    {
+      "source": "eda",
+      "target": "visual-storytelling",
+      "type": "related"
+    },
+    {
+      "source": "missing-data",
+      "target": "scaling",
+      "type": "related"
+    },
+    {
+      "source": "scaling",
+      "target": "knn",
+      "type": "related"
+    },
+    {
+      "source": "scaling",
+      "target": "svm",
+      "type": "related"
+    },
+    {
+      "source": "categorical-encoding",
+      "target": "logistic-regression",
+      "type": "related"
+    },
+    {
+      "source": "train-validation-test",
+      "target": "cross-validation",
+      "type": "related"
+    },
+    {
+      "source": "cross-validation",
+      "target": "data-leakage",
+      "type": "related"
+    },
+    {
+      "source": "data-leakage",
+      "target": "hyperparameter-optimisation",
+      "type": "related"
+    },
+    {
+      "source": "linear-regression",
+      "target": "regression-metrics",
+      "type": "related"
+    },
+    {
+      "source": "logistic-regression",
+      "target": "classification-metrics",
+      "type": "related"
+    },
+    {
+      "source": "decision-tree",
+      "target": "random-forest",
+      "type": "related"
+    },
+    {
+      "source": "decision-tree",
+      "target": "boosting",
+      "type": "related"
+    },
+    {
+      "source": "random-forest",
+      "target": "boosting",
+      "type": "related"
+    },
+    {
+      "source": "knn",
+      "target": "scaling",
+      "type": "related"
+    },
+    {
+      "source": "svm",
+      "target": "scaling",
+      "type": "related"
+    },
+    {
+      "source": "kmeans",
+      "target": "pca",
+      "type": "related"
+    },
+    {
+      "source": "classification-metrics",
+      "target": "calibration",
+      "type": "related"
+    },
+    {
+      "source": "regression-metrics",
+      "target": "uncertainty",
+      "type": "related"
+    },
+    {
+      "source": "bias-variance",
+      "target": "regularisation",
+      "type": "related"
+    },
+    {
+      "source": "regularisation",
+      "target": "hyperparameter-optimisation",
+      "type": "related"
+    },
+    {
+      "source": "hyperparameter-optimisation",
+      "target": "cross-validation",
+      "type": "related"
+    },
+    {
+      "source": "explainability",
+      "target": "deployment-drift",
+      "type": "related"
+    },
+    {
+      "source": "uncertainty",
+      "target": "deployment-drift",
+      "type": "related"
+    },
+    {
+      "source": "neural-network",
+      "target": "attention",
+      "type": "related"
+    },
+    {
+      "source": "neural-network",
+      "target": "gnn",
+      "type": "related"
+    },
+    {
+      "source": "attention",
+      "target": "gnn",
+      "type": "related"
+    },
+    {
+      "source": "time-series",
+      "target": "train-validation-test",
+      "type": "related"
+    },
+    {
+      "source": "calibration",
+      "target": "deployment-drift",
+      "type": "related"
+    },
+    {
+      "source": "visual-storytelling",
+      "target": "deployment-drift",
+      "type": "related"
+    }
+  ]
+}

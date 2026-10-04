@@ -1,0 +1,9 @@
+date,region,channel,revenue,orders
+2026-01-01,East,Online,120,3
+2026-01-01,West,Store,95,2
+2026-02-01,East,Store,150,4
+2026-02-01,West,Online,110,3
+2026-03-01,North,Online,135,3
+2026-03-01,East,Online,90,2
+2026-04-01,North,Store,160,4
+2026-04-01,West,Online,125,3

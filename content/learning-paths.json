@@ -1,0 +1,1678 @@
+{
+  "python-programming": {
+    "id": "python-programming",
+    "title": "Python Programming",
+    "summary": "Learn Python from first principles, then use it confidently for files, numerical computing, pandas, visualisation and small data projects.",
+    "outcomes": [
+      "Read and write clear Python programs",
+      "Use core data structures, functions, files and tests",
+      "Work with NumPy, pandas and Matplotlib",
+      "Structure a small reproducible Python project"
+    ],
+    "duration": "55\u201375 hours",
+    "modules": [
+      {
+        "number": 1,
+        "title": "Getting Started with Python",
+        "lessons": [
+          {
+            "slug": "python-programming__m01__what-python-is-and-where-it-is-used",
+            "title": "What Python is and Where It is Used",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m01__the-python-interpreter-scripts-and-notebooks",
+            "title": "The Python Interpreter Scripts and Notebooks",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m01__indentation-and-blocks",
+            "title": "Indentation and Blocks",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m01__reading-tracebacks-without-panic",
+            "title": "Reading Tracebacks Without Panic",
+            "language": "python",
+            "visualType": "python"
+          }
+        ],
+        "fullCount": 8
+      },
+      {
+        "number": 2,
+        "title": "Variables, Types & Operators",
+        "lessons": [
+          {
+            "slug": "python-programming__m02__variables-and-assignment",
+            "title": "Variables and Assignment",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m02__none-and-missing-object-references",
+            "title": "None and Missing Object References",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m02__comparison-operators",
+            "title": "Comparison Operators",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m02__mini-lab-calculate-a-shopping-basket-total",
+            "title": "Mini Lab Calculate a Shopping Basket Total",
+            "language": "python",
+            "visualType": "python"
+          }
+        ],
+        "fullCount": 12
+      },
+      {
+        "number": 3,
+        "title": "Strings & Text",
+        "lessons": [
+          {
+            "slug": "python-programming__m03__create-strings-with-quotes",
+            "title": "Create Strings with Quotes",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m03__string-slicing",
+            "title": "String Slicing",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m03__split-and-join-text",
+            "title": "Split and Join Text",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m03__mini-lab-clean-a-customer-name",
+            "title": "Mini Lab Clean a Customer Name",
+            "language": "python",
+            "visualType": "python"
+          }
+        ],
+        "fullCount": 10
+      },
+      {
+        "number": 4,
+        "title": "Collections & Data Structures",
+        "lessons": [
+          {
+            "slug": "python-programming__m04__create-and-inspect-lists",
+            "title": "Create and Inspect Lists",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m04__tuples-and-immutable-records",
+            "title": "Tuples and Immutable Records",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m04__dictionary-methods-and-iteration",
+            "title": "Dictionary Methods and Iteration",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m04__mini-lab-summarise-product-ratings",
+            "title": "Mini Lab Summarise Product Ratings",
+            "language": "python",
+            "visualType": "python"
+          }
+        ],
+        "fullCount": 15
+      },
+      {
+        "number": 5,
+        "title": "Decisions & Loops",
+        "lessons": [
+          {
+            "slug": "python-programming__m05__if-statements",
+            "title": "IF Statements",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m05__conditional-expressions",
+            "title": "Conditional Expressions",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m05__break-and-continue",
+            "title": "Break and Continue",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m05__mini-lab-flag-unusual-transactions",
+            "title": "Mini Lab Flag Unusual Transactions",
+            "language": "python",
+            "visualType": "python"
+          }
+        ],
+        "fullCount": 12
+      },
+      {
+        "number": 6,
+        "title": "Functions & Reusable Code",
+        "lessons": [
+          {
+            "slug": "python-programming__m06__define-and-call-a-function",
+            "title": "Define and Call a Function",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m06__variable-length-arguments-with-args",
+            "title": "Variable Length Arguments with Args",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m06__type-hints",
+            "title": "Type Hints",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m06__mini-lab-reusable-kpi-functions",
+            "title": "Mini Lab Reusable KPI Functions",
+            "language": "python",
+            "visualType": "python"
+          }
+        ],
+        "fullCount": 15
+      },
+      {
+        "number": 7,
+        "title": "Errors, Debugging & Testing",
+        "lessons": [
+          {
+            "slug": "python-programming__m07__common-python-exceptions",
+            "title": "Common Python Exceptions",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m07__raise-your-own-exceptions",
+            "title": "Raise Your Own Exceptions",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m07__use-logging-instead-of-scattered-prints",
+            "title": "Use Logging Instead of Scattered Prints",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m07__mini-lab-validate-incoming-records",
+            "title": "Mini Lab Validate Incoming Records",
+            "language": "python",
+            "visualType": "python"
+          }
+        ],
+        "fullCount": 10
+      },
+      {
+        "number": 8,
+        "title": "Files & Data Formats",
+        "lessons": [
+          {
+            "slug": "python-programming__m08__paths-with-pathlib",
+            "title": "Paths with Pathlib",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m08__context-managers-with-with",
+            "title": "Context Managers with with",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m08__work-with-folders-and-glob-patterns",
+            "title": "Work with Folders and Glob Patterns",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m08__mini-lab-load-and-summarise-a-csv",
+            "title": "Mini Lab Load and Summarise a CSV",
+            "language": "python",
+            "visualType": "python"
+          }
+        ],
+        "fullCount": 10
+      },
+      {
+        "number": 9,
+        "title": "Modules, Packages & Environments",
+        "lessons": [
+          {
+            "slug": "python-programming__m09__import-and-from-import",
+            "title": "Import and from Import",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m09__understand-packages",
+            "title": "Understand Packages",
+            "language": "python",
+            "visualType": "python"
+          },
+          {
+            "slug": "python-programming__m09__requirements-txt-and-reproducible-dependencies",
+            "title": "Requirements Txt and Reproducible Dependencies",
+            "language": "bash",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "python-programming__m09__mini-lab-turn-a-script-into-a-small-package",
+            "title": "Mini Lab Turn a Script Into a Small Package",
+            "language": "python",
+            "visualType": "python"
+          }
+        ],
+        "fullCount": 10
+      },
+      {
+        "number": 10,
+        "title": "NumPy for Numerical Computing",
+        "lessons": [
+          {
+            "slug": "python-programming__m10__why-numpy-arrays-matter",
+            "title": "Why NumPy Arrays Matter",
+            "language": "python",
+            "visualType": "array"
+          },
+          {
+            "slug": "python-programming__m10__vectorised-arithmetic",
+            "title": "Vectorised Arithmetic",
+            "language": "python",
+            "visualType": "array"
+          },
+          {
+            "slug": "python-programming__m10__random-number-generation",
+            "title": "Random Number Generation",
+            "language": "python",
+            "visualType": "array"
+          },
+          {
+            "slug": "python-programming__m10__mini-lab-analyse-sensor-readings",
+            "title": "Mini Lab Analyse Sensor Readings",
+            "language": "python",
+            "visualType": "array"
+          }
+        ],
+        "fullCount": 14
+      },
+      {
+        "number": 11,
+        "title": "pandas for Tabular Data",
+        "lessons": [
+          {
+            "slug": "python-programming__m11__series-and-dataframe",
+            "title": "Series and Dataframe",
+            "language": "python",
+            "visualType": "table"
+          },
+          {
+            "slug": "python-programming__m11__filter-rows",
+            "title": "Filter Rows",
+            "language": "python",
+            "visualType": "table"
+          },
+          {
+            "slug": "python-programming__m11__pivot-tables",
+            "title": "Pivot Tables",
+            "language": "python",
+            "visualType": "table"
+          },
+          {
+            "slug": "python-programming__m11__mini-lab-analyse-monthly-sales",
+            "title": "Mini Lab Analyse Monthly Sales",
+            "language": "python",
+            "visualType": "table"
+          }
+        ],
+        "fullCount": 17
+      },
+      {
+        "number": 12,
+        "title": "Matplotlib & Visualisation",
+        "lessons": [
+          {
+            "slug": "python-programming__m12__figure-and-axes-objects",
+            "title": "Figure and Axes Objects",
+            "language": "python",
+            "visualType": "plot"
+          },
+          {
+            "slug": "python-programming__m12__create-a-histogram",
+            "title": "Create a Histogram",
+            "language": "python",
+            "visualType": "plot"
+          },
+          {
+            "slug": "python-programming__m12__annotations-and-reference-lines",
+            "title": "Annotations and Reference Lines",
+            "language": "python",
+            "visualType": "plot"
+          },
+          {
+            "slug": "python-programming__m12__mini-lab-build-an-eda-figure",
+            "title": "Mini Lab Build an EDA Figure",
+            "language": "python",
+            "visualType": "plot"
+          }
+        ],
+        "fullCount": 12
+      },
+      {
+        "number": 13,
+        "title": "Object-Oriented Python",
+        "lessons": [
+          {
+            "slug": "python-programming__m13__objects-and-classes",
+            "title": "Objects and Classes",
+            "language": "python",
+            "visualType": "oop"
+          },
+          {
+            "slug": "python-programming__m13__inheritance-basics",
+            "title": "Inheritance Basics",
+            "language": "python",
+            "visualType": "oop"
+          },
+          {
+            "slug": "python-programming__m13__dunder-methods-intuition",
+            "title": "Dunder Methods Intuition",
+            "language": "python",
+            "visualType": "oop"
+          },
+          {
+            "slug": "python-programming__m13__mini-lab-model-a-small-experiment-run",
+            "title": "Mini Lab Model a Small Experiment Run",
+            "language": "python",
+            "visualType": "oop"
+          }
+        ],
+        "fullCount": 13
+      },
+      {
+        "number": 14,
+        "title": "Capstone: A Small Data Project",
+        "lessons": [
+          {
+            "slug": "python-programming__m14__plan-a-small-data-project",
+            "title": "Plan a Small Data Project",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "python-programming__m14__write-reusable-analysis-functions",
+            "title": "Write Reusable Analysis Functions",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "python-programming__m14__add-tests",
+            "title": "Add Tests",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "python-programming__m14__final-checklist-and-next-learning-paths",
+            "title": "Final Checklist and Next Learning Paths",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 13
+      }
+    ],
+    "fullLessonCount": 171,
+    "coreLessonCount": 56
+  },
+  "data-analytics": {
+    "id": "data-analytics",
+    "title": "Data Analytics",
+    "summary": "Learn how to frame analytical questions, work in Excel/SQL/Python, clean and reshape tabular data, perform EDA, build visualisations and communicate evidence.",
+    "outcomes": [
+      "Frame analytical questions and KPIs",
+      "Analyse data with Excel, SQL and pandas",
+      "Clean, reshape and explore real-world tables",
+      "Communicate results with trustworthy visuals and reports"
+    ],
+    "duration": "50\u201370 hours",
+    "modules": [
+      {
+        "number": 1,
+        "title": "Analytics Thinking & Problem Framing",
+        "lessons": [
+          {
+            "slug": "data-analytics__m01__what-data-analytics-is",
+            "title": "What Data Analytics is",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m01__descriptive-diagnostic-predictive-and-prescriptive-analytics",
+            "title": "Descriptive Diagnostic Predictive and Prescriptive Analytics",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m01__kpis-dimensions-and-measures",
+            "title": "KPIs Dimensions and Measures",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m01__the-end-to-end-analytics-workflow",
+            "title": "The End to End Analytics Workflow",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 5
+      },
+      {
+        "number": 2,
+        "title": "Python & pandas Essentials",
+        "lessons": [
+          {
+            "slug": "data-analytics__m02__python-values-variables-and-expressions",
+            "title": "Python Values Variables and Expressions",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m02__dataframes-and-series",
+            "title": "Dataframes and Series",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m02__sorting-and-filtering",
+            "title": "Sorting and Filtering",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m02__creating-and-renaming-columns",
+            "title": "Creating and Renaming Columns",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 6
+      },
+      {
+        "number": 3,
+        "title": "Excel & Spreadsheet Analytics",
+        "lessons": [
+          {
+            "slug": "data-analytics__m03__workbook-worksheet-and-table-anatomy",
+            "title": "Workbook Worksheet and Table Anatomy",
+            "language": "excel",
+            "visualType": "spreadsheet"
+          },
+          {
+            "slug": "data-analytics__m03__lookup-analysis-with-xlookup",
+            "title": "Lookup Analysis with XLOOKUP",
+            "language": "excel",
+            "visualType": "spreadsheet"
+          },
+          {
+            "slug": "data-analytics__m03__pivottables-for-grouped-analysis",
+            "title": "Pivottables for Grouped Analysis",
+            "language": "excel",
+            "visualType": "spreadsheet"
+          },
+          {
+            "slug": "data-analytics__m03__spreadsheet-mini-project-sales-performance-workbook",
+            "title": "Spreadsheet Mini Project Sales Performance Workbook",
+            "language": "excel",
+            "visualType": "spreadsheet"
+          }
+        ],
+        "fullCount": 15
+      },
+      {
+        "number": 4,
+        "title": "Reading & Understanding Data",
+        "lessons": [
+          {
+            "slug": "data-analytics__m04__csv-json-and-tabular-file-formats",
+            "title": "CSV JSON and Tabular File Formats",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m04__schema-and-data-dictionary",
+            "title": "Schema and Data Dictionary",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m04__dates-and-text-fields",
+            "title": "Dates and Text Fields",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m04__descriptive-statistics",
+            "title": "Descriptive Statistics",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 6
+      },
+      {
+        "number": 5,
+        "title": "SQL for Analytics",
+        "lessons": [
+          {
+            "slug": "data-analytics__m05__select-and-where",
+            "title": "Select and Where",
+            "language": "sql",
+            "visualType": "sql"
+          },
+          {
+            "slug": "data-analytics__m05__group-by-and-aggregate-functions",
+            "title": "Group by and Aggregate Functions",
+            "language": "sql",
+            "visualType": "sql"
+          },
+          {
+            "slug": "data-analytics__m05__inner-and-left-join",
+            "title": "Inner and Left Join",
+            "language": "sql",
+            "visualType": "sql"
+          },
+          {
+            "slug": "data-analytics__m05__ctes-and-readable-queries",
+            "title": "CTEs and Readable Queries",
+            "language": "sql",
+            "visualType": "sql"
+          }
+        ],
+        "fullCount": 7
+      },
+      {
+        "number": 6,
+        "title": "Data Cleaning & Missing Data",
+        "lessons": [
+          {
+            "slug": "data-analytics__m06__detect-missing-values",
+            "title": "Detect Missing Values",
+            "language": "python",
+            "visualType": "missing"
+          },
+          {
+            "slug": "data-analytics__m06__deletion-vs-imputation",
+            "title": "Deletion vs Imputation",
+            "language": "python",
+            "visualType": "missing"
+          },
+          {
+            "slug": "data-analytics__m06__duplicates",
+            "title": "Duplicates",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m06__outlier-checks",
+            "title": "Outlier Checks",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 8
+      },
+      {
+        "number": 7,
+        "title": "Reshaping & Integration",
+        "lessons": [
+          {
+            "slug": "data-analytics__m07__merge-and-join-dataframes",
+            "title": "Merge and Join Dataframes",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m07__concatenate-datasets",
+            "title": "Concatenate Datasets",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m07__melt-wide-to-long",
+            "title": "Melt Wide to Long",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m07__groupby-split-apply-combine",
+            "title": "Groupby Split Apply Combine",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 6
+      },
+      {
+        "number": 8,
+        "title": "Exploratory Data Analysis",
+        "lessons": [
+          {
+            "slug": "data-analytics__m08__frequency-tables",
+            "title": "Frequency Tables",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m08__boxplots-and-outliers",
+            "title": "Boxplots and Outliers",
+            "language": "python",
+            "visualType": "plot"
+          },
+          {
+            "slug": "data-analytics__m08__correlation",
+            "title": "Correlation",
+            "language": "python",
+            "visualType": "correlation"
+          },
+          {
+            "slug": "data-analytics__m08__eda-checklist",
+            "title": "EDA Checklist",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 7
+      },
+      {
+        "number": 9,
+        "title": "Visualisation & Storytelling",
+        "lessons": [
+          {
+            "slug": "data-analytics__m09__chart-selection",
+            "title": "Chart Selection",
+            "language": "python",
+            "visualType": "plot"
+          },
+          {
+            "slug": "data-analytics__m09__line-charts",
+            "title": "Line Charts",
+            "language": "python",
+            "visualType": "plot"
+          },
+          {
+            "slug": "data-analytics__m09__labels-and-annotations",
+            "title": "Labels and Annotations",
+            "language": "python",
+            "visualType": "plot"
+          },
+          {
+            "slug": "data-analytics__m09__avoid-misleading-charts",
+            "title": "Avoid Misleading Charts",
+            "language": "python",
+            "visualType": "plot"
+          }
+        ],
+        "fullCount": 8
+      },
+      {
+        "number": 10,
+        "title": "Business Analysis",
+        "lessons": [
+          {
+            "slug": "data-analytics__m10__rates-and-ratios",
+            "title": "Rates and Ratios",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m10__cohort-intuition",
+            "title": "Cohort Intuition",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m10__funnel-analysis",
+            "title": "Funnel Analysis",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m10__time-series-trend-and-seasonality",
+            "title": "Time Series Trend and Seasonality",
+            "language": "python",
+            "visualType": "timeseries"
+          }
+        ],
+        "fullCount": 7
+      },
+      {
+        "number": 11,
+        "title": "Statistical Reasoning",
+        "lessons": [
+          {
+            "slug": "data-analytics__m11__population-vs-sample",
+            "title": "Population vs Sample",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m11__probability-intuition",
+            "title": "Probability Intuition",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m11__hypothesis-tests-intuition",
+            "title": "Hypothesis Tests Intuition",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m11__correlation-vs-causation",
+            "title": "Correlation vs Causation",
+            "language": "python",
+            "visualType": "correlation"
+          }
+        ],
+        "fullCount": 6
+      },
+      {
+        "number": 12,
+        "title": "Reporting & Reproducibility",
+        "lessons": [
+          {
+            "slug": "data-analytics__m12__from-notebook-to-report",
+            "title": "From Notebook to Report",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m12__tables-that-answer-questions",
+            "title": "Tables That Answer Questions",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m12__reproducible-scripts",
+            "title": "Reproducible Scripts",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m12__data-and-metric-definitions",
+            "title": "Data and Metric Definitions",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 6
+      },
+      {
+        "number": 13,
+        "title": "Capstone Analytics Project",
+        "lessons": [
+          {
+            "slug": "data-analytics__m13__frame-a-business-question",
+            "title": "Frame a Business Question",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m13__perform-eda",
+            "title": "Perform EDA",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-analytics__m13__create-final-visuals",
+            "title": "Create Final Visuals",
+            "language": "python",
+            "visualType": "plot"
+          },
+          {
+            "slug": "data-analytics__m13__write-an-evidence-based-recommendation",
+            "title": "Write an Evidence Based Recommendation",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 6
+      }
+    ],
+    "fullLessonCount": 93,
+    "coreLessonCount": 52
+  },
+  "data-science": {
+    "id": "data-science",
+    "title": "Data Science",
+    "summary": "Build the statistical, computational and experimental skills required to move from exploratory analysis to leakage-safe predictive modelling and interpretation.",
+    "outcomes": [
+      "Design reproducible data-science workflows",
+      "Handle missingness and preprocessing safely",
+      "Build and evaluate predictive models",
+      "Interpret uncertainty, errors and model behaviour"
+    ],
+    "duration": "60\u201380 hours",
+    "modules": [
+      {
+        "number": 1,
+        "title": "Data Science Foundations",
+        "lessons": [
+          {
+            "slug": "data-science__m01__what-data-science-is",
+            "title": "What Data Science is",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m01__analytics-vs-data-science-vs-ml",
+            "title": "Analytics vs Data Science vs ML",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m01__problem-framing",
+            "title": "Problem Framing",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m01__prediction-vs-explanation-vs-causality",
+            "title": "Prediction vs Explanation vs Causality",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 5
+      },
+      {
+        "number": 2,
+        "title": "Python, NumPy & pandas",
+        "lessons": [
+          {
+            "slug": "data-science__m02__numpy-arrays",
+            "title": "NumPy Arrays",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m02__dataframe-operations",
+            "title": "Dataframe Operations",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m02__missing-data",
+            "title": "Missing Data",
+            "language": "python",
+            "visualType": "missing"
+          },
+          {
+            "slug": "data-science__m02__dates-and-categories",
+            "title": "Dates and Categories",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 7
+      },
+      {
+        "number": 3,
+        "title": "Statistics & Probability",
+        "lessons": [
+          {
+            "slug": "data-science__m03__random-variables",
+            "title": "Random Variables",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m03__expectation-and-variance",
+            "title": "Expectation and Variance",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m03__confidence-intervals",
+            "title": "Confidence Intervals",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m03__bayes-rule-intuition",
+            "title": "Bayes Rule Intuition",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 7
+      },
+      {
+        "number": 4,
+        "title": "EDA & Data Quality",
+        "lessons": [
+          {
+            "slug": "data-science__m04__data-profiling",
+            "title": "Data Profiling",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m04__bivariate-analysis",
+            "title": "Bivariate Analysis",
+            "language": "python",
+            "visualType": "correlation"
+          },
+          {
+            "slug": "data-science__m04__outliers",
+            "title": "Outliers",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m04__data-leakage-warning-signs",
+            "title": "Data Leakage Warning Signs",
+            "language": "python",
+            "visualType": "split"
+          }
+        ],
+        "fullCount": 8
+      },
+      {
+        "number": 5,
+        "title": "Cleaning & Imputation",
+        "lessons": [
+          {
+            "slug": "data-science__m05__mcar-mar-and-mnar",
+            "title": "MCAR MAR and MNAR",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m05__simple-imputation",
+            "title": "Simple Imputation",
+            "language": "python",
+            "visualType": "missing"
+          },
+          {
+            "slug": "data-science__m05__missing-indicators",
+            "title": "Missing Indicators",
+            "language": "python",
+            "visualType": "missing"
+          },
+          {
+            "slug": "data-science__m05__validate-imputation",
+            "title": "Validate Imputation",
+            "language": "python",
+            "visualType": "missing"
+          }
+        ],
+        "fullCount": 8
+      },
+      {
+        "number": 6,
+        "title": "Preprocessing",
+        "lessons": [
+          {
+            "slug": "data-science__m06__standardisation",
+            "title": "Standardisation",
+            "language": "python",
+            "visualType": "scaling"
+          },
+          {
+            "slug": "data-science__m06__categorical-encoding",
+            "title": "Categorical Encoding",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m06__columntransformer",
+            "title": "Columntransformer",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m06__target-transformations",
+            "title": "Target Transformations",
+            "language": "python",
+            "visualType": "scaling"
+          }
+        ],
+        "fullCount": 7
+      },
+      {
+        "number": 7,
+        "title": "Feature Engineering",
+        "lessons": [
+          {
+            "slug": "data-science__m07__domain-features",
+            "title": "Domain Features",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m07__datetime-features",
+            "title": "Datetime Features",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m07__text-tf-idf-intuition",
+            "title": "Text TF IDF Intuition",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m07__pca",
+            "title": "PCA",
+            "language": "python",
+            "visualType": "pca"
+          }
+        ],
+        "fullCount": 7
+      },
+      {
+        "number": 8,
+        "title": "Experimental Design & Validation",
+        "lessons": [
+          {
+            "slug": "data-science__m08__train-validation-test",
+            "title": "Train Validation Test",
+            "language": "python",
+            "visualType": "split"
+          },
+          {
+            "slug": "data-science__m08__stratification",
+            "title": "Stratification",
+            "language": "python",
+            "visualType": "split"
+          },
+          {
+            "slug": "data-science__m08__nested-cv",
+            "title": "Nested Cv",
+            "language": "python",
+            "visualType": "split"
+          },
+          {
+            "slug": "data-science__m08__leakage-safe-pipelines",
+            "title": "Leakage Safe Pipelines",
+            "language": "python",
+            "visualType": "split"
+          }
+        ],
+        "fullCount": 8
+      },
+      {
+        "number": 9,
+        "title": "Predictive Modelling",
+        "lessons": [
+          {
+            "slug": "data-science__m09__linear-regression",
+            "title": "Linear Regression",
+            "language": "python",
+            "visualType": "regression"
+          },
+          {
+            "slug": "data-science__m09__knn",
+            "title": "KNN",
+            "language": "python",
+            "visualType": "regression"
+          },
+          {
+            "slug": "data-science__m09__gradient-boosting",
+            "title": "Gradient Boosting",
+            "language": "python",
+            "visualType": "classification"
+          },
+          {
+            "slug": "data-science__m09__neural-network-intuition",
+            "title": "Neural Network Intuition",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 8
+      },
+      {
+        "number": 10,
+        "title": "Evaluation & Diagnostics",
+        "lessons": [
+          {
+            "slug": "data-science__m10__classification-metrics",
+            "title": "Classification Metrics",
+            "language": "python",
+            "visualType": "classification"
+          },
+          {
+            "slug": "data-science__m10__regression-metrics",
+            "title": "Regression Metrics",
+            "language": "python",
+            "visualType": "regression"
+          },
+          {
+            "slug": "data-science__m10__thresholds",
+            "title": "Thresholds",
+            "language": "python",
+            "visualType": "classification"
+          },
+          {
+            "slug": "data-science__m10__subgroup-evaluation",
+            "title": "Subgroup Evaluation",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 8
+      },
+      {
+        "number": 11,
+        "title": "Interpretation & Communication",
+        "lessons": [
+          {
+            "slug": "data-science__m11__coefficients-and-feature-importance",
+            "title": "Coefficients and Feature Importance",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m11__pdp-and-ice",
+            "title": "PDP and ICE",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m11__model-cards",
+            "title": "Model Cards",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m11__decision-recommendations",
+            "title": "Decision Recommendations",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 7
+      },
+      {
+        "number": 12,
+        "title": "Capstone Project",
+        "lessons": [
+          {
+            "slug": "data-science__m12__define-the-unit-and-target",
+            "title": "Define the Unit and Target",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m12__compare-baseline-and-advanced-models",
+            "title": "Compare Baseline and Advanced Models",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m12__evaluate-on-held-out-data",
+            "title": "Evaluate on Held Out Data",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "data-science__m12__deliver-a-reproducible-report",
+            "title": "Deliver a Reproducible Report",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 7
+      }
+    ],
+    "fullLessonCount": 87,
+    "coreLessonCount": 48
+  },
+  "machine-learning": {
+    "id": "machine-learning",
+    "title": "Machine Learning",
+    "summary": "Learn how machine-learning algorithms fit, generalise and fail, then practise validation, tuning, calibration, interpretation and production thinking.",
+    "outcomes": [
+      "Explain core ML algorithms and objectives",
+      "Build leakage-safe training and validation workflows",
+      "Choose metrics and tune models responsibly",
+      "Interpret model behaviour and package a final model"
+    ],
+    "duration": "65\u201390 hours",
+    "modules": [
+      {
+        "number": 1,
+        "title": "ML Foundations",
+        "lessons": [
+          {
+            "slug": "machine-learning__m01__machine-learning-workflow",
+            "title": "Machine Learning Workflow",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m01__features-targets-and-examples",
+            "title": "Features Targets and Examples",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m01__training-validation-and-inference",
+            "title": "Training Validation and Inference",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m01__generalisation",
+            "title": "Generalisation",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 6
+      },
+      {
+        "number": 2,
+        "title": "Math for ML",
+        "lessons": [
+          {
+            "slug": "machine-learning__m02__vectors-and-matrices",
+            "title": "Vectors and Matrices",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m02__probability-for-prediction",
+            "title": "Probability for Prediction",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m02__gradients",
+            "title": "Gradients",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m02__bias-and-variance",
+            "title": "Bias and Variance",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 7
+      },
+      {
+        "number": 3,
+        "title": "Data Preparation for ML",
+        "lessons": [
+          {
+            "slug": "machine-learning__m03__numeric-scaling",
+            "title": "Numeric Scaling",
+            "language": "python",
+            "visualType": "scaling"
+          },
+          {
+            "slug": "machine-learning__m03__missing-value-imputation",
+            "title": "Missing Value Imputation",
+            "language": "python",
+            "visualType": "missing"
+          },
+          {
+            "slug": "machine-learning__m03__feature-selection",
+            "title": "Feature Selection",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m03__pipelines-and-columntransformer",
+            "title": "Pipelines and Columntransformer",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 7
+      },
+      {
+        "number": 4,
+        "title": "Linear Models",
+        "lessons": [
+          {
+            "slug": "machine-learning__m04__linear-regression",
+            "title": "Linear Regression",
+            "language": "python",
+            "visualType": "regression"
+          },
+          {
+            "slug": "machine-learning__m04__lasso-regression",
+            "title": "Lasso Regression",
+            "language": "python",
+            "visualType": "regression"
+          },
+          {
+            "slug": "machine-learning__m04__logistic-regression",
+            "title": "Logistic Regression",
+            "language": "python",
+            "visualType": "classification"
+          },
+          {
+            "slug": "machine-learning__m04__regularisation-paths",
+            "title": "Regularisation Paths",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 7
+      },
+      {
+        "number": 5,
+        "title": "Instance & Kernel Methods",
+        "lessons": [
+          {
+            "slug": "machine-learning__m05__knn-classification",
+            "title": "KNN Classification",
+            "language": "python",
+            "visualType": "classification"
+          },
+          {
+            "slug": "machine-learning__m05__distance-metrics",
+            "title": "Distance Metrics",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m05__kernel-trick-intuition",
+            "title": "Kernel Trick Intuition",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m05__scaling-requirements",
+            "title": "Scaling Requirements",
+            "language": "python",
+            "visualType": "scaling"
+          }
+        ],
+        "fullCount": 7
+      },
+      {
+        "number": 6,
+        "title": "Tree Models",
+        "lessons": [
+          {
+            "slug": "machine-learning__m06__decision-tree-splits",
+            "title": "Decision Tree Splits",
+            "language": "python",
+            "visualType": "classification"
+          },
+          {
+            "slug": "machine-learning__m06__regression-trees",
+            "title": "Regression Trees",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m06__random-forests",
+            "title": "Random Forests",
+            "language": "python",
+            "visualType": "classification"
+          },
+          {
+            "slug": "machine-learning__m06__feature-importance-caveats",
+            "title": "Feature Importance Caveats",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 7
+      },
+      {
+        "number": 7,
+        "title": "Boosting",
+        "lessons": [
+          {
+            "slug": "machine-learning__m07__boosting-intuition",
+            "title": "Boosting Intuition",
+            "language": "python",
+            "visualType": "classification"
+          },
+          {
+            "slug": "machine-learning__m07__xgboost-concepts",
+            "title": "XGBoost Concepts",
+            "language": "python",
+            "visualType": "classification"
+          },
+          {
+            "slug": "machine-learning__m07__catboost-concepts",
+            "title": "CatBoost Concepts",
+            "language": "python",
+            "visualType": "classification"
+          },
+          {
+            "slug": "machine-learning__m07__early-stopping",
+            "title": "Early Stopping",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 7
+      },
+      {
+        "number": 8,
+        "title": "Unsupervised Learning",
+        "lessons": [
+          {
+            "slug": "machine-learning__m08__k-means",
+            "title": "K Means",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m08__dbscan",
+            "title": "DBSCAN",
+            "language": "python",
+            "visualType": "pca"
+          },
+          {
+            "slug": "machine-learning__m08__pca",
+            "title": "PCA",
+            "language": "python",
+            "visualType": "pca"
+          },
+          {
+            "slug": "machine-learning__m08__t-sne-and-umap-usage",
+            "title": "T Sne and Umap Usage",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 6
+      },
+      {
+        "number": 9,
+        "title": "Validation & Leakage",
+        "lessons": [
+          {
+            "slug": "machine-learning__m09__holdout",
+            "title": "Holdout",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m09__stratified-k-fold",
+            "title": "Stratified K Fold",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m09__nested-cv",
+            "title": "Nested Cv",
+            "language": "python",
+            "visualType": "split"
+          },
+          {
+            "slug": "machine-learning__m09__repeated-evaluation",
+            "title": "Repeated Evaluation",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 8
+      },
+      {
+        "number": 10,
+        "title": "Hyperparameter Optimisation",
+        "lessons": [
+          {
+            "slug": "machine-learning__m10__search-space-design",
+            "title": "Search Space Design",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m10__random-search",
+            "title": "Random Search",
+            "language": "python",
+            "visualType": "hpo"
+          },
+          {
+            "slug": "machine-learning__m10__successive-halving",
+            "title": "Successive Halving",
+            "language": "python",
+            "visualType": "hpo"
+          },
+          {
+            "slug": "machine-learning__m10__multi-metric-tuning",
+            "title": "Multi Metric Tuning",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 8
+      },
+      {
+        "number": 11,
+        "title": "Metrics, Calibration & Thresholds",
+        "lessons": [
+          {
+            "slug": "machine-learning__m11__confusion-matrix",
+            "title": "Confusion Matrix",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m11__roc-auc",
+            "title": "ROC AUC",
+            "language": "python",
+            "visualType": "classification"
+          },
+          {
+            "slug": "machine-learning__m11__regression-metrics",
+            "title": "Regression Metrics",
+            "language": "python",
+            "visualType": "regression"
+          },
+          {
+            "slug": "machine-learning__m11__threshold-optimisation",
+            "title": "Threshold Optimisation",
+            "language": "python",
+            "visualType": "classification"
+          }
+        ],
+        "fullCount": 9
+      },
+      {
+        "number": 12,
+        "title": "Interpretation & Production Thinking",
+        "lessons": [
+          {
+            "slug": "machine-learning__m12__permutation-importance",
+            "title": "Permutation Importance",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m12__shap-intuition",
+            "title": "SHAP Intuition",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m12__batch-vs-api-inference",
+            "title": "Batch vs API Inference",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m12__retraining-governance",
+            "title": "Retraining Governance",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 8
+      },
+      {
+        "number": 13,
+        "title": "Capstone Project",
+        "lessons": [
+          {
+            "slug": "machine-learning__m13__choose-a-real-task",
+            "title": "Choose a Real Task",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m13__build-a-pipeline",
+            "title": "Build a Pipeline",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m13__evaluate",
+            "title": "Evaluate",
+            "language": "python",
+            "visualType": "workflow"
+          },
+          {
+            "slug": "machine-learning__m13__document-and-package-the-final-model",
+            "title": "Document and Package the Final Model",
+            "language": "python",
+            "visualType": "workflow"
+          }
+        ],
+        "fullCount": 8
+      }
+    ],
+    "fullLessonCount": 95,
+    "coreLessonCount": 52
+  }
+}

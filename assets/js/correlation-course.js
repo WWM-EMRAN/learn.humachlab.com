@@ -1,0 +1,7 @@
+(() => {
+ const C=window.HumachCorr;if(!C)return;
+ function demo(){const el=document.getElementById('courseCorrPlot');if(!el)return;const pattern=document.getElementById('courseCorrPattern'),noise=document.getElementById('courseCorrNoise'),out=document.getElementById('courseCorrOut'),d=C.patternData(pattern.value,48,+noise.value,42,false),r=C.pearson(d.x,d.y),fit=C.lineFit(d.x,d.y),mn=Math.min(...d.x),mx=Math.max(...d.x);out.textContent=r.toFixed(3);Plotly.react(el,[{x:d.x,y:d.y,type:'scatter',mode:'markers',marker:{size:8,opacity:.72},name:'Observations'},{x:[mn,mx],y:[fit.intercept+fit.slope*mn,fit.intercept+fit.slope*mx],type:'scatter',mode:'lines',name:'Fit'}],{title:`Pearson r = ${r.toFixed(3)}`,xaxis:{title:'X'},yaxis:{title:'Y'},margin:{l:55,r:20,t:50,b:50}}, {responsive:true,displaylogo:false});}
+ if(document.getElementById('courseCorrPlot')){document.getElementById('courseCorrPattern').addEventListener('change',demo);document.getElementById('courseCorrNoise').addEventListener('input',demo);demo()}
+ function fs(){const el=document.getElementById('courseCorrSelection');if(!el)return;const rows=C.makeData(150,.42,42,false),scores=C.targetScores(rows,'pearson');Plotly.react(el,[{x:scores.map(s=>s.label),y:scores.map(s=>Math.abs(s.r)),type:'bar'}],{title:'Absolute feature–target correlation',yaxis:{title:'|Pearson r|',range:[0,1]},margin:{l:55,r:20,t:50,b:100}}, {responsive:true,displaylogo:false});}
+ fs();
+})();

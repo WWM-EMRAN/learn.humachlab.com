@@ -1,0 +1,1372 @@
+[
+  {
+    "slug": "python-execution",
+    "title": "Python: How Code Becomes State",
+    "category": "Programming",
+    "question": "What actually changes when Python executes one line?",
+    "intuition": "Python evaluates expressions, binds names to objects, changes program state, and produces observable output. Thinking in state changes is more reliable than memorising syntax.",
+    "technical": "Execution is a sequence of evaluation, name binding, function calls and control-flow decisions. Types define available operations; mutability determines whether an object can change in place.",
+    "practitioner": "Trace variables and types at each meaningful step. When debugging, ask which assumption about state stopped being true.",
+    "visualType": "python",
+    "breakPrompt": "Change an input type and predict which operation will fail first.",
+    "keyword": "Python",
+    "hubLinks": [
+      {
+        "title": "Python objects and variables",
+        "slug": "python-notebooks-and-reproducible-analysis__python-objects-and-variables",
+        "topicTitle": "Python, Notebooks & Reproducible Analysis"
+      },
+      {
+        "title": "Jupyter notebook workflow",
+        "slug": "python-notebooks-and-reproducible-analysis__jupyter-notebook-workflow",
+        "topicTitle": "Python, Notebooks & Reproducible Analysis"
+      },
+      {
+        "title": "Random seeds and reproducibility",
+        "slug": "python-notebooks-and-reproducible-analysis__random-seeds-and-reproducibility",
+        "topicTitle": "Python, Notebooks & Reproducible Analysis"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "python-functions",
+    "title": "Functions & Reusable Reasoning",
+    "category": "Programming",
+    "question": "Why do functions make programs easier to trust?",
+    "intuition": "A function packages one transformation behind a clear interface: inputs enter, a result or side effect leaves, and the implementation can be tested independently.",
+    "technical": "Function parameters create local bindings; return values communicate results. Pure functions minimise hidden state, while side-effecting functions should make their effects explicit.",
+    "practitioner": "Prefer small functions with one responsibility, descriptive names, explicit inputs and testable outputs.",
+    "visualType": "python",
+    "breakPrompt": "Add hidden global state, then observe why the same call can stop producing the same result.",
+    "keyword": "Functions",
+    "hubLinks": [
+      {
+        "title": "Functions and reusable code",
+        "slug": "python-notebooks-and-reproducible-analysis__functions-and-reusable-code",
+        "topicTitle": "Python, Notebooks & Reproducible Analysis"
+      },
+      {
+        "title": "Python objects and variables",
+        "slug": "python-notebooks-and-reproducible-analysis__python-objects-and-variables",
+        "topicTitle": "Python, Notebooks & Reproducible Analysis"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "python-collections",
+    "title": "Choosing Python Collections",
+    "category": "Programming",
+    "question": "List, tuple, set or dictionary—what changes when you choose the wrong one?",
+    "intuition": "Collections encode assumptions about order, uniqueness, mutability and lookup. The right data structure makes intended operations obvious and accidental complexity harder.",
+    "technical": "Lists provide ordered mutable sequences; tuples are ordered and immutable; sets optimise uniqueness/membership; dictionaries map keys to values with fast key-based lookup.",
+    "practitioner": "Choose by operations, not habit. If identity matters, use keys; if uniqueness matters, use sets; if order and repetition matter, use sequences.",
+    "visualType": "python",
+    "breakPrompt": "Replace a dictionary lookup with repeated list scanning and compare the mental and computational cost.",
+    "keyword": "Collections",
+    "hubLinks": [
+      {
+        "title": "Lists, dictionaries and arrays",
+        "slug": "python-notebooks-and-reproducible-analysis__lists-dictionaries-and-arrays",
+        "topicTitle": "Python, Notebooks & Reproducible Analysis"
+      },
+      {
+        "title": "Python objects and variables",
+        "slug": "python-notebooks-and-reproducible-analysis__python-objects-and-variables",
+        "topicTitle": "Python, Notebooks & Reproducible Analysis"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "pandas-table-thinking",
+    "title": "pandas & Table Thinking",
+    "category": "Programming",
+    "question": "What does a DataFrame represent beyond “an Excel-like table”?",
+    "intuition": "A DataFrame is a labelled, typed table where rows have a grain and columns have meanings. Good pandas work starts by preserving those semantics through each transformation.",
+    "technical": "Selection, filtering, grouping, joining and reshaping transform table structure. Index alignment and data types can silently affect results, so intermediate inspection matters.",
+    "practitioner": "State row grain before merging or aggregating. Inspect shape, dtypes, keys and missingness after major transformations.",
+    "visualType": "table",
+    "breakPrompt": "Create a many-to-many merge accidentally and watch row counts explode.",
+    "keyword": "pandas",
+    "hubLinks": [
+      {
+        "title": "Schema and data types",
+        "slug": "data_understanding_eda__schema_and_data_types",
+        "topicTitle": "Data Understanding & Exploratory Analysis"
+      },
+      {
+        "title": "Tables, rows, columns and keys",
+        "slug": "sql-and-relational-data-basics__tables-rows-columns-and-keys",
+        "topicTitle": "SQL & Relational Data Basics"
+      },
+      {
+        "title": "Missing-value representations",
+        "slug": "missing-data-concepts-and-diagnosis__missing-value-representations",
+        "topicTitle": "Missing Data: Concepts & Diagnosis"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "sql-query-flow",
+    "title": "SQL Query Flow",
+    "category": "Data Analytics",
+    "question": "How does SQL turn tables into evidence?",
+    "intuition": "SQL declares the result you want; the database engine determines an execution plan. The learner’s job is to reason about row grain, filters, joins and aggregation.",
+    "technical": "Logical query processing can be reasoned about as FROM/JOIN → WHERE → GROUP BY → HAVING → SELECT → ORDER BY, even though the optimiser may execute differently.",
+    "practitioner": "Validate join cardinality and aggregation grain. A syntactically correct query can still answer the wrong business question.",
+    "visualType": "sql",
+    "breakPrompt": "Change an inner join to a left join and predict which entities reappear.",
+    "keyword": "SQL",
+    "hubLinks": [
+      {
+        "title": "Tables, rows, columns and keys",
+        "slug": "sql-and-relational-data-basics__tables-rows-columns-and-keys",
+        "topicTitle": "SQL & Relational Data Basics"
+      },
+      {
+        "title": "SELECT, WHERE and ORDER BY",
+        "slug": "sql-and-relational-data-basics__select-where-and-order-by",
+        "topicTitle": "SQL & Relational Data Basics"
+      },
+      {
+        "title": "GROUP BY and aggregation",
+        "slug": "sql-and-relational-data-basics__group-by-and-aggregation",
+        "topicTitle": "SQL & Relational Data Basics"
+      },
+      {
+        "title": "JOIN fundamentals",
+        "slug": "sql-and-relational-data-basics__join-fundamentals",
+        "topicTitle": "SQL & Relational Data Basics"
+      },
+      {
+        "title": "CTEs and readable analytical SQL",
+        "slug": "sql-and-relational-data-basics__ctes-and-readable-analytical-sql",
+        "topicTitle": "SQL & Relational Data Basics"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "excel-model-thinking",
+    "title": "Excel as an Analytical Model",
+    "category": "Data Analytics",
+    "question": "When is a spreadsheet a model rather than just a grid?",
+    "intuition": "A spreadsheet becomes an analytical model when data, assumptions, formulas and outputs are organised so another person can trace how a result was produced.",
+    "technical": "Cell references form a dependency graph. Tables, named ranges, structured references, PivotTables and Power Query reduce fragile manual steps.",
+    "practitioner": "Separate raw data, transformation logic and outputs. Avoid hard-coded constants inside formulas when they represent assumptions.",
+    "visualType": "spreadsheet",
+    "breakPrompt": "Insert a row into a fragile range and compare it with a structured-table formula.",
+    "keyword": "Excel",
+    "hubLinks": [
+      {
+        "title": "Workbook, worksheet and table anatomy",
+        "slug": "excel-spreadsheet-analytics__workbook-worksheet-and-table-anatomy",
+        "topicTitle": "Excel & Spreadsheet Analytics"
+      },
+      {
+        "title": "Excel Tables and structured references",
+        "slug": "excel-spreadsheet-analytics__excel-tables-and-structured-references",
+        "topicTitle": "Excel & Spreadsheet Analytics"
+      },
+      {
+        "title": "Spreadsheet error handling and auditing",
+        "slug": "excel-spreadsheet-analytics__spreadsheet-error-handling-and-auditing",
+        "topicTitle": "Excel & Spreadsheet Analytics"
+      },
+      {
+        "title": "Power Query fundamentals",
+        "slug": "excel-spreadsheet-analytics__power-query-fundamentals",
+        "topicTitle": "Excel & Spreadsheet Analytics"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "missing-data",
+    "title": "Missing Data Decisions",
+    "category": "Data Preparation",
+    "question": "A blank cell is not a method—what should you decide before imputing?",
+    "intuition": "Missingness has a cause. Deletion, simple imputation, local imputation or model-native handling can each be reasonable, but only when their assumptions match how values became missing.",
+    "technical": "MCAR, MAR and MNAR describe relationships between missingness and observed/unobserved values. Imputation parameters must be learned inside training folds to avoid leakage.",
+    "practitioner": "Profile missingness by feature, subgroup and time. Compare strategies on downstream validation and inspect post-imputation distributions.",
+    "visualType": "missing",
+    "breakPrompt": "Impute before splitting the data and identify where information from the test set leaks backward.",
+    "keyword": "Missing Data",
+    "hubLinks": [
+      {
+        "title": "Missingness profiling",
+        "slug": "data_understanding_eda__missingness_profiling",
+        "topicTitle": "Data Understanding & Exploratory Analysis"
+      },
+      {
+        "title": "MCAR: missing completely at random",
+        "slug": "missing-data-concepts-and-diagnosis__mcar-missing-completely-at-random",
+        "topicTitle": "Missing Data: Concepts & Diagnosis"
+      },
+      {
+        "title": "MAR: missing at random",
+        "slug": "missing-data-concepts-and-diagnosis__mar-missing-at-random",
+        "topicTitle": "Missing Data: Concepts & Diagnosis"
+      },
+      {
+        "title": "MNAR: missing not at random",
+        "slug": "missing-data-concepts-and-diagnosis__mnar-missing-not-at-random",
+        "topicTitle": "Missing Data: Concepts & Diagnosis"
+      },
+      {
+        "title": "Why missingness mechanism matters",
+        "slug": "missing-data-concepts-and-diagnosis__why-missingness-mechanism-matters",
+        "topicTitle": "Missing Data: Concepts & Diagnosis"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "scaling",
+    "title": "Scaling & Distance",
+    "category": "Data Preparation",
+    "question": "Why can a harmless-looking unit change alter a model?",
+    "intuition": "Distance- and gradient-based methods react to numerical scale. Changing kilometres to metres should not make one feature semantically more important, yet raw magnitudes can do exactly that.",
+    "technical": "Standardisation centres and rescales by training mean/std; Min–Max scaling maps a range; robust scaling uses resistant statistics. Tree splits generally do not require scaling.",
+    "practitioner": "Fit scaling only on training data and include it inside a pipeline. Inspect transformed distributions and remember that scaling does not fix outliers or skew by itself.",
+    "visualType": "scaling",
+    "breakPrompt": "Multiply one feature by 1,000 and watch KNN/SVM geometry change before and after scaling.",
+    "keyword": "Scaling",
+    "hubLinks": [
+      {
+        "title": "Scaling",
+        "slug": "preprocessing__scaling",
+        "topicTitle": "Data Preprocessing"
+      },
+      {
+        "title": "Min-max scaling",
+        "slug": "numeric-preprocessing__min-max-scaling",
+        "topicTitle": "Numeric Preprocessing"
+      },
+      {
+        "title": "Robust scaling",
+        "slug": "numeric-preprocessing__robust-scaling",
+        "topicTitle": "Numeric Preprocessing"
+      },
+      {
+        "title": "When scaling is unnecessary",
+        "slug": "numeric-preprocessing__when-scaling-is-unnecessary",
+        "topicTitle": "Numeric Preprocessing"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "categorical-encoding",
+    "title": "Categorical Encoding",
+    "category": "Data Preparation",
+    "question": "How do categories become numbers without inventing false meaning?",
+    "intuition": "Models need numerical representations, but the encoding determines what relationships the model can infer. One-hot preserves nominal identity; ordinal encoding intentionally imposes order.",
+    "technical": "One-hot creates indicator columns; ordinal maps ordered levels; target encoding uses outcome statistics and therefore requires strict out-of-fold handling.",
+    "practitioner": "Choose encoding from semantics and model family. Never let target-derived encodings see validation labels.",
+    "visualType": "table",
+    "breakPrompt": "Assign arbitrary integers to unordered cities and observe the artificial order you created.",
+    "keyword": "Categorical Encoding",
+    "hubLinks": [
+      {
+        "title": "Categorical encoding",
+        "slug": "preprocessing__categorical_encoding",
+        "topicTitle": "Data Preprocessing"
+      },
+      {
+        "title": "One-hot encoding",
+        "slug": "categorical-preprocessing__one-hot-encoding",
+        "topicTitle": "Categorical Preprocessing"
+      },
+      {
+        "title": "Ordinal encoding",
+        "slug": "categorical-preprocessing__ordinal-encoding",
+        "topicTitle": "Categorical Preprocessing"
+      },
+      {
+        "title": "Target encoding",
+        "slug": "categorical-preprocessing__target-encoding",
+        "topicTitle": "Categorical Preprocessing"
+      },
+      {
+        "title": "Avoiding target leakage in encoders",
+        "slug": "categorical-preprocessing__avoiding-target-leakage-in-encoders",
+        "topicTitle": "Categorical Preprocessing"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "eda",
+    "title": "Exploratory Data Analysis",
+    "category": "Data Analytics",
+    "question": "What should you learn before fitting a model?",
+    "intuition": "EDA is disciplined interrogation of the dataset: structure, distributions, relationships, missingness, anomalies and potential data-generating processes.",
+    "technical": "Univariate summaries reveal centre/spread; bivariate views reveal association; multivariate analysis surfaces interactions and confounding. EDA must respect future validation boundaries when it influences modelling decisions.",
+    "practitioner": "Ask a question before making a plot. Record observations, hypotheses and decisions instead of producing charts without interpretation.",
+    "visualType": "distribution",
+    "breakPrompt": "Hide an outlier or subgroup and see how a single aggregate can tell a different story.",
+    "keyword": "EDA",
+    "hubLinks": [
+      {
+        "title": "Descriptive statistics",
+        "slug": "data_understanding_eda__descriptive_statistics",
+        "topicTitle": "Data Understanding & Exploratory Analysis"
+      },
+      {
+        "title": "Distribution visualisation",
+        "slug": "data_understanding_eda__distribution_visualisation",
+        "topicTitle": "Data Understanding & Exploratory Analysis"
+      },
+      {
+        "title": "Relationships and correlation",
+        "slug": "data_understanding_eda__relationships_and_correlation",
+        "topicTitle": "Data Understanding & Exploratory Analysis"
+      },
+      {
+        "title": "Missingness profiling",
+        "slug": "data_understanding_eda__missingness_profiling",
+        "topicTitle": "Data Understanding & Exploratory Analysis"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "visual-storytelling",
+    "title": "Visualisation & Storytelling",
+    "category": "Data Analytics",
+    "question": "What makes a chart explain rather than decorate?",
+    "intuition": "A chart is an encoding of evidence. Good visualisation chooses position, length, colour and annotation to make the intended comparison effortless and honest.",
+    "technical": "Chart selection follows the analytical task: comparison, trend, distribution, relationship, composition or uncertainty. Axis scales and aggregation choices can distort perception.",
+    "practitioner": "Write the takeaway first, then choose the simplest encoding that supports it. Label units, show uncertainty when relevant and remove non-informative decoration.",
+    "visualType": "plot",
+    "breakPrompt": "Truncate an axis or switch aggregation and inspect how the apparent story changes.",
+    "keyword": "Visualisation",
+    "hubLinks": [
+      {
+        "title": "Choose chart by analytical question",
+        "slug": "visualisation-foundations__choose-chart-by-analytical-question",
+        "topicTitle": "Visualisation Foundations"
+      },
+      {
+        "title": "Bar, line, scatter and distribution plots",
+        "slug": "visualisation-foundations__bar-line-scatter-and-distribution-plots",
+        "topicTitle": "Visualisation Foundations"
+      },
+      {
+        "title": "Labels, scales and annotations",
+        "slug": "visualisation-foundations__labels-scales-and-annotations",
+        "topicTitle": "Visualisation Foundations"
+      },
+      {
+        "title": "Avoid misleading visualisations",
+        "slug": "visualisation-foundations__avoid-misleading-visualisations",
+        "topicTitle": "Visualisation Foundations"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "train-validation-test",
+    "title": "Train, Validation & Test",
+    "category": "Experiment Design",
+    "question": "Why do we need data the model has never seen?",
+    "intuition": "Training measures fit; validation guides choices; testing estimates final generalisation. Mixing these roles lets decisions adapt to the answer key.",
+    "technical": "Repeated model selection on a validation set gradually overfits that validation evidence. The final test set should remain untouched until choices are frozen.",
+    "practitioner": "Split by the deployment unit—person, customer, device, time—not blindly by row.",
+    "visualType": "split",
+    "breakPrompt": "Tune repeatedly on the test set and watch the “final” estimate stop being independent.",
+    "keyword": "Validation",
+    "hubLinks": [
+      {
+        "title": "Three-way train-validation-test",
+        "slug": "train-validation-test-design__three-way-train-validation-test",
+        "topicTitle": "Train / Validation / Test Design"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "cross-validation",
+    "title": "Cross-Validation",
+    "category": "Experiment Design",
+    "question": "How do we estimate generalisation when one split is too fragile?",
+    "intuition": "Cross-validation rotates which observations are held out, giving several views of model performance and revealing variability that one split can hide.",
+    "technical": "K-Fold assumes exchangeable independent observations; stratification preserves class proportions; grouped CV keeps related entities together; time-series CV preserves temporal order.",
+    "practitioner": "Choose the split strategy from the data-generating process, not from habit. Report fold variability as well as the mean.",
+    "visualType": "split",
+    "breakPrompt": "Use ordinary K-Fold on repeated measurements from the same person and locate the leakage path.",
+    "keyword": "Cross-Validation",
+    "hubLinks": [
+      {
+        "title": "K-Fold",
+        "slug": "cross-validation-methods__k-fold",
+        "topicTitle": "Cross-Validation Methods"
+      },
+      {
+        "title": "Stratified K-Fold",
+        "slug": "cross-validation-methods__stratified-k-fold",
+        "topicTitle": "Cross-Validation Methods"
+      },
+      {
+        "title": "Group K-Fold",
+        "slug": "cross-validation-methods__group-k-fold",
+        "topicTitle": "Cross-Validation Methods"
+      },
+      {
+        "title": "TimeSeriesSplit",
+        "slug": "cross-validation-methods__timeseriessplit",
+        "topicTitle": "Cross-Validation Methods"
+      },
+      {
+        "title": "Nested cross-validation",
+        "slug": "cross_validation__nested_cross_validation",
+        "topicTitle": "Cross-Validation & Data Splitting"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "data-leakage",
+    "title": "Data Leakage",
+    "category": "Experiment Design",
+    "question": "Can a model look excellent because we accidentally gave it the answer?",
+    "intuition": "Leakage occurs when training uses information that would not be available at prediction time or information from held-out data. It often produces impressive but unreproducible performance.",
+    "technical": "Leakage can enter through preprocessing, target proxies, duplicates, grouped entities, temporal look-ahead or feature engineering performed before splitting.",
+    "practitioner": "Build transformations inside pipelines and audit every feature with one question: “Would I know this value at the moment of prediction?”",
+    "visualType": "split",
+    "breakPrompt": "Fit preprocessing on the entire dataset, then compare the inflated validation score with a leakage-safe pipeline.",
+    "keyword": "Data Leakage",
+    "hubLinks": [
+      {
+        "title": "Preprocessing leakage",
+        "slug": "data_leakage__preprocessing_leakage",
+        "topicTitle": "Data Leakage & Experimental Integrity"
+      },
+      {
+        "title": "Target leakage",
+        "slug": "data_leakage__target_leakage",
+        "topicTitle": "Data Leakage & Experimental Integrity"
+      },
+      {
+        "title": "Group leakage",
+        "slug": "data_leakage__group_leakage",
+        "topicTitle": "Data Leakage & Experimental Integrity"
+      },
+      {
+        "title": "Temporal leakage",
+        "slug": "data_leakage__temporal_leakage",
+        "topicTitle": "Data Leakage & Experimental Integrity"
+      },
+      {
+        "title": "Duplicate leakage",
+        "slug": "leakage-prevention__duplicate-leakage",
+        "topicTitle": "Leakage Prevention"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "linear-regression",
+    "title": "Linear Regression",
+    "category": "Machine Learning",
+    "question": "What does “best-fitting line” really optimise?",
+    "intuition": "Linear regression learns coefficients that make predicted values close to observed targets under a squared-error objective. Coefficients quantify conditional linear associations.",
+    "technical": "OLS minimises the sum of squared residuals. Matrix form gives β̂=(XᵀX)⁻¹Xᵀy when conditions permit; regularised variants change the objective to stabilise estimates.",
+    "practitioner": "Inspect residuals, nonlinearity, influential points and extrapolation. Coefficients are not automatically causal effects.",
+    "visualType": "regression",
+    "breakPrompt": "Add one extreme outlier and watch squared error pull the fitted line toward it.",
+    "keyword": "Linear Regression",
+    "hubLinks": [
+      {
+        "title": "Linear models",
+        "slug": "supervised-model-families__linear-models",
+        "topicTitle": "Supervised Model Families"
+      },
+      {
+        "title": "Regression",
+        "slug": "common_ml_tasks__regression",
+        "topicTitle": "Common Data Science & ML Tasks"
+      },
+      {
+        "title": "Residual analysis",
+        "slug": "regression_metrics__residual_analysis",
+        "topicTitle": "Regression Metrics & Residuals"
+      },
+      {
+        "title": "MAE and median absolute error",
+        "slug": "regression_metrics__mae_and_median_absolute_error",
+        "topicTitle": "Regression Metrics & Residuals"
+      }
+    ],
+    "modelLinks": [
+      {
+        "title": "Ordinary Least Squares (Linear Regression)",
+        "slug": "linear_regression_ols"
+      },
+      {
+        "title": "Ridge Regression (L2)",
+        "slug": "ridge_regression"
+      },
+      {
+        "title": "Lasso Regression (L1)",
+        "slug": "lasso_regression"
+      }
+    ]
+  },
+  {
+    "slug": "logistic-regression",
+    "title": "Logistic Regression",
+    "category": "Machine Learning",
+    "question": "How does a linear model become a probability classifier?",
+    "intuition": "Logistic regression learns a linear score and maps it through the logistic function, producing a probability that can be thresholded into a class decision.",
+    "technical": "The model is linear in log-odds. Training minimises log loss; regularisation controls coefficient magnitude. The decision boundary is linear unless features are transformed.",
+    "practitioner": "Use it as a strong interpretable baseline. Check calibration, class imbalance, multicollinearity and nonlinear patterns.",
+    "visualType": "classification",
+    "breakPrompt": "Move the classification threshold without retraining and watch precision/recall trade places.",
+    "keyword": "Logistic Regression",
+    "hubLinks": [
+      {
+        "title": "Linear models",
+        "slug": "supervised-model-families__linear-models",
+        "topicTitle": "Supervised Model Families"
+      },
+      {
+        "title": "Classification",
+        "slug": "common_ml_tasks__classification",
+        "topicTitle": "Common Data Science & ML Tasks"
+      },
+      {
+        "title": "Probability metrics",
+        "slug": "classification_metrics__probability_metrics",
+        "topicTitle": "Classification Metrics"
+      },
+      {
+        "title": "Threshold selection",
+        "slug": "calibration_thresholding__threshold_selection",
+        "topicTitle": "Calibration & Decision Thresholds"
+      }
+    ],
+    "modelLinks": [
+      {
+        "title": "Logistic Regression",
+        "slug": "logistic_regression"
+      },
+      {
+        "title": "Softmax Regression (Multinomial Logistic)",
+        "slug": "softmax_regression"
+      }
+    ]
+  },
+  {
+    "slug": "decision-tree",
+    "title": "Decision Trees",
+    "category": "Machine Learning",
+    "question": "How does a tree convert questions into regions of feature space?",
+    "intuition": "A decision tree recursively asks threshold questions that make child groups more homogeneous. Each path is an explicit rule from root to leaf.",
+    "technical": "Classification trees optimise impurity reduction; regression trees reduce squared error or related criteria. Depth/min-samples constraints regulate variance.",
+    "practitioner": "Trees are interpretable but unstable. Use pruning/regularisation and compare with ensembles when predictive stability matters.",
+    "visualType": "tree",
+    "breakPrompt": "Increase maximum depth until training error collapses while validation error worsens.",
+    "keyword": "Decision Tree",
+    "hubLinks": [
+      {
+        "title": "Decision trees",
+        "slug": "supervised-model-families__decision-trees",
+        "topicTitle": "Supervised Model Families"
+      },
+      {
+        "title": "Tree rules",
+        "slug": "interpretable-models__tree-rules",
+        "topicTitle": "Interpretable Models"
+      },
+      {
+        "title": "High variance",
+        "slug": "learning_curves_bias_variance__high_variance",
+        "topicTitle": "Learning Curves, Bias & Variance"
+      }
+    ],
+    "modelLinks": [
+      {
+        "title": "Decision Tree Classifier (CART)",
+        "slug": "decision_tree_classifier"
+      },
+      {
+        "title": "Decision Tree Regressor (CART)",
+        "slug": "decision_tree_regressor"
+      }
+    ]
+  },
+  {
+    "slug": "random-forest",
+    "title": "Random Forest",
+    "category": "Machine Learning",
+    "question": "Why can many unstable trees become a stable model?",
+    "intuition": "Random Forest builds many deliberately different trees and averages/votes their predictions. Diversity reduces the variance that makes a single deep tree unstable.",
+    "technical": "Bootstrap sampling varies training rows; random feature subsets decorrelate tree structures. Averaging reduces variance most when individual errors are not perfectly correlated.",
+    "practitioner": "Strong default for tabular data. Tune tree size/depth/features, inspect OOB or CV performance, and treat impurity importance cautiously.",
+    "visualType": "forest",
+    "breakPrompt": "Increase tree correlation by removing feature randomness and observe why averaging helps less.",
+    "keyword": "Random Forest",
+    "hubLinks": [
+      {
+        "title": "Random forests and bagging",
+        "slug": "supervised-model-families__random-forests-and-bagging",
+        "topicTitle": "Supervised Model Families"
+      },
+      {
+        "title": "Permutation importance",
+        "slug": "model-agnostic-explainability__permutation-importance",
+        "topicTitle": "Model-Agnostic Explainability"
+      },
+      {
+        "title": "High variance",
+        "slug": "learning_curves_bias_variance__high_variance",
+        "topicTitle": "Learning Curves, Bias & Variance"
+      }
+    ],
+    "modelLinks": [
+      {
+        "title": "Random Forest Classifier",
+        "slug": "random_forest_classifier"
+      },
+      {
+        "title": "Random Forest Regressor",
+        "slug": "random_forest_regressor"
+      }
+    ]
+  },
+  {
+    "slug": "boosting",
+    "title": "Gradient Boosting",
+    "category": "Machine Learning",
+    "question": "How can a sequence of weak models repair its own mistakes?",
+    "intuition": "Boosting adds learners sequentially. Each new learner focuses on the residual error or gradient left by the current ensemble.",
+    "technical": "Gradient boosting performs stage-wise functional optimisation. Learning rate controls step size; tree depth controls interaction complexity; early stopping regulates overfit.",
+    "practitioner": "Use careful validation and monitor training rounds. Lower learning rates often require more trees.",
+    "visualType": "boosting",
+    "breakPrompt": "Set learning rate very high and watch the ensemble overshoot useful corrections.",
+    "keyword": "Boosting",
+    "hubLinks": [
+      {
+        "title": "Gradient boosting",
+        "slug": "supervised-model-families__gradient-boosting",
+        "topicTitle": "Supervised Model Families"
+      },
+      {
+        "title": "Boosting",
+        "slug": "ensemble_learning__boosting",
+        "topicTitle": "Ensemble Learning"
+      },
+      {
+        "title": "Early stopping",
+        "slug": "regularisation__early_stopping",
+        "topicTitle": "Regularisation & Early Stopping"
+      }
+    ],
+    "modelLinks": [
+      {
+        "title": "XGBoost Classifier",
+        "slug": "xgboost_classifier"
+      },
+      {
+        "title": "LightGBM Classifier",
+        "slug": "lightgbm_classifier"
+      },
+      {
+        "title": "CatBoost Classifier",
+        "slug": "catboost_classifier"
+      }
+    ]
+  },
+  {
+    "slug": "knn",
+    "title": "K-Nearest Neighbours",
+    "category": "Machine Learning",
+    "question": "What happens when prediction is literally “look at similar examples”?",
+    "intuition": "KNN stores training examples and predicts from the labels or targets of nearby points. The geometry of the feature space is therefore the model.",
+    "technical": "Distance metric, scaling, k and weighting define neighbourhoods. Small k lowers bias but raises variance; large k smooths local structure.",
+    "practitioner": "Scale features and consider dimensionality. KNN can be expensive at inference and deteriorates in high-dimensional sparse spaces.",
+    "visualType": "knn",
+    "breakPrompt": "Move k from 1 to a large value and watch local boundaries become smoother.",
+    "keyword": "KNN",
+    "hubLinks": [
+      {
+        "title": "Nearest-neighbour methods",
+        "slug": "supervised-model-families__nearest-neighbour-methods",
+        "topicTitle": "Supervised Model Families"
+      },
+      {
+        "title": "Scaling",
+        "slug": "preprocessing__scaling",
+        "topicTitle": "Data Preprocessing"
+      }
+    ],
+    "modelLinks": [
+      {
+        "title": "K-Nearest Neighbors (KNN) Classifier",
+        "slug": "knn_classifier"
+      },
+      {
+        "title": "K-Nearest Neighbors (KNN) Regressor",
+        "slug": "knn_regressor"
+      }
+    ]
+  },
+  {
+    "slug": "svm",
+    "title": "Support Vector Machines",
+    "category": "Machine Learning",
+    "question": "Why do only a few boundary points determine the classifier?",
+    "intuition": "An SVM chooses a separating boundary with a wide margin. Points touching or violating the margin—the support vectors—determine the solution.",
+    "technical": "Soft-margin SVM balances margin width and violations through C. Kernels replace dot products to create nonlinear boundaries in an implicit feature space.",
+    "practitioner": "Scale inputs. Tune C and kernel parameters jointly. Probability estimates require additional calibration.",
+    "visualType": "svm",
+    "breakPrompt": "Increase C and watch the model trade a wider margin for fewer training errors.",
+    "keyword": "SVM",
+    "hubLinks": [
+      {
+        "title": "Support vector machines",
+        "slug": "supervised-model-families__support-vector-machines",
+        "topicTitle": "Supervised Model Families"
+      },
+      {
+        "title": "Scaling",
+        "slug": "preprocessing__scaling",
+        "topicTitle": "Data Preprocessing"
+      }
+    ],
+    "modelLinks": [
+      {
+        "title": "Support Vector Classifier (SVC)",
+        "slug": "support_vector_classifier"
+      },
+      {
+        "title": "Support Vector Regressor (SVR)",
+        "slug": "support_vector_regressor"
+      }
+    ]
+  },
+  {
+    "slug": "kmeans",
+    "title": "K-Means Clustering",
+    "category": "Machine Learning",
+    "question": "How do unlabeled points organise themselves around centroids?",
+    "intuition": "K-Means alternates between assigning each point to its nearest centroid and moving each centroid to the mean of its assigned points.",
+    "technical": "The algorithm optimises within-cluster sum of squares but can converge to local minima. k-means++ improves initialisation. Euclidean spherical-cluster assumptions matter.",
+    "practitioner": "Scale features, try multiple initialisations, and validate whether clusters are useful—not merely compact.",
+    "visualType": "kmeans",
+    "breakPrompt": "Change k and initial centroids to see different local solutions on the same data.",
+    "keyword": "K-Means",
+    "hubLinks": [
+      {
+        "title": "Clustering",
+        "slug": "common_ml_tasks__clustering",
+        "topicTitle": "Common Data Science & ML Tasks"
+      },
+      {
+        "title": "Silhouette score",
+        "slug": "clustering-metrics__silhouette-score",
+        "topicTitle": "Clustering Metrics"
+      },
+      {
+        "title": "Davies-Bouldin index",
+        "slug": "clustering-metrics__davies-bouldin-index",
+        "topicTitle": "Clustering Metrics"
+      },
+      {
+        "title": "Calinski-Harabasz index",
+        "slug": "clustering-metrics__calinski-harabasz-index",
+        "topicTitle": "Clustering Metrics"
+      }
+    ],
+    "modelLinks": [
+      {
+        "title": "K-Means / K-Means++",
+        "slug": "kmeans"
+      }
+    ]
+  },
+  {
+    "slug": "pca",
+    "title": "Principal Component Analysis",
+    "category": "Machine Learning",
+    "question": "How can we rotate a feature space without throwing away its main variation?",
+    "intuition": "PCA finds orthogonal directions that capture as much variance as possible, then represents observations using coordinates along those directions.",
+    "technical": "Eigenvectors of the covariance matrix (or SVD of centred data) define principal directions. Components are ordered by explained variance.",
+    "practitioner": "Scale features when units differ meaningfully. PCA maximises variance, not task relevance or interpretability.",
+    "visualType": "pca",
+    "breakPrompt": "Rescale one feature and watch the first principal direction rotate toward it.",
+    "keyword": "PCA",
+    "hubLinks": [
+      {
+        "title": "PCA intuition",
+        "slug": "dimensionality-reduction__pca-intuition",
+        "topicTitle": "Dimensionality Reduction"
+      },
+      {
+        "title": "Explained variance",
+        "slug": "dimensionality-reduction__explained-variance",
+        "topicTitle": "Dimensionality Reduction"
+      },
+      {
+        "title": "Scaling",
+        "slug": "preprocessing__scaling",
+        "topicTitle": "Data Preprocessing"
+      }
+    ],
+    "modelLinks": [
+      {
+        "title": "Principal Component Analysis (PCA)",
+        "slug": "pca"
+      }
+    ]
+  },
+  {
+    "slug": "classification-metrics",
+    "title": "Classification Metrics",
+    "category": "Evaluation",
+    "question": "Why can “90% accuracy” be terrible?",
+    "intuition": "Metrics encode which mistakes matter. Accuracy treats all correct decisions equally; precision, recall, F1, ROC-AUC, PR-AUC and log loss answer different questions.",
+    "technical": "Confusion-matrix counts produce threshold-dependent metrics. Ranking metrics evaluate score ordering; probabilistic metrics evaluate probability quality.",
+    "practitioner": "Start from decision costs and class prevalence. For rare positives, PR curves and precision/recall are often more informative than accuracy.",
+    "visualType": "classification",
+    "breakPrompt": "Make positives rare while keeping accuracy high and inspect what the confusion matrix reveals.",
+    "keyword": "Classification Metrics",
+    "hubLinks": [
+      {
+        "title": "Confusion matrix",
+        "slug": "classification_metrics__confusion_matrix",
+        "topicTitle": "Classification Metrics"
+      },
+      {
+        "title": "Precision, recall and F-scores",
+        "slug": "classification_metrics__precision_recall_and_f_scores",
+        "topicTitle": "Classification Metrics"
+      },
+      {
+        "title": "ROC-AUC and PR-AUC",
+        "slug": "classification_metrics__roc_auc_and_pr_auc",
+        "topicTitle": "Classification Metrics"
+      },
+      {
+        "title": "Probability metrics",
+        "slug": "classification_metrics__probability_metrics",
+        "topicTitle": "Classification Metrics"
+      },
+      {
+        "title": "Balanced and correlation metrics",
+        "slug": "classification_metrics__balanced_and_correlation_metrics",
+        "topicTitle": "Classification Metrics"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "regression-metrics",
+    "title": "Regression Metrics & Residuals",
+    "category": "Evaluation",
+    "question": "What does one error number hide?",
+    "intuition": "MAE, RMSE and R² summarise different aspects of prediction error. Residual plots reveal structure that a single scalar cannot.",
+    "technical": "MAE weights errors linearly; MSE/RMSE square errors; R² compares residual variation with a mean baseline. Heteroscedasticity and systematic residual patterns indicate model mismatch.",
+    "practitioner": "Report a metric that matches business cost, plus residual diagnostics and subgroup performance.",
+    "visualType": "regression",
+    "breakPrompt": "Add a few large errors and compare how MAE and RMSE respond.",
+    "keyword": "Regression Metrics",
+    "hubLinks": [
+      {
+        "title": "MAE and median absolute error",
+        "slug": "regression_metrics__mae_and_median_absolute_error",
+        "topicTitle": "Regression Metrics & Residuals"
+      },
+      {
+        "title": "MSE and RMSE",
+        "slug": "regression_metrics__mse_and_rmse",
+        "topicTitle": "Regression Metrics & Residuals"
+      },
+      {
+        "title": "R² and adjusted R²",
+        "slug": "regression_metrics__r_and_adjusted_r",
+        "topicTitle": "Regression Metrics & Residuals"
+      },
+      {
+        "title": "Residual analysis",
+        "slug": "regression_metrics__residual_analysis",
+        "topicTitle": "Regression Metrics & Residuals"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "bias-variance",
+    "title": "Bias, Variance & Learning Curves",
+    "category": "Evaluation",
+    "question": "Is poor validation performance caused by underfitting or instability?",
+    "intuition": "Bias describes systematic simplification; variance describes sensitivity to training data. Learning curves compare training and validation performance as data grows.",
+    "technical": "High bias often yields similarly poor train/validation scores; high variance yields a large gap. Regularisation, data size and model complexity move the trade-off.",
+    "practitioner": "Diagnose before tuning. More complexity does not solve high variance; more data does not always solve high bias.",
+    "visualType": "regression",
+    "breakPrompt": "Increase model complexity and watch training error fall before validation error eventually rises.",
+    "keyword": "Bias Variance",
+    "hubLinks": [
+      {
+        "title": "Generalisation, bias and variance",
+        "slug": "math_stats_foundations__generalisation_bias_and_variance",
+        "topicTitle": "Mathematical & Statistical Foundations"
+      },
+      {
+        "title": "High bias",
+        "slug": "learning_curves_bias_variance__high_bias",
+        "topicTitle": "Learning Curves, Bias & Variance"
+      },
+      {
+        "title": "High variance",
+        "slug": "learning_curves_bias_variance__high_variance",
+        "topicTitle": "Learning Curves, Bias & Variance"
+      },
+      {
+        "title": "Learning curves",
+        "slug": "learning_curves_bias_variance__learning_curves",
+        "topicTitle": "Learning Curves, Bias & Variance"
+      },
+      {
+        "title": "Complexity curves",
+        "slug": "learning_curves_bias_variance__complexity_curves",
+        "topicTitle": "Learning Curves, Bias & Variance"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "regularisation",
+    "title": "Regularisation",
+    "category": "Optimisation",
+    "question": "How do we tell a flexible model not to chase every detail?",
+    "intuition": "Regularisation penalises or constrains complexity so the fitted model prefers simpler solutions unless extra complexity clearly improves the objective.",
+    "technical": "L2 shrinks coefficients smoothly; L1 can drive some to zero; early stopping limits optimisation time; dropout regularises neural networks stochastically.",
+    "practitioner": "Tune regularisation inside validation. Standardise features before coefficient penalties when scales differ.",
+    "visualType": "scaling",
+    "breakPrompt": "Increase λ and watch coefficients shrink while bias rises and variance falls.",
+    "keyword": "Regularisation",
+    "hubLinks": [
+      {
+        "title": "L2 regularisation",
+        "slug": "regularisation__l2_regularisation",
+        "topicTitle": "Regularisation & Early Stopping"
+      },
+      {
+        "title": "L1 regularisation",
+        "slug": "regularisation__l1_regularisation",
+        "topicTitle": "Regularisation & Early Stopping"
+      },
+      {
+        "title": "Elastic Net",
+        "slug": "regularisation__elastic_net",
+        "topicTitle": "Regularisation & Early Stopping"
+      },
+      {
+        "title": "Early stopping",
+        "slug": "regularisation__early_stopping",
+        "topicTitle": "Regularisation & Early Stopping"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "hyperparameter-optimisation",
+    "title": "Hyperparameter Optimisation",
+    "category": "Optimisation",
+    "question": "How do we search a large configuration space without fooling ourselves?",
+    "intuition": "HPO treats validation performance as an objective over configuration choices such as depth, learning rate or regularisation.",
+    "technical": "Grid search enumerates a lattice; random search samples dimensions efficiently; Bayesian/TPE methods use previous trials; Hyperband allocates budget adaptively.",
+    "practitioner": "Define a sensible search space and validation design first. More trials cannot rescue a leaky or noisy objective.",
+    "visualType": "hpo",
+    "breakPrompt": "Search a parameter that barely matters and see how grid search wastes budget compared with random search.",
+    "keyword": "Hyperparameter Optimisation",
+    "hubLinks": [
+      {
+        "title": "Manual and grid search",
+        "slug": "hyperparameter_optimisation__manual_and_grid_search",
+        "topicTitle": "Hyperparameter Optimisation"
+      },
+      {
+        "title": "Random search",
+        "slug": "hyperparameter_optimisation__random_search",
+        "topicTitle": "Hyperparameter Optimisation"
+      },
+      {
+        "title": "Bayesian optimisation and TPE",
+        "slug": "hyperparameter_optimisation__bayesian_optimisation_and_tpe",
+        "topicTitle": "Hyperparameter Optimisation"
+      },
+      {
+        "title": "Successive Halving and Hyperband",
+        "slug": "hyperparameter_optimisation__successive_halving_and_hyperband",
+        "topicTitle": "Hyperparameter Optimisation"
+      },
+      {
+        "title": "Practical search design",
+        "slug": "hyperparameter_optimisation__practical_search_design",
+        "topicTitle": "Hyperparameter Optimisation"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "calibration",
+    "title": "Probability Calibration & Thresholds",
+    "category": "Evaluation",
+    "question": "Is a predicted 0.8 probability actually an 80% event rate?",
+    "intuition": "Discrimination asks whether positives rank above negatives; calibration asks whether predicted probabilities match observed frequencies. Thresholding then turns probabilities into decisions.",
+    "technical": "Reliability diagrams and Brier/log loss assess calibration. Platt, isotonic and temperature scaling transform scores using separate calibration evidence.",
+    "practitioner": "Separate model fitting, calibration and threshold choice. Choose thresholds from decision costs, not the default 0.5 by reflex.",
+    "visualType": "classification",
+    "breakPrompt": "Hold ranking fixed but distort probabilities, then compare AUC with calibration error.",
+    "keyword": "Calibration",
+    "hubLinks": [
+      {
+        "title": "Probability calibration",
+        "slug": "calibration-thresholds-and-decision-costs__probability-calibration",
+        "topicTitle": "Calibration, Thresholds & Decision Costs"
+      },
+      {
+        "title": "Reliability diagrams",
+        "slug": "calibration_thresholding__reliability_diagrams",
+        "topicTitle": "Calibration & Decision Thresholds"
+      },
+      {
+        "title": "Platt scaling",
+        "slug": "calibration-thresholds-and-decision-costs__platt-scaling",
+        "topicTitle": "Calibration, Thresholds & Decision Costs"
+      },
+      {
+        "title": "Isotonic calibration",
+        "slug": "calibration-thresholds-and-decision-costs__isotonic-calibration",
+        "topicTitle": "Calibration, Thresholds & Decision Costs"
+      },
+      {
+        "title": "Threshold optimisation",
+        "slug": "calibration-thresholds-and-decision-costs__threshold-optimisation",
+        "topicTitle": "Calibration, Thresholds & Decision Costs"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "explainability",
+    "title": "Explainability & Model Interpretation",
+    "category": "Interpretation",
+    "question": "How do statistical significance, feature AUC, model importance and RFE answer different questions?",
+    "intuition": "Feature evidence can come from statistical significance, single-feature discrimination, model reliance, subset selection or local prediction effects. These are related but not interchangeable.",
+    "technical": "Welch t-tests produce p-values for class-mean differences; univariate ROC-AUC measures ranking discrimination; permutation importance measures held-out performance loss; RFE recursively removes weak model features; local methods explain individual predictions.",
+    "practitioner": "Use multiple evidence types, keep selection inside training/validation data, account for multiple testing where appropriate, and never equate importance with causality.",
+    "visualType": "pca",
+    "breakPrompt": "Duplicate a correlated feature and observe how importance can split or move between substitutes.",
+    "keyword": "Explainability",
+    "hubLinks": [
+      {
+        "title": "Permutation importance",
+        "slug": "model-agnostic-explainability__permutation-importance",
+        "topicTitle": "Model-Agnostic Explainability"
+      },
+      {
+        "title": "Partial dependence",
+        "slug": "model-agnostic-explainability__partial-dependence",
+        "topicTitle": "Model-Agnostic Explainability"
+      },
+      {
+        "title": "ICE plots",
+        "slug": "model-agnostic-explainability__ice-plots",
+        "topicTitle": "Model-Agnostic Explainability"
+      },
+      {
+        "title": "SHAP intuition",
+        "slug": "model-agnostic-explainability__shap-intuition",
+        "topicTitle": "Model-Agnostic Explainability"
+      },
+      {
+        "title": "LIME intuition",
+        "slug": "model-agnostic-explainability__lime-intuition",
+        "topicTitle": "Model-Agnostic Explainability"
+      }
+    ],
+    "modelLinks": []
+  },
+  {
+    "slug": "uncertainty",
+    "title": "Predictive Uncertainty",
+    "category": "Evaluation",
+    "question": "When should a model say “I am not sure”?",
+    "intuition": "Point predictions hide uncertainty from noise, limited data and model uncertainty. Intervals or predictive distributions make that uncertainty visible.",
+    "technical": "Aleatoric uncertainty comes from irreducible outcome variation; epistemic uncertainty reflects limited knowledge. Conformal methods can provide coverage guarantees under assumptions.",
+    "practitioner": "Evaluate interval coverage and width, not only point error. Escalate or abstain when uncertainty is operationally important.",
+    "visualType": "regression",
+    "breakPrompt": "Move a test point far outside the training region and compare point prediction confidence with uncertainty.",
+    "keyword": "Uncertainty",
+    "hubLinks": [
+      {
+        "title": "Aleatoric uncertainty",
+        "slug": "uncertainty_estimation__aleatoric_uncertainty",
+        "topicTitle": "Predictive Uncertainty"
+      },
+      {
+        "title": "Epistemic uncertainty",
+        "slug": "uncertainty_estimation__epistemic_uncertainty",
+        "topicTitle": "Predictive Uncertainty"
+      },
+      {
+        "title": "Predictive intervals",
+        "slug": "uncertainty_estimation__predictive_intervals",
+        "topicTitle": "Predictive Uncertainty"
+      },
+      {
+        "title": "Conformal prediction",
+        "slug": "uncertainty_estimation__conformal_prediction",
+        "topicTitle": "Predictive Uncertainty"
+      },
+      {
+        "title": "Coverage and interval width",
+        "slug": "uncertainty-and-intervals__coverage-and-interval-width",
+        "topicTitle": "Uncertainty & Intervals"
+      }
+    ],
+    "modelLinks": [
+      {
+        "title": "Gaussian Process Regressor (GPR)",
+        "slug": "gaussian_process_regressor"
+      },
+      {
+        "title": "Gaussian Process Classifier (GPC)",
+        "slug": "gaussian_process_classifier"
+      }
+    ]
+  },
+  {
+    "slug": "time-series",
+    "title": "Time-Series Forecasting",
+    "category": "Machine Learning",
+    "question": "Why can’t time-ordered data be shuffled like ordinary rows?",
+    "intuition": "Forecasting predicts the future from information available in the past. Temporal order creates dependence, trend, seasonality and a strict information boundary.",
+    "technical": "Lag features, differencing, autoregression and state-space/decomposition methods model temporal structure. Validation must roll forward rather than sample future observations into training.",
+    "practitioner": "Always define forecast horizon and prediction origin. Compare against naive seasonal baselines.",
+    "visualType": "timeseries",
+    "breakPrompt": "Randomly split a time series and identify how future patterns leak into training.",
+    "keyword": "Time Series",
+    "hubLinks": [
+      {
+        "title": "Lag features",
+        "slug": "datetime-and-time-series-features__lag-features",
+        "topicTitle": "Datetime & Time-Series Features"
+      },
+      {
+        "title": "Rolling-window features",
+        "slug": "datetime-and-time-series-features__rolling-window-features",
+        "topicTitle": "Datetime & Time-Series Features"
+      },
+      {
+        "title": "TimeSeriesSplit",
+        "slug": "cross-validation-methods__timeseriessplit",
+        "topicTitle": "Cross-Validation Methods"
+      },
+      {
+        "title": "Rolling and expanding windows",
+        "slug": "cross-validation-methods__rolling-and-expanding-windows",
+        "topicTitle": "Cross-Validation Methods"
+      },
+      {
+        "title": "Temporal leakage",
+        "slug": "data_leakage__temporal_leakage",
+        "topicTitle": "Data Leakage & Experimental Integrity"
+      }
+    ],
+    "modelLinks": [
+      {
+        "title": "ARIMA / SARIMA",
+        "slug": "arima_sarima"
+      },
+      {
+        "title": "Prophet",
+        "slug": "prophet"
+      }
+    ]
+  },
+  {
+    "slug": "neural-network",
+    "title": "Neural Networks & Backpropagation",
+    "category": "Deep Learning",
+    "question": "How does a network turn many simple transformations into complex behaviour?",
+    "intuition": "A neural network composes affine transformations and nonlinear activations. Training adjusts weights so the final outputs reduce a loss function.",
+    "technical": "Backpropagation applies the chain rule to compute gradients efficiently through the computational graph; an optimiser uses those gradients to update parameters.",
+    "practitioner": "Monitor training/validation curves, scale inputs, tune learning rate carefully and use regularisation/normalisation where appropriate.",
+    "visualType": "nn",
+    "breakPrompt": "Increase learning rate until loss oscillates or diverges.",
+    "keyword": "Neural Network",
+    "hubLinks": [
+      {
+        "title": "Neural networks",
+        "slug": "supervised-model-families__neural-networks",
+        "topicTitle": "Supervised Model Families"
+      },
+      {
+        "title": "Loss functions",
+        "slug": "training-dynamics__loss-functions",
+        "topicTitle": "Training Dynamics"
+      },
+      {
+        "title": "Early stopping",
+        "slug": "regularisation__early_stopping",
+        "topicTitle": "Regularisation & Early Stopping"
+      },
+      {
+        "title": "Dropout and augmentation",
+        "slug": "regularisation__dropout_and_augmentation",
+        "topicTitle": "Regularisation & Early Stopping"
+      }
+    ],
+    "modelLinks": [
+      {
+        "title": "Multilayer Perceptron (MLP) Classifier",
+        "slug": "mlp_classifier"
+      },
+      {
+        "title": "Multilayer Perceptron (MLP) Regressor",
+        "slug": "mlp_regressor"
+      }
+    ]
+  },
+  {
+    "slug": "attention",
+    "title": "Attention & Transformers",
+    "category": "Deep Learning",
+    "question": "How can each token decide which other tokens matter?",
+    "intuition": "Attention computes content-dependent weights between elements, allowing each token to combine information from relevant context rather than relying only on fixed local recurrence.",
+    "technical": "Scaled dot-product attention uses softmax(QKᵀ/√d)V. Multi-head attention learns multiple relation subspaces; positional information restores order.",
+    "practitioner": "Inspect sequence length/memory costs and remember attention weights are not automatically causal explanations.",
+    "visualType": "attention",
+    "breakPrompt": "Increase attention sharpness and watch one context token dominate the representation.",
+    "keyword": "Attention",
+    "hubLinks": [
+      {
+        "title": "Attention visualisation",
+        "slug": "deep-learning-explainability__attention-visualisation",
+        "topicTitle": "Deep Learning Explainability"
+      },
+      {
+        "title": "Deep visual explanations",
+        "slug": "explainability__deep_visual_explanations",
+        "topicTitle": "Explainability & Model Interpretation"
+      },
+      {
+        "title": "Architecture families",
+        "slug": "graph_ml_foundations__architecture_families",
+        "topicTitle": "Graph ML Foundations"
+      }
+    ],
+    "modelLinks": [
+      {
+        "title": "Transformer / Attention Classifier",
+        "slug": "transformer_classifier"
+      },
+      {
+        "title": "Transformer / Attention Regressor",
+        "slug": "transformer_regressor"
+      }
+    ]
+  },
+  {
+    "slug": "gnn",
+    "title": "Graph Neural Networks",
+    "category": "Graph ML",
+    "question": "How can information move across relationships rather than rows?",
+    "intuition": "GNNs update each node by combining its own representation with messages from neighbours. Repeating layers expands the receptive field through the graph.",
+    "technical": "Message passing defines message, aggregation and update functions. GCN normalises neighbour aggregation; GAT learns attention weights; GIN uses expressive sum aggregation plus an MLP.",
+    "practitioner": "Match graph construction to the real relational process. Too many layers can oversmooth node representations.",
+    "visualType": "graph",
+    "breakPrompt": "Add more message-passing layers and observe when node representations become too similar.",
+    "keyword": "Graph Neural Network",
+    "hubLinks": [
+      {
+        "title": "Graph representation",
+        "slug": "graph_ml_foundations__graph_representation",
+        "topicTitle": "Graph ML Foundations"
+      },
+      {
+        "title": "Message passing",
+        "slug": "graph_ml_foundations__message_passing",
+        "topicTitle": "Graph ML Foundations"
+      },
+      {
+        "title": "Receptive fields",
+        "slug": "graph_ml_foundations__receptive_fields",
+        "topicTitle": "Graph ML Foundations"
+      },
+      {
+        "title": "Architecture families",
+        "slug": "graph_ml_foundations__architecture_families",
+        "topicTitle": "Graph ML Foundations"
+      },
+      {
+        "title": "Graph tasks",
+        "slug": "graph_ml_foundations__graph_tasks",
+        "topicTitle": "Graph ML Foundations"
+      }
+    ],
+    "modelLinks": [
+      {
+        "title": "Graph Convolutional Network (GCN)",
+        "slug": "graph_convolutional_network"
+      },
+      {
+        "title": "Graph Attention Network (GAT) Classifier",
+        "slug": "gat_classifier"
+      },
+      {
+        "title": "Graph Isomorphism Network (GIN)",
+        "slug": "graph_isomorphism_network"
+      }
+    ]
+  },
+  {
+    "slug": "deployment-drift",
+    "title": "Deployment, Drift & Monitoring",
+    "category": "Production",
+    "question": "What changes after a model leaves the notebook?",
+    "intuition": "Production models interact with changing data, systems and decisions. Monitoring asks whether inputs, predictions, calibration and outcomes still resemble the evidence used to validate the model.",
+    "technical": "Data drift changes input distributions; concept drift changes P(y|x); performance drift is observed degradation. Detection requires reference windows, delayed labels and response policies.",
+    "practitioner": "Define thresholds and owners before deployment. Retraining should be governed, reproducible and evaluated against the current champion.",
+    "visualType": "drift",
+    "breakPrompt": "Shift an input distribution without changing labels, then distinguish data drift from concept drift.",
+    "keyword": "Monitoring",
+    "hubLinks": [
+      {
+        "title": "Data drift",
+        "slug": "deployment_monitoring__data_drift",
+        "topicTitle": "Deployment, Drift & Monitoring"
+      },
+      {
+        "title": "Concept drift",
+        "slug": "deployment_monitoring__concept_drift",
+        "topicTitle": "Deployment, Drift & Monitoring"
+      },
+      {
+        "title": "Performance monitoring",
+        "slug": "deployment_monitoring__performance_monitoring",
+        "topicTitle": "Deployment, Drift & Monitoring"
+      },
+      {
+        "title": "Calibration and threshold monitoring",
+        "slug": "deployment_monitoring__calibration_and_threshold_monitoring",
+        "topicTitle": "Deployment, Drift & Monitoring"
+      },
+      {
+        "title": "Retraining governance",
+        "slug": "deployment_monitoring__retraining_governance",
+        "topicTitle": "Deployment, Drift & Monitoring"
+      }
+    ],
+    "modelLinks": []
+  }
+]

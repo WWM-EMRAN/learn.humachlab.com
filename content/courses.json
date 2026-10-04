@@ -1,0 +1,4578 @@
+{
+  "courses": [
+    {
+      "id": "python-programming",
+      "title": "Python Programming",
+      "summary": "Learn Python from first principles, then use it confidently for files, numerical computing, pandas, visualisation and small data projects.",
+      "duration": "55–75 hours",
+      "outcomes": [
+        "Read and write clear Python programs",
+        "Use core data structures, functions, files and tests",
+        "Work with NumPy, pandas and Matplotlib",
+        "Structure a small reproducible Python project"
+      ],
+      "modules": {
+        "1": "Getting Started with Python",
+        "2": "Variables, Types & Operators",
+        "3": "Strings & Text",
+        "4": "Collections & Data Structures",
+        "5": "Decisions & Loops",
+        "6": "Functions & Reusable Code",
+        "7": "Errors, Debugging & Testing",
+        "8": "Files & Data Formats",
+        "9": "Modules, Packages & Environments",
+        "10": "NumPy for Numerical Computing",
+        "11": "pandas for Tabular Data",
+        "12": "Matplotlib & Visualisation",
+        "13": "Object-Oriented Python",
+        "14": "Capstone: A Small Data Project"
+      },
+      "lessonCount": 171
+    },
+    {
+      "id": "data-analytics",
+      "title": "Data Analytics",
+      "summary": "Learn how to frame analytical questions, work in Excel/SQL/Python, clean and reshape tabular data, perform EDA, build visualisations and communicate evidence.",
+      "duration": "50–70 hours",
+      "outcomes": [
+        "Frame analytical questions and KPIs",
+        "Analyse data with Excel, SQL and pandas",
+        "Clean, reshape and explore real-world tables",
+        "Communicate results with trustworthy visuals and reports"
+      ],
+      "modules": {
+        "1": "Analytics Thinking & Problem Framing",
+        "2": "Python & pandas Essentials",
+        "3": "Excel & Spreadsheet Analytics",
+        "4": "Reading & Understanding Data",
+        "5": "SQL for Analytics",
+        "6": "Data Cleaning & Missing Data",
+        "7": "Reshaping & Integration",
+        "8": "Exploratory Data Analysis",
+        "9": "Visualisation & Storytelling",
+        "10": "Business Analysis",
+        "11": "Statistical Reasoning",
+        "12": "Reporting & Reproducibility",
+        "13": "Capstone Analytics Project"
+      },
+      "lessonCount": 93
+    },
+    {
+      "id": "data-science",
+      "title": "Data Science",
+      "summary": "Build the statistical, computational and experimental skills required to move from exploratory analysis to leakage-safe predictive modelling and interpretation.",
+      "duration": "60–80 hours",
+      "outcomes": [
+        "Design reproducible data-science workflows",
+        "Handle missingness and preprocessing safely",
+        "Build and evaluate predictive models",
+        "Interpret uncertainty, errors and model behaviour"
+      ],
+      "modules": {
+        "1": "Data Science Foundations",
+        "2": "Python, NumPy & pandas",
+        "3": "Statistics & Probability",
+        "4": "EDA & Data Quality",
+        "5": "Cleaning & Imputation",
+        "6": "Preprocessing",
+        "7": "Feature Engineering",
+        "8": "Experimental Design & Validation",
+        "9": "Predictive Modelling",
+        "10": "Evaluation & Diagnostics",
+        "11": "Interpretation & Communication",
+        "12": "Capstone Project"
+      },
+      "lessonCount": 87
+    },
+    {
+      "id": "machine-learning",
+      "title": "Machine Learning",
+      "summary": "Learn how machine-learning algorithms fit, generalise and fail, then practise validation, tuning, calibration, interpretation and production thinking.",
+      "duration": "65–90 hours",
+      "outcomes": [
+        "Explain core ML algorithms and objectives",
+        "Build leakage-safe training and validation workflows",
+        "Choose metrics and tune models responsibly",
+        "Interpret model behaviour and package a final model"
+      ],
+      "modules": {
+        "1": "ML Foundations",
+        "2": "Math for ML",
+        "3": "Data Preparation for ML",
+        "4": "Linear Models",
+        "5": "Instance & Kernel Methods",
+        "6": "Tree Models",
+        "7": "Boosting",
+        "8": "Unsupervised Learning",
+        "9": "Validation & Leakage",
+        "10": "Hyperparameter Optimisation",
+        "11": "Metrics, Calibration & Thresholds",
+        "12": "Interpretation & Production Thinking",
+        "13": "Capstone Project"
+      },
+      "lessonCount": 95
+    }
+  ],
+  "lessons": [
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 1,
+      "moduleTitle": "Analytics Thinking & Problem Framing",
+      "slug": "data-analytics__m01__what-data-analytics-is",
+      "title": "What Data Analytics is",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 1,
+      "moduleTitle": "Analytics Thinking & Problem Framing",
+      "slug": "data-analytics__m01__descriptive-diagnostic-predictive-and-prescriptive-analytics",
+      "title": "Descriptive Diagnostic Predictive and Prescriptive Analytics",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 1,
+      "moduleTitle": "Analytics Thinking & Problem Framing",
+      "slug": "data-analytics__m01__questions-stakeholders-and-decisions",
+      "title": "Questions Stakeholders and Decisions",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 1,
+      "moduleTitle": "Analytics Thinking & Problem Framing",
+      "slug": "data-analytics__m01__kpis-dimensions-and-measures",
+      "title": "KPIs Dimensions and Measures",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 1,
+      "moduleTitle": "Analytics Thinking & Problem Framing",
+      "slug": "data-analytics__m01__the-end-to-end-analytics-workflow",
+      "title": "The End to End Analytics Workflow",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 2,
+      "moduleTitle": "Python & pandas Essentials",
+      "slug": "data-analytics__m02__python-values-variables-and-expressions",
+      "title": "Python Values Variables and Expressions",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 2,
+      "moduleTitle": "Python & pandas Essentials",
+      "slug": "data-analytics__m02__lists-and-dictionaries",
+      "title": "Lists and Dictionaries",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 2,
+      "moduleTitle": "Python & pandas Essentials",
+      "slug": "data-analytics__m02__dataframes-and-series",
+      "title": "Dataframes and Series",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 2,
+      "moduleTitle": "Python & pandas Essentials",
+      "slug": "data-analytics__m02__selecting-rows-and-columns",
+      "title": "Selecting Rows and Columns",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 2,
+      "moduleTitle": "Python & pandas Essentials",
+      "slug": "data-analytics__m02__sorting-and-filtering",
+      "title": "Sorting and Filtering",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 2,
+      "moduleTitle": "Python & pandas Essentials",
+      "slug": "data-analytics__m02__creating-and-renaming-columns",
+      "title": "Creating and Renaming Columns",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 3,
+      "moduleTitle": "Excel & Spreadsheet Analytics",
+      "slug": "data-analytics__m03__workbook-worksheet-and-table-anatomy",
+      "title": "Workbook Worksheet and Table Anatomy",
+      "language": "excel",
+      "visualType": "spreadsheet"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 3,
+      "moduleTitle": "Excel & Spreadsheet Analytics",
+      "slug": "data-analytics__m03__cell-references-relative-absolute-and-mixed",
+      "title": "Cell References Relative Absolute and Mixed",
+      "language": "excel",
+      "visualType": "spreadsheet"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 3,
+      "moduleTitle": "Excel & Spreadsheet Analytics",
+      "slug": "data-analytics__m03__core-arithmetic-and-aggregation-formulas",
+      "title": "Core Arithmetic and Aggregation Formulas",
+      "language": "excel",
+      "visualType": "spreadsheet"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 3,
+      "moduleTitle": "Excel & Spreadsheet Analytics",
+      "slug": "data-analytics__m03__logical-formulas-with-if-ifs-and-and-or",
+      "title": "Logical Formulas with IF IFS and and or",
+      "language": "excel",
+      "visualType": "spreadsheet"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 3,
+      "moduleTitle": "Excel & Spreadsheet Analytics",
+      "slug": "data-analytics__m03__conditional-aggregation-with-sumifs-countifs-and-averageifs",
+      "title": "Conditional Aggregation with SUMIFS COUNTIFS and AVERAGEIFS",
+      "language": "excel",
+      "visualType": "spreadsheet"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 3,
+      "moduleTitle": "Excel & Spreadsheet Analytics",
+      "slug": "data-analytics__m03__lookup-analysis-with-xlookup",
+      "title": "Lookup Analysis with XLOOKUP",
+      "language": "excel",
+      "visualType": "spreadsheet"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 3,
+      "moduleTitle": "Excel & Spreadsheet Analytics",
+      "slug": "data-analytics__m03__index-and-match-for-flexible-lookups",
+      "title": "INDEX and MATCH for Flexible Lookups",
+      "language": "excel",
+      "visualType": "spreadsheet"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 3,
+      "moduleTitle": "Excel & Spreadsheet Analytics",
+      "slug": "data-analytics__m03__text-cleaning-with-trim-clean-textsplit-and-substitute",
+      "title": "Text Cleaning with Trim Clean Textsplit and Substitute",
+      "language": "excel",
+      "visualType": "spreadsheet"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 3,
+      "moduleTitle": "Excel & Spreadsheet Analytics",
+      "slug": "data-analytics__m03__date-and-time-analysis-in-excel",
+      "title": "Date and Time Analysis in Excel",
+      "language": "excel",
+      "visualType": "spreadsheet"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 3,
+      "moduleTitle": "Excel & Spreadsheet Analytics",
+      "slug": "data-analytics__m03__excel-tables-and-structured-references",
+      "title": "Excel Tables and Structured References",
+      "language": "excel",
+      "visualType": "spreadsheet"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 3,
+      "moduleTitle": "Excel & Spreadsheet Analytics",
+      "slug": "data-analytics__m03__pivottables-for-grouped-analysis",
+      "title": "Pivottables for Grouped Analysis",
+      "language": "excel",
+      "visualType": "spreadsheet"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 3,
+      "moduleTitle": "Excel & Spreadsheet Analytics",
+      "slug": "data-analytics__m03__charts-in-excel-choose-label-and-audit",
+      "title": "Charts in Excel Choose Label and Audit",
+      "language": "excel",
+      "visualType": "spreadsheet"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 3,
+      "moduleTitle": "Excel & Spreadsheet Analytics",
+      "slug": "data-analytics__m03__power-query-fundamentals",
+      "title": "Power Query Fundamentals",
+      "language": "powerquery",
+      "visualType": "spreadsheet"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 3,
+      "moduleTitle": "Excel & Spreadsheet Analytics",
+      "slug": "data-analytics__m03__spreadsheet-error-handling-and-auditing",
+      "title": "Spreadsheet Error Handling and Auditing",
+      "language": "excel",
+      "visualType": "spreadsheet"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 3,
+      "moduleTitle": "Excel & Spreadsheet Analytics",
+      "slug": "data-analytics__m03__spreadsheet-mini-project-sales-performance-workbook",
+      "title": "Spreadsheet Mini Project Sales Performance Workbook",
+      "language": "excel",
+      "visualType": "spreadsheet"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 4,
+      "moduleTitle": "Reading & Understanding Data",
+      "slug": "data-analytics__m04__csv-json-and-tabular-file-formats",
+      "title": "CSV JSON and Tabular File Formats",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 4,
+      "moduleTitle": "Reading & Understanding Data",
+      "slug": "data-analytics__m04__inspect-shape-head-and-dtypes",
+      "title": "Inspect Shape Head and Dtypes",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 4,
+      "moduleTitle": "Reading & Understanding Data",
+      "slug": "data-analytics__m04__schema-and-data-dictionary",
+      "title": "Schema and Data Dictionary",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 4,
+      "moduleTitle": "Reading & Understanding Data",
+      "slug": "data-analytics__m04__numeric-vs-categorical-variables",
+      "title": "Numeric vs Categorical Variables",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 4,
+      "moduleTitle": "Reading & Understanding Data",
+      "slug": "data-analytics__m04__dates-and-text-fields",
+      "title": "Dates and Text Fields",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 4,
+      "moduleTitle": "Reading & Understanding Data",
+      "slug": "data-analytics__m04__descriptive-statistics",
+      "title": "Descriptive Statistics",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 5,
+      "moduleTitle": "SQL for Analytics",
+      "slug": "data-analytics__m05__select-and-where",
+      "title": "Select and Where",
+      "language": "sql",
+      "visualType": "sql"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 5,
+      "moduleTitle": "SQL for Analytics",
+      "slug": "data-analytics__m05__order-by-and-limit",
+      "title": "Order by and Limit",
+      "language": "sql",
+      "visualType": "sql"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 5,
+      "moduleTitle": "SQL for Analytics",
+      "slug": "data-analytics__m05__group-by-and-aggregate-functions",
+      "title": "Group by and Aggregate Functions",
+      "language": "sql",
+      "visualType": "sql"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 5,
+      "moduleTitle": "SQL for Analytics",
+      "slug": "data-analytics__m05__case-expressions",
+      "title": "Case Expressions",
+      "language": "sql",
+      "visualType": "sql"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 5,
+      "moduleTitle": "SQL for Analytics",
+      "slug": "data-analytics__m05__inner-and-left-join",
+      "title": "Inner and Left Join",
+      "language": "sql",
+      "visualType": "sql"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 5,
+      "moduleTitle": "SQL for Analytics",
+      "slug": "data-analytics__m05__window-functions",
+      "title": "Window Functions",
+      "language": "sql",
+      "visualType": "sql"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 5,
+      "moduleTitle": "SQL for Analytics",
+      "slug": "data-analytics__m05__ctes-and-readable-queries",
+      "title": "CTEs and Readable Queries",
+      "language": "sql",
+      "visualType": "sql"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 6,
+      "moduleTitle": "Data Cleaning & Missing Data",
+      "slug": "data-analytics__m06__detect-missing-values",
+      "title": "Detect Missing Values",
+      "language": "python",
+      "visualType": "missing"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 6,
+      "moduleTitle": "Data Cleaning & Missing Data",
+      "slug": "data-analytics__m06__missingness-patterns",
+      "title": "Missingness Patterns",
+      "language": "python",
+      "visualType": "missing"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 6,
+      "moduleTitle": "Data Cleaning & Missing Data",
+      "slug": "data-analytics__m06__deletion-vs-imputation",
+      "title": "Deletion vs Imputation",
+      "language": "python",
+      "visualType": "missing"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 6,
+      "moduleTitle": "Data Cleaning & Missing Data",
+      "slug": "data-analytics__m06__mean-median-and-mode-imputation",
+      "title": "Mean Median and Mode Imputation",
+      "language": "python",
+      "visualType": "missing"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 6,
+      "moduleTitle": "Data Cleaning & Missing Data",
+      "slug": "data-analytics__m06__forward-fill-and-interpolation",
+      "title": "Forward Fill and Interpolation",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 6,
+      "moduleTitle": "Data Cleaning & Missing Data",
+      "slug": "data-analytics__m06__duplicates",
+      "title": "Duplicates",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 6,
+      "moduleTitle": "Data Cleaning & Missing Data",
+      "slug": "data-analytics__m06__category-standardisation",
+      "title": "Category Standardisation",
+      "language": "python",
+      "visualType": "scaling"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 6,
+      "moduleTitle": "Data Cleaning & Missing Data",
+      "slug": "data-analytics__m06__outlier-checks",
+      "title": "Outlier Checks",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 7,
+      "moduleTitle": "Reshaping & Integration",
+      "slug": "data-analytics__m07__merge-and-join-dataframes",
+      "title": "Merge and Join Dataframes",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 7,
+      "moduleTitle": "Reshaping & Integration",
+      "slug": "data-analytics__m07__validate-join-cardinality",
+      "title": "Validate Join Cardinality",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 7,
+      "moduleTitle": "Reshaping & Integration",
+      "slug": "data-analytics__m07__concatenate-datasets",
+      "title": "Concatenate Datasets",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 7,
+      "moduleTitle": "Reshaping & Integration",
+      "slug": "data-analytics__m07__pivot-tables",
+      "title": "Pivot Tables",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 7,
+      "moduleTitle": "Reshaping & Integration",
+      "slug": "data-analytics__m07__melt-wide-to-long",
+      "title": "Melt Wide to Long",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 7,
+      "moduleTitle": "Reshaping & Integration",
+      "slug": "data-analytics__m07__groupby-split-apply-combine",
+      "title": "Groupby Split Apply Combine",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 8,
+      "moduleTitle": "Exploratory Data Analysis",
+      "slug": "data-analytics__m08__frequency-tables",
+      "title": "Frequency Tables",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 8,
+      "moduleTitle": "Exploratory Data Analysis",
+      "slug": "data-analytics__m08__distribution-plots",
+      "title": "Distribution Plots",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 8,
+      "moduleTitle": "Exploratory Data Analysis",
+      "slug": "data-analytics__m08__boxplots-and-outliers",
+      "title": "Boxplots and Outliers",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 8,
+      "moduleTitle": "Exploratory Data Analysis",
+      "slug": "data-analytics__m08__scatterplots",
+      "title": "Scatterplots",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 8,
+      "moduleTitle": "Exploratory Data Analysis",
+      "slug": "data-analytics__m08__correlation",
+      "title": "Correlation",
+      "language": "python",
+      "visualType": "correlation"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 8,
+      "moduleTitle": "Exploratory Data Analysis",
+      "slug": "data-analytics__m08__grouped-comparisons",
+      "title": "Grouped Comparisons",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 8,
+      "moduleTitle": "Exploratory Data Analysis",
+      "slug": "data-analytics__m08__eda-checklist",
+      "title": "EDA Checklist",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 9,
+      "moduleTitle": "Visualisation & Storytelling",
+      "slug": "data-analytics__m09__chart-selection",
+      "title": "Chart Selection",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 9,
+      "moduleTitle": "Visualisation & Storytelling",
+      "slug": "data-analytics__m09__bar-charts",
+      "title": "Bar Charts",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 9,
+      "moduleTitle": "Visualisation & Storytelling",
+      "slug": "data-analytics__m09__line-charts",
+      "title": "Line Charts",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 9,
+      "moduleTitle": "Visualisation & Storytelling",
+      "slug": "data-analytics__m09__scatterplots",
+      "title": "Scatterplots",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 9,
+      "moduleTitle": "Visualisation & Storytelling",
+      "slug": "data-analytics__m09__histograms",
+      "title": "Histograms",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 9,
+      "moduleTitle": "Visualisation & Storytelling",
+      "slug": "data-analytics__m09__labels-and-annotations",
+      "title": "Labels and Annotations",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 9,
+      "moduleTitle": "Visualisation & Storytelling",
+      "slug": "data-analytics__m09__colour-and-accessibility",
+      "title": "Colour and Accessibility",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 9,
+      "moduleTitle": "Visualisation & Storytelling",
+      "slug": "data-analytics__m09__avoid-misleading-charts",
+      "title": "Avoid Misleading Charts",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 10,
+      "moduleTitle": "Business Analysis",
+      "slug": "data-analytics__m10__rates-and-ratios",
+      "title": "Rates and Ratios",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 10,
+      "moduleTitle": "Business Analysis",
+      "slug": "data-analytics__m10__growth-calculations",
+      "title": "Growth Calculations",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 10,
+      "moduleTitle": "Business Analysis",
+      "slug": "data-analytics__m10__cohort-intuition",
+      "title": "Cohort Intuition",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 10,
+      "moduleTitle": "Business Analysis",
+      "slug": "data-analytics__m10__segmentation",
+      "title": "Segmentation",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 10,
+      "moduleTitle": "Business Analysis",
+      "slug": "data-analytics__m10__funnel-analysis",
+      "title": "Funnel Analysis",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 10,
+      "moduleTitle": "Business Analysis",
+      "slug": "data-analytics__m10__retention-and-churn-basics",
+      "title": "Retention and Churn Basics",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 10,
+      "moduleTitle": "Business Analysis",
+      "slug": "data-analytics__m10__time-series-trend-and-seasonality",
+      "title": "Time Series Trend and Seasonality",
+      "language": "python",
+      "visualType": "timeseries"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 11,
+      "moduleTitle": "Statistical Reasoning",
+      "slug": "data-analytics__m11__population-vs-sample",
+      "title": "Population vs Sample",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 11,
+      "moduleTitle": "Statistical Reasoning",
+      "slug": "data-analytics__m11__mean-median-and-variability",
+      "title": "Mean Median and Variability",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 11,
+      "moduleTitle": "Statistical Reasoning",
+      "slug": "data-analytics__m11__probability-intuition",
+      "title": "Probability Intuition",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 11,
+      "moduleTitle": "Statistical Reasoning",
+      "slug": "data-analytics__m11__confidence-intervals-intuition",
+      "title": "Confidence Intervals Intuition",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 11,
+      "moduleTitle": "Statistical Reasoning",
+      "slug": "data-analytics__m11__hypothesis-tests-intuition",
+      "title": "Hypothesis Tests Intuition",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 11,
+      "moduleTitle": "Statistical Reasoning",
+      "slug": "data-analytics__m11__correlation-vs-causation",
+      "title": "Correlation vs Causation",
+      "language": "python",
+      "visualType": "correlation"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 12,
+      "moduleTitle": "Reporting & Reproducibility",
+      "slug": "data-analytics__m12__from-notebook-to-report",
+      "title": "From Notebook to Report",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 12,
+      "moduleTitle": "Reporting & Reproducibility",
+      "slug": "data-analytics__m12__executive-summary",
+      "title": "Executive Summary",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 12,
+      "moduleTitle": "Reporting & Reproducibility",
+      "slug": "data-analytics__m12__tables-that-answer-questions",
+      "title": "Tables That Answer Questions",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 12,
+      "moduleTitle": "Reporting & Reproducibility",
+      "slug": "data-analytics__m12__uncertainty-and-limitations",
+      "title": "Uncertainty and Limitations",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 12,
+      "moduleTitle": "Reporting & Reproducibility",
+      "slug": "data-analytics__m12__reproducible-scripts",
+      "title": "Reproducible Scripts",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 12,
+      "moduleTitle": "Reporting & Reproducibility",
+      "slug": "data-analytics__m12__data-and-metric-definitions",
+      "title": "Data and Metric Definitions",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 13,
+      "moduleTitle": "Capstone Analytics Project",
+      "slug": "data-analytics__m13__frame-a-business-question",
+      "title": "Frame a Business Question",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 13,
+      "moduleTitle": "Capstone Analytics Project",
+      "slug": "data-analytics__m13__audit-and-clean-the-dataset",
+      "title": "Audit and Clean the Dataset",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 13,
+      "moduleTitle": "Capstone Analytics Project",
+      "slug": "data-analytics__m13__perform-eda",
+      "title": "Perform EDA",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 13,
+      "moduleTitle": "Capstone Analytics Project",
+      "slug": "data-analytics__m13__build-kpi-tables",
+      "title": "Build KPI Tables",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 13,
+      "moduleTitle": "Capstone Analytics Project",
+      "slug": "data-analytics__m13__create-final-visuals",
+      "title": "Create Final Visuals",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Data Analytics",
+      "courseId": "data-analytics",
+      "module": 13,
+      "moduleTitle": "Capstone Analytics Project",
+      "slug": "data-analytics__m13__write-an-evidence-based-recommendation",
+      "title": "Write an Evidence Based Recommendation",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 1,
+      "moduleTitle": "Data Science Foundations",
+      "slug": "data-science__m01__what-data-science-is",
+      "title": "What Data Science is",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 1,
+      "moduleTitle": "Data Science Foundations",
+      "slug": "data-science__m01__analytics-vs-data-science-vs-ml",
+      "title": "Analytics vs Data Science vs ML",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 1,
+      "moduleTitle": "Data Science Foundations",
+      "slug": "data-science__m01__reproducible-project-structure",
+      "title": "Reproducible Project Structure",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 1,
+      "moduleTitle": "Data Science Foundations",
+      "slug": "data-science__m01__problem-framing",
+      "title": "Problem Framing",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 1,
+      "moduleTitle": "Data Science Foundations",
+      "slug": "data-science__m01__prediction-vs-explanation-vs-causality",
+      "title": "Prediction vs Explanation vs Causality",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 2,
+      "moduleTitle": "Python, NumPy & pandas",
+      "slug": "data-science__m02__numpy-arrays",
+      "title": "NumPy Arrays",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 2,
+      "moduleTitle": "Python, NumPy & pandas",
+      "slug": "data-science__m02__vectorised-computation",
+      "title": "Vectorised Computation",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 2,
+      "moduleTitle": "Python, NumPy & pandas",
+      "slug": "data-science__m02__dataframe-operations",
+      "title": "Dataframe Operations",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 2,
+      "moduleTitle": "Python, NumPy & pandas",
+      "slug": "data-science__m02__functions-and-modules",
+      "title": "Functions and Modules",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 2,
+      "moduleTitle": "Python, NumPy & pandas",
+      "slug": "data-science__m02__missing-data",
+      "title": "Missing Data",
+      "language": "python",
+      "visualType": "missing"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 2,
+      "moduleTitle": "Python, NumPy & pandas",
+      "slug": "data-science__m02__groupby-and-joins",
+      "title": "Groupby and Joins",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 2,
+      "moduleTitle": "Python, NumPy & pandas",
+      "slug": "data-science__m02__dates-and-categories",
+      "title": "Dates and Categories",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 3,
+      "moduleTitle": "Statistics & Probability",
+      "slug": "data-science__m03__random-variables",
+      "title": "Random Variables",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 3,
+      "moduleTitle": "Statistics & Probability",
+      "slug": "data-science__m03__distributions",
+      "title": "Distributions",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 3,
+      "moduleTitle": "Statistics & Probability",
+      "slug": "data-science__m03__expectation-and-variance",
+      "title": "Expectation and Variance",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 3,
+      "moduleTitle": "Statistics & Probability",
+      "slug": "data-science__m03__sampling-distributions",
+      "title": "Sampling Distributions",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 3,
+      "moduleTitle": "Statistics & Probability",
+      "slug": "data-science__m03__confidence-intervals",
+      "title": "Confidence Intervals",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 3,
+      "moduleTitle": "Statistics & Probability",
+      "slug": "data-science__m03__hypothesis-testing",
+      "title": "Hypothesis Testing",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 3,
+      "moduleTitle": "Statistics & Probability",
+      "slug": "data-science__m03__bayes-rule-intuition",
+      "title": "Bayes Rule Intuition",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 4,
+      "moduleTitle": "EDA & Data Quality",
+      "slug": "data-science__m04__data-profiling",
+      "title": "Data Profiling",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 4,
+      "moduleTitle": "EDA & Data Quality",
+      "slug": "data-science__m04__univariate-analysis",
+      "title": "Univariate Analysis",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 4,
+      "moduleTitle": "EDA & Data Quality",
+      "slug": "data-science__m04__bivariate-analysis",
+      "title": "Bivariate Analysis",
+      "language": "python",
+      "visualType": "correlation"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 4,
+      "moduleTitle": "EDA & Data Quality",
+      "slug": "data-science__m04__multivariate-patterns",
+      "title": "Multivariate Patterns",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 4,
+      "moduleTitle": "EDA & Data Quality",
+      "slug": "data-science__m04__missingness-mechanisms",
+      "title": "Missingness Mechanisms",
+      "language": "python",
+      "visualType": "missing"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 4,
+      "moduleTitle": "EDA & Data Quality",
+      "slug": "data-science__m04__outliers",
+      "title": "Outliers",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 4,
+      "moduleTitle": "EDA & Data Quality",
+      "slug": "data-science__m04__label-quality",
+      "title": "Label Quality",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 4,
+      "moduleTitle": "EDA & Data Quality",
+      "slug": "data-science__m04__data-leakage-warning-signs",
+      "title": "Data Leakage Warning Signs",
+      "language": "python",
+      "visualType": "split"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 5,
+      "moduleTitle": "Cleaning & Imputation",
+      "slug": "data-science__m05__mcar-mar-and-mnar",
+      "title": "MCAR MAR and MNAR",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 5,
+      "moduleTitle": "Cleaning & Imputation",
+      "slug": "data-science__m05__complete-case-analysis",
+      "title": "Complete Case Analysis",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 5,
+      "moduleTitle": "Cleaning & Imputation",
+      "slug": "data-science__m05__simple-imputation",
+      "title": "Simple Imputation",
+      "language": "python",
+      "visualType": "missing"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 5,
+      "moduleTitle": "Cleaning & Imputation",
+      "slug": "data-science__m05__knn-imputation",
+      "title": "KNN Imputation",
+      "language": "python",
+      "visualType": "missing"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 5,
+      "moduleTitle": "Cleaning & Imputation",
+      "slug": "data-science__m05__iterative-imputation",
+      "title": "Iterative Imputation",
+      "language": "python",
+      "visualType": "missing"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 5,
+      "moduleTitle": "Cleaning & Imputation",
+      "slug": "data-science__m05__missing-indicators",
+      "title": "Missing Indicators",
+      "language": "python",
+      "visualType": "missing"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 5,
+      "moduleTitle": "Cleaning & Imputation",
+      "slug": "data-science__m05__time-series-interpolation",
+      "title": "Time Series Interpolation",
+      "language": "python",
+      "visualType": "timeseries"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 5,
+      "moduleTitle": "Cleaning & Imputation",
+      "slug": "data-science__m05__validate-imputation",
+      "title": "Validate Imputation",
+      "language": "python",
+      "visualType": "missing"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 6,
+      "moduleTitle": "Preprocessing",
+      "slug": "data-science__m06__standardisation",
+      "title": "Standardisation",
+      "language": "python",
+      "visualType": "scaling"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 6,
+      "moduleTitle": "Preprocessing",
+      "slug": "data-science__m06__robust-scaling",
+      "title": "Robust Scaling",
+      "language": "python",
+      "visualType": "scaling"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 6,
+      "moduleTitle": "Preprocessing",
+      "slug": "data-science__m06__categorical-encoding",
+      "title": "Categorical Encoding",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 6,
+      "moduleTitle": "Preprocessing",
+      "slug": "data-science__m06__transformations",
+      "title": "Transformations",
+      "language": "python",
+      "visualType": "scaling"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 6,
+      "moduleTitle": "Preprocessing",
+      "slug": "data-science__m06__columntransformer",
+      "title": "Columntransformer",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 6,
+      "moduleTitle": "Preprocessing",
+      "slug": "data-science__m06__pipelines",
+      "title": "Pipelines",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 6,
+      "moduleTitle": "Preprocessing",
+      "slug": "data-science__m06__target-transformations",
+      "title": "Target Transformations",
+      "language": "python",
+      "visualType": "scaling"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 7,
+      "moduleTitle": "Feature Engineering",
+      "slug": "data-science__m07__domain-features",
+      "title": "Domain Features",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 7,
+      "moduleTitle": "Feature Engineering",
+      "slug": "data-science__m07__interactions-and-polynomial-features",
+      "title": "Interactions and Polynomial Features",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 7,
+      "moduleTitle": "Feature Engineering",
+      "slug": "data-science__m07__datetime-features",
+      "title": "Datetime Features",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 7,
+      "moduleTitle": "Feature Engineering",
+      "slug": "data-science__m07__lag-and-rolling-features",
+      "title": "Lag and Rolling Features",
+      "language": "python",
+      "visualType": "timeseries"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 7,
+      "moduleTitle": "Feature Engineering",
+      "slug": "data-science__m07__text-tf-idf-intuition",
+      "title": "Text TF IDF Intuition",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 7,
+      "moduleTitle": "Feature Engineering",
+      "slug": "data-science__m07__feature-selection",
+      "title": "Feature Selection",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 7,
+      "moduleTitle": "Feature Engineering",
+      "slug": "data-science__m07__pca",
+      "title": "PCA",
+      "language": "python",
+      "visualType": "pca"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 8,
+      "moduleTitle": "Experimental Design & Validation",
+      "slug": "data-science__m08__train-validation-test",
+      "title": "Train Validation Test",
+      "language": "python",
+      "visualType": "split"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 8,
+      "moduleTitle": "Experimental Design & Validation",
+      "slug": "data-science__m08__k-fold",
+      "title": "K Fold",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 8,
+      "moduleTitle": "Experimental Design & Validation",
+      "slug": "data-science__m08__stratification",
+      "title": "Stratification",
+      "language": "python",
+      "visualType": "split"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 8,
+      "moduleTitle": "Experimental Design & Validation",
+      "slug": "data-science__m08__group-cv",
+      "title": "Group Cv",
+      "language": "python",
+      "visualType": "split"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 8,
+      "moduleTitle": "Experimental Design & Validation",
+      "slug": "data-science__m08__time-series-validation",
+      "title": "Time Series Validation",
+      "language": "python",
+      "visualType": "timeseries"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 8,
+      "moduleTitle": "Experimental Design & Validation",
+      "slug": "data-science__m08__nested-cv",
+      "title": "Nested Cv",
+      "language": "python",
+      "visualType": "split"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 8,
+      "moduleTitle": "Experimental Design & Validation",
+      "slug": "data-science__m08__bootstrap-intuition",
+      "title": "Bootstrap Intuition",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 8,
+      "moduleTitle": "Experimental Design & Validation",
+      "slug": "data-science__m08__leakage-safe-pipelines",
+      "title": "Leakage Safe Pipelines",
+      "language": "python",
+      "visualType": "split"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 9,
+      "moduleTitle": "Predictive Modelling",
+      "slug": "data-science__m09__linear-regression",
+      "title": "Linear Regression",
+      "language": "python",
+      "visualType": "regression"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 9,
+      "moduleTitle": "Predictive Modelling",
+      "slug": "data-science__m09__logistic-regression",
+      "title": "Logistic Regression",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 9,
+      "moduleTitle": "Predictive Modelling",
+      "slug": "data-science__m09__knn",
+      "title": "KNN",
+      "language": "python",
+      "visualType": "regression"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 9,
+      "moduleTitle": "Predictive Modelling",
+      "slug": "data-science__m09__decision-trees",
+      "title": "Decision Trees",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 9,
+      "moduleTitle": "Predictive Modelling",
+      "slug": "data-science__m09__random-forest",
+      "title": "Random Forest",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 9,
+      "moduleTitle": "Predictive Modelling",
+      "slug": "data-science__m09__gradient-boosting",
+      "title": "Gradient Boosting",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 9,
+      "moduleTitle": "Predictive Modelling",
+      "slug": "data-science__m09__svm-intuition",
+      "title": "SVM Intuition",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 9,
+      "moduleTitle": "Predictive Modelling",
+      "slug": "data-science__m09__neural-network-intuition",
+      "title": "Neural Network Intuition",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 10,
+      "moduleTitle": "Evaluation & Diagnostics",
+      "slug": "data-science__m10__classification-metrics",
+      "title": "Classification Metrics",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 10,
+      "moduleTitle": "Evaluation & Diagnostics",
+      "slug": "data-science__m10__roc-and-pr-curves",
+      "title": "ROC and PR Curves",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 10,
+      "moduleTitle": "Evaluation & Diagnostics",
+      "slug": "data-science__m10__regression-metrics",
+      "title": "Regression Metrics",
+      "language": "python",
+      "visualType": "regression"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 10,
+      "moduleTitle": "Evaluation & Diagnostics",
+      "slug": "data-science__m10__residual-analysis",
+      "title": "Residual Analysis",
+      "language": "python",
+      "visualType": "regression"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 10,
+      "moduleTitle": "Evaluation & Diagnostics",
+      "slug": "data-science__m10__calibration",
+      "title": "Calibration",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 10,
+      "moduleTitle": "Evaluation & Diagnostics",
+      "slug": "data-science__m10__thresholds",
+      "title": "Thresholds",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 10,
+      "moduleTitle": "Evaluation & Diagnostics",
+      "slug": "data-science__m10__uncertainty",
+      "title": "Uncertainty",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 10,
+      "moduleTitle": "Evaluation & Diagnostics",
+      "slug": "data-science__m10__subgroup-evaluation",
+      "title": "Subgroup Evaluation",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 11,
+      "moduleTitle": "Interpretation & Communication",
+      "slug": "data-science__m11__coefficients-and-feature-importance",
+      "title": "Coefficients and Feature Importance",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 11,
+      "moduleTitle": "Interpretation & Communication",
+      "slug": "data-science__m11__permutation-importance",
+      "title": "Permutation Importance",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 11,
+      "moduleTitle": "Interpretation & Communication",
+      "slug": "data-science__m11__pdp-and-ice",
+      "title": "PDP and ICE",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 11,
+      "moduleTitle": "Interpretation & Communication",
+      "slug": "data-science__m11__shap-intuition",
+      "title": "SHAP Intuition",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 11,
+      "moduleTitle": "Interpretation & Communication",
+      "slug": "data-science__m11__model-cards",
+      "title": "Model Cards",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 11,
+      "moduleTitle": "Interpretation & Communication",
+      "slug": "data-science__m11__communicating-uncertainty",
+      "title": "Communicating Uncertainty",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 11,
+      "moduleTitle": "Interpretation & Communication",
+      "slug": "data-science__m11__decision-recommendations",
+      "title": "Decision Recommendations",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 12,
+      "moduleTitle": "Capstone Project",
+      "slug": "data-science__m12__define-the-unit-and-target",
+      "title": "Define the Unit and Target",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 12,
+      "moduleTitle": "Capstone Project",
+      "slug": "data-science__m12__create-a-leakage-safe-pipeline",
+      "title": "Create a Leakage Safe Pipeline",
+      "language": "python",
+      "visualType": "split"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 12,
+      "moduleTitle": "Capstone Project",
+      "slug": "data-science__m12__compare-baseline-and-advanced-models",
+      "title": "Compare Baseline and Advanced Models",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 12,
+      "moduleTitle": "Capstone Project",
+      "slug": "data-science__m12__tune-hyperparameters",
+      "title": "Tune Hyperparameters",
+      "language": "python",
+      "visualType": "hpo"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 12,
+      "moduleTitle": "Capstone Project",
+      "slug": "data-science__m12__evaluate-on-held-out-data",
+      "title": "Evaluate on Held Out Data",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 12,
+      "moduleTitle": "Capstone Project",
+      "slug": "data-science__m12__interpret-errors",
+      "title": "Interpret Errors",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Data Science",
+      "courseId": "data-science",
+      "module": 12,
+      "moduleTitle": "Capstone Project",
+      "slug": "data-science__m12__deliver-a-reproducible-report",
+      "title": "Deliver a Reproducible Report",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 1,
+      "moduleTitle": "ML Foundations",
+      "slug": "machine-learning__m01__machine-learning-workflow",
+      "title": "Machine Learning Workflow",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 1,
+      "moduleTitle": "ML Foundations",
+      "slug": "machine-learning__m01__supervised-and-unsupervised-learning",
+      "title": "Supervised and Unsupervised Learning",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 1,
+      "moduleTitle": "ML Foundations",
+      "slug": "machine-learning__m01__features-targets-and-examples",
+      "title": "Features Targets and Examples",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 1,
+      "moduleTitle": "ML Foundations",
+      "slug": "machine-learning__m01__parameters-vs-hyperparameters",
+      "title": "Parameters vs Hyperparameters",
+      "language": "python",
+      "visualType": "hpo"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 1,
+      "moduleTitle": "ML Foundations",
+      "slug": "machine-learning__m01__training-validation-and-inference",
+      "title": "Training Validation and Inference",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 1,
+      "moduleTitle": "ML Foundations",
+      "slug": "machine-learning__m01__generalisation",
+      "title": "Generalisation",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 2,
+      "moduleTitle": "Math for ML",
+      "slug": "machine-learning__m02__vectors-and-matrices",
+      "title": "Vectors and Matrices",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 2,
+      "moduleTitle": "Math for ML",
+      "slug": "machine-learning__m02__dot-products-and-linear-functions",
+      "title": "Dot Products and Linear Functions",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 2,
+      "moduleTitle": "Math for ML",
+      "slug": "machine-learning__m02__probability-for-prediction",
+      "title": "Probability for Prediction",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 2,
+      "moduleTitle": "Math for ML",
+      "slug": "machine-learning__m02__loss-functions",
+      "title": "Loss Functions",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 2,
+      "moduleTitle": "Math for ML",
+      "slug": "machine-learning__m02__gradients",
+      "title": "Gradients",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 2,
+      "moduleTitle": "Math for ML",
+      "slug": "machine-learning__m02__gradient-descent",
+      "title": "Gradient Descent",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 2,
+      "moduleTitle": "Math for ML",
+      "slug": "machine-learning__m02__bias-and-variance",
+      "title": "Bias and Variance",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 3,
+      "moduleTitle": "Data Preparation for ML",
+      "slug": "machine-learning__m03__numeric-scaling",
+      "title": "Numeric Scaling",
+      "language": "python",
+      "visualType": "scaling"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 3,
+      "moduleTitle": "Data Preparation for ML",
+      "slug": "machine-learning__m03__categorical-encoding",
+      "title": "Categorical Encoding",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 3,
+      "moduleTitle": "Data Preparation for ML",
+      "slug": "machine-learning__m03__missing-value-imputation",
+      "title": "Missing Value Imputation",
+      "language": "python",
+      "visualType": "missing"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 3,
+      "moduleTitle": "Data Preparation for ML",
+      "slug": "machine-learning__m03__feature-construction",
+      "title": "Feature Construction",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 3,
+      "moduleTitle": "Data Preparation for ML",
+      "slug": "machine-learning__m03__feature-selection",
+      "title": "Feature Selection",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 3,
+      "moduleTitle": "Data Preparation for ML",
+      "slug": "machine-learning__m03__pca",
+      "title": "PCA",
+      "language": "python",
+      "visualType": "pca"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 3,
+      "moduleTitle": "Data Preparation for ML",
+      "slug": "machine-learning__m03__pipelines-and-columntransformer",
+      "title": "Pipelines and Columntransformer",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 4,
+      "moduleTitle": "Linear Models",
+      "slug": "machine-learning__m04__linear-regression",
+      "title": "Linear Regression",
+      "language": "python",
+      "visualType": "regression"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 4,
+      "moduleTitle": "Linear Models",
+      "slug": "machine-learning__m04__ridge-regression",
+      "title": "Ridge Regression",
+      "language": "python",
+      "visualType": "regression"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 4,
+      "moduleTitle": "Linear Models",
+      "slug": "machine-learning__m04__lasso-regression",
+      "title": "Lasso Regression",
+      "language": "python",
+      "visualType": "regression"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 4,
+      "moduleTitle": "Linear Models",
+      "slug": "machine-learning__m04__elastic-net",
+      "title": "Elastic Net",
+      "language": "python",
+      "visualType": "regression"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 4,
+      "moduleTitle": "Linear Models",
+      "slug": "machine-learning__m04__logistic-regression",
+      "title": "Logistic Regression",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 4,
+      "moduleTitle": "Linear Models",
+      "slug": "machine-learning__m04__softmax-intuition",
+      "title": "Softmax Intuition",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 4,
+      "moduleTitle": "Linear Models",
+      "slug": "machine-learning__m04__regularisation-paths",
+      "title": "Regularisation Paths",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 5,
+      "moduleTitle": "Instance & Kernel Methods",
+      "slug": "machine-learning__m05__knn-classification",
+      "title": "KNN Classification",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 5,
+      "moduleTitle": "Instance & Kernel Methods",
+      "slug": "machine-learning__m05__knn-regression",
+      "title": "KNN Regression",
+      "language": "python",
+      "visualType": "regression"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 5,
+      "moduleTitle": "Instance & Kernel Methods",
+      "slug": "machine-learning__m05__distance-metrics",
+      "title": "Distance Metrics",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 5,
+      "moduleTitle": "Instance & Kernel Methods",
+      "slug": "machine-learning__m05__svm-margins",
+      "title": "SVM Margins",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 5,
+      "moduleTitle": "Instance & Kernel Methods",
+      "slug": "machine-learning__m05__kernel-trick-intuition",
+      "title": "Kernel Trick Intuition",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 5,
+      "moduleTitle": "Instance & Kernel Methods",
+      "slug": "machine-learning__m05__svr-epsilon-tube",
+      "title": "SVR Epsilon Tube",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 5,
+      "moduleTitle": "Instance & Kernel Methods",
+      "slug": "machine-learning__m05__scaling-requirements",
+      "title": "Scaling Requirements",
+      "language": "python",
+      "visualType": "scaling"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 6,
+      "moduleTitle": "Tree Models",
+      "slug": "machine-learning__m06__decision-tree-splits",
+      "title": "Decision Tree Splits",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 6,
+      "moduleTitle": "Tree Models",
+      "slug": "machine-learning__m06__classification-trees",
+      "title": "Classification Trees",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 6,
+      "moduleTitle": "Tree Models",
+      "slug": "machine-learning__m06__regression-trees",
+      "title": "Regression Trees",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 6,
+      "moduleTitle": "Tree Models",
+      "slug": "machine-learning__m06__pruning-and-depth",
+      "title": "Pruning and Depth",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 6,
+      "moduleTitle": "Tree Models",
+      "slug": "machine-learning__m06__random-forests",
+      "title": "Random Forests",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 6,
+      "moduleTitle": "Tree Models",
+      "slug": "machine-learning__m06__bagging-and-oob-intuition",
+      "title": "Bagging and Oob Intuition",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 6,
+      "moduleTitle": "Tree Models",
+      "slug": "machine-learning__m06__feature-importance-caveats",
+      "title": "Feature Importance Caveats",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 7,
+      "moduleTitle": "Boosting",
+      "slug": "machine-learning__m07__boosting-intuition",
+      "title": "Boosting Intuition",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 7,
+      "moduleTitle": "Boosting",
+      "slug": "machine-learning__m07__gradient-boosting",
+      "title": "Gradient Boosting",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 7,
+      "moduleTitle": "Boosting",
+      "slug": "machine-learning__m07__xgboost-concepts",
+      "title": "XGBoost Concepts",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 7,
+      "moduleTitle": "Boosting",
+      "slug": "machine-learning__m07__lightgbm-concepts",
+      "title": "LightGBM Concepts",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 7,
+      "moduleTitle": "Boosting",
+      "slug": "machine-learning__m07__catboost-concepts",
+      "title": "CatBoost Concepts",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 7,
+      "moduleTitle": "Boosting",
+      "slug": "machine-learning__m07__learning-rate-vs-number-of-trees",
+      "title": "Learning Rate vs Number of Trees",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 7,
+      "moduleTitle": "Boosting",
+      "slug": "machine-learning__m07__early-stopping",
+      "title": "Early Stopping",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 8,
+      "moduleTitle": "Unsupervised Learning",
+      "slug": "machine-learning__m08__k-means",
+      "title": "K Means",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 8,
+      "moduleTitle": "Unsupervised Learning",
+      "slug": "machine-learning__m08__hierarchical-clustering",
+      "title": "Hierarchical Clustering",
+      "language": "python",
+      "visualType": "pca"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 8,
+      "moduleTitle": "Unsupervised Learning",
+      "slug": "machine-learning__m08__dbscan",
+      "title": "DBSCAN",
+      "language": "python",
+      "visualType": "pca"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 8,
+      "moduleTitle": "Unsupervised Learning",
+      "slug": "machine-learning__m08__gaussian-mixtures",
+      "title": "Gaussian Mixtures",
+      "language": "python",
+      "visualType": "pca"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 8,
+      "moduleTitle": "Unsupervised Learning",
+      "slug": "machine-learning__m08__pca",
+      "title": "PCA",
+      "language": "python",
+      "visualType": "pca"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 8,
+      "moduleTitle": "Unsupervised Learning",
+      "slug": "machine-learning__m08__t-sne-and-umap-usage",
+      "title": "T Sne and Umap Usage",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 9,
+      "moduleTitle": "Validation & Leakage",
+      "slug": "machine-learning__m09__holdout",
+      "title": "Holdout",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 9,
+      "moduleTitle": "Validation & Leakage",
+      "slug": "machine-learning__m09__k-fold",
+      "title": "K Fold",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 9,
+      "moduleTitle": "Validation & Leakage",
+      "slug": "machine-learning__m09__stratified-k-fold",
+      "title": "Stratified K Fold",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 9,
+      "moduleTitle": "Validation & Leakage",
+      "slug": "machine-learning__m09__group-k-fold",
+      "title": "Group K Fold",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 9,
+      "moduleTitle": "Validation & Leakage",
+      "slug": "machine-learning__m09__time-series-split",
+      "title": "Time Series Split",
+      "language": "python",
+      "visualType": "timeseries"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 9,
+      "moduleTitle": "Validation & Leakage",
+      "slug": "machine-learning__m09__nested-cv",
+      "title": "Nested Cv",
+      "language": "python",
+      "visualType": "split"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 9,
+      "moduleTitle": "Validation & Leakage",
+      "slug": "machine-learning__m09__leakage-scenarios",
+      "title": "Leakage Scenarios",
+      "language": "python",
+      "visualType": "split"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 9,
+      "moduleTitle": "Validation & Leakage",
+      "slug": "machine-learning__m09__repeated-evaluation",
+      "title": "Repeated Evaluation",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 10,
+      "moduleTitle": "Hyperparameter Optimisation",
+      "slug": "machine-learning__m10__search-space-design",
+      "title": "Search Space Design",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 10,
+      "moduleTitle": "Hyperparameter Optimisation",
+      "slug": "machine-learning__m10__grid-search",
+      "title": "Grid Search",
+      "language": "python",
+      "visualType": "hpo"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 10,
+      "moduleTitle": "Hyperparameter Optimisation",
+      "slug": "machine-learning__m10__random-search",
+      "title": "Random Search",
+      "language": "python",
+      "visualType": "hpo"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 10,
+      "moduleTitle": "Hyperparameter Optimisation",
+      "slug": "machine-learning__m10__bayesian-optimisation",
+      "title": "Bayesian Optimisation",
+      "language": "python",
+      "visualType": "hpo"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 10,
+      "moduleTitle": "Hyperparameter Optimisation",
+      "slug": "machine-learning__m10__tpe-intuition",
+      "title": "Tpe Intuition",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 10,
+      "moduleTitle": "Hyperparameter Optimisation",
+      "slug": "machine-learning__m10__successive-halving",
+      "title": "Successive Halving",
+      "language": "python",
+      "visualType": "hpo"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 10,
+      "moduleTitle": "Hyperparameter Optimisation",
+      "slug": "machine-learning__m10__hyperband-intuition",
+      "title": "Hyperband Intuition",
+      "language": "python",
+      "visualType": "hpo"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 10,
+      "moduleTitle": "Hyperparameter Optimisation",
+      "slug": "machine-learning__m10__multi-metric-tuning",
+      "title": "Multi Metric Tuning",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 11,
+      "moduleTitle": "Metrics, Calibration & Thresholds",
+      "slug": "machine-learning__m11__confusion-matrix",
+      "title": "Confusion Matrix",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 11,
+      "moduleTitle": "Metrics, Calibration & Thresholds",
+      "slug": "machine-learning__m11__precision-and-recall",
+      "title": "Precision and Recall",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 11,
+      "moduleTitle": "Metrics, Calibration & Thresholds",
+      "slug": "machine-learning__m11__f1-and-f-beta",
+      "title": "F1 and F Beta",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 11,
+      "moduleTitle": "Metrics, Calibration & Thresholds",
+      "slug": "machine-learning__m11__roc-auc",
+      "title": "ROC AUC",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 11,
+      "moduleTitle": "Metrics, Calibration & Thresholds",
+      "slug": "machine-learning__m11__pr-auc",
+      "title": "PR AUC",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 11,
+      "moduleTitle": "Metrics, Calibration & Thresholds",
+      "slug": "machine-learning__m11__log-loss-and-brier-score",
+      "title": "Log Loss and Brier Score",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 11,
+      "moduleTitle": "Metrics, Calibration & Thresholds",
+      "slug": "machine-learning__m11__regression-metrics",
+      "title": "Regression Metrics",
+      "language": "python",
+      "visualType": "regression"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 11,
+      "moduleTitle": "Metrics, Calibration & Thresholds",
+      "slug": "machine-learning__m11__calibration",
+      "title": "Calibration",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 11,
+      "moduleTitle": "Metrics, Calibration & Thresholds",
+      "slug": "machine-learning__m11__threshold-optimisation",
+      "title": "Threshold Optimisation",
+      "language": "python",
+      "visualType": "classification"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 12,
+      "moduleTitle": "Interpretation & Production Thinking",
+      "slug": "machine-learning__m12__permutation-importance",
+      "title": "Permutation Importance",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 12,
+      "moduleTitle": "Interpretation & Production Thinking",
+      "slug": "machine-learning__m12__pdp-and-ice",
+      "title": "PDP and ICE",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 12,
+      "moduleTitle": "Interpretation & Production Thinking",
+      "slug": "machine-learning__m12__shap-intuition",
+      "title": "SHAP Intuition",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 12,
+      "moduleTitle": "Interpretation & Production Thinking",
+      "slug": "machine-learning__m12__uncertainty",
+      "title": "Uncertainty",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 12,
+      "moduleTitle": "Interpretation & Production Thinking",
+      "slug": "machine-learning__m12__model-persistence",
+      "title": "Model Persistence",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 12,
+      "moduleTitle": "Interpretation & Production Thinking",
+      "slug": "machine-learning__m12__batch-vs-api-inference",
+      "title": "Batch vs API Inference",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 12,
+      "moduleTitle": "Interpretation & Production Thinking",
+      "slug": "machine-learning__m12__drift-monitoring",
+      "title": "Drift Monitoring",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 12,
+      "moduleTitle": "Interpretation & Production Thinking",
+      "slug": "machine-learning__m12__retraining-governance",
+      "title": "Retraining Governance",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 13,
+      "moduleTitle": "Capstone Project",
+      "slug": "machine-learning__m13__choose-a-real-task",
+      "title": "Choose a Real Task",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 13,
+      "moduleTitle": "Capstone Project",
+      "slug": "machine-learning__m13__create-a-baseline",
+      "title": "Create a Baseline",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 13,
+      "moduleTitle": "Capstone Project",
+      "slug": "machine-learning__m13__build-a-pipeline",
+      "title": "Build a Pipeline",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 13,
+      "moduleTitle": "Capstone Project",
+      "slug": "machine-learning__m13__cross-validate",
+      "title": "Cross Validate",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 13,
+      "moduleTitle": "Capstone Project",
+      "slug": "machine-learning__m13__tune",
+      "title": "Tune",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 13,
+      "moduleTitle": "Capstone Project",
+      "slug": "machine-learning__m13__evaluate",
+      "title": "Evaluate",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 13,
+      "moduleTitle": "Capstone Project",
+      "slug": "machine-learning__m13__interpret",
+      "title": "Interpret",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Machine Learning",
+      "courseId": "machine-learning",
+      "module": 13,
+      "moduleTitle": "Capstone Project",
+      "slug": "machine-learning__m13__document-and-package-the-final-model",
+      "title": "Document and Package the Final Model",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 1,
+      "moduleTitle": "Getting Started with Python",
+      "slug": "python-programming__m01__what-python-is-and-where-it-is-used",
+      "title": "What Python is and Where It is Used",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 1,
+      "moduleTitle": "Getting Started with Python",
+      "slug": "python-programming__m01__install-python-or-choose-a-notebook-environment",
+      "title": "Install Python or Choose a Notebook Environment",
+      "language": "bash",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 1,
+      "moduleTitle": "Getting Started with Python",
+      "slug": "python-programming__m01__the-python-interpreter-scripts-and-notebooks",
+      "title": "The Python Interpreter Scripts and Notebooks",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 1,
+      "moduleTitle": "Getting Started with Python",
+      "slug": "python-programming__m01__your-first-program-with-print",
+      "title": "Your First Program with Print",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 1,
+      "moduleTitle": "Getting Started with Python",
+      "slug": "python-programming__m01__comments-and-readable-code",
+      "title": "Comments and Readable Code",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 1,
+      "moduleTitle": "Getting Started with Python",
+      "slug": "python-programming__m01__indentation-and-blocks",
+      "title": "Indentation and Blocks",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 1,
+      "moduleTitle": "Getting Started with Python",
+      "slug": "python-programming__m01__getting-help-with-help-and-documentation",
+      "title": "Getting Help with Help and Documentation",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 1,
+      "moduleTitle": "Getting Started with Python",
+      "slug": "python-programming__m01__reading-tracebacks-without-panic",
+      "title": "Reading Tracebacks Without Panic",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 2,
+      "moduleTitle": "Variables, Types & Operators",
+      "slug": "python-programming__m02__variables-and-assignment",
+      "title": "Variables and Assignment",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 2,
+      "moduleTitle": "Variables, Types & Operators",
+      "slug": "python-programming__m02__valid-names-and-naming-conventions",
+      "title": "Valid Names and Naming Conventions",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 2,
+      "moduleTitle": "Variables, Types & Operators",
+      "slug": "python-programming__m02__integers-and-floating-point-numbers",
+      "title": "Integers and Floating Point Numbers",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 2,
+      "moduleTitle": "Variables, Types & Operators",
+      "slug": "python-programming__m02__booleans-and-comparison-results",
+      "title": "Booleans and Comparison Results",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 2,
+      "moduleTitle": "Variables, Types & Operators",
+      "slug": "python-programming__m02__none-and-missing-object-references",
+      "title": "None and Missing Object References",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 2,
+      "moduleTitle": "Variables, Types & Operators",
+      "slug": "python-programming__m02__inspect-types-with-type",
+      "title": "Inspect Types with Type",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 2,
+      "moduleTitle": "Variables, Types & Operators",
+      "slug": "python-programming__m02__convert-between-common-types",
+      "title": "Convert Between Common Types",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 2,
+      "moduleTitle": "Variables, Types & Operators",
+      "slug": "python-programming__m02__arithmetic-operators-and-precedence",
+      "title": "Arithmetic Operators and Precedence",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 2,
+      "moduleTitle": "Variables, Types & Operators",
+      "slug": "python-programming__m02__comparison-operators",
+      "title": "Comparison Operators",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 2,
+      "moduleTitle": "Variables, Types & Operators",
+      "slug": "python-programming__m02__boolean-logic-with-and-or-and-not",
+      "title": "Boolean Logic with and or and Not",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 2,
+      "moduleTitle": "Variables, Types & Operators",
+      "slug": "python-programming__m02__assignment-operators",
+      "title": "Assignment Operators",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 2,
+      "moduleTitle": "Variables, Types & Operators",
+      "slug": "python-programming__m02__mini-lab-calculate-a-shopping-basket-total",
+      "title": "Mini Lab Calculate a Shopping Basket Total",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 3,
+      "moduleTitle": "Strings & Text",
+      "slug": "python-programming__m03__create-strings-with-quotes",
+      "title": "Create Strings with Quotes",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 3,
+      "moduleTitle": "Strings & Text",
+      "slug": "python-programming__m03__escape-characters-and-raw-strings",
+      "title": "Escape Characters and Raw Strings",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 3,
+      "moduleTitle": "Strings & Text",
+      "slug": "python-programming__m03__string-length-and-indexing",
+      "title": "String Length and Indexing",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 3,
+      "moduleTitle": "Strings & Text",
+      "slug": "python-programming__m03__string-slicing",
+      "title": "String Slicing",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 3,
+      "moduleTitle": "Strings & Text",
+      "slug": "python-programming__m03__useful-string-methods",
+      "title": "Useful String Methods",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 3,
+      "moduleTitle": "Strings & Text",
+      "slug": "python-programming__m03__search-and-replace-text",
+      "title": "Search and Replace Text",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 3,
+      "moduleTitle": "Strings & Text",
+      "slug": "python-programming__m03__split-and-join-text",
+      "title": "Split and Join Text",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 3,
+      "moduleTitle": "Strings & Text",
+      "slug": "python-programming__m03__f-strings-for-readable-output",
+      "title": "F Strings for Readable Output",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 3,
+      "moduleTitle": "Strings & Text",
+      "slug": "python-programming__m03__unicode-and-text-encoding-intuition",
+      "title": "Unicode and Text Encoding Intuition",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 3,
+      "moduleTitle": "Strings & Text",
+      "slug": "python-programming__m03__mini-lab-clean-a-customer-name",
+      "title": "Mini Lab Clean a Customer Name",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 4,
+      "moduleTitle": "Collections & Data Structures",
+      "slug": "python-programming__m04__create-and-inspect-lists",
+      "title": "Create and Inspect Lists",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 4,
+      "moduleTitle": "Collections & Data Structures",
+      "slug": "python-programming__m04__list-indexing-and-slicing",
+      "title": "List Indexing and Slicing",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 4,
+      "moduleTitle": "Collections & Data Structures",
+      "slug": "python-programming__m04__append-insert-remove-and-pop",
+      "title": "Append Insert Remove and Pop",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 4,
+      "moduleTitle": "Collections & Data Structures",
+      "slug": "python-programming__m04__sort-and-reverse-lists",
+      "title": "Sort and Reverse Lists",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 4,
+      "moduleTitle": "Collections & Data Structures",
+      "slug": "python-programming__m04__list-comprehensions",
+      "title": "List Comprehensions",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 4,
+      "moduleTitle": "Collections & Data Structures",
+      "slug": "python-programming__m04__tuples-and-immutable-records",
+      "title": "Tuples and Immutable Records",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 4,
+      "moduleTitle": "Collections & Data Structures",
+      "slug": "python-programming__m04__sets-and-unique-values",
+      "title": "Sets and Unique Values",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 4,
+      "moduleTitle": "Collections & Data Structures",
+      "slug": "python-programming__m04__set-operations",
+      "title": "Set Operations",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 4,
+      "moduleTitle": "Collections & Data Structures",
+      "slug": "python-programming__m04__create-dictionaries",
+      "title": "Create Dictionaries",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 4,
+      "moduleTitle": "Collections & Data Structures",
+      "slug": "python-programming__m04__read-and-update-dictionary-values",
+      "title": "Read and Update Dictionary Values",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 4,
+      "moduleTitle": "Collections & Data Structures",
+      "slug": "python-programming__m04__dictionary-methods-and-iteration",
+      "title": "Dictionary Methods and Iteration",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 4,
+      "moduleTitle": "Collections & Data Structures",
+      "slug": "python-programming__m04__nested-lists-and-dictionaries",
+      "title": "Nested Lists and Dictionaries",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 4,
+      "moduleTitle": "Collections & Data Structures",
+      "slug": "python-programming__m04__unpacking-values",
+      "title": "Unpacking Values",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 4,
+      "moduleTitle": "Collections & Data Structures",
+      "slug": "python-programming__m04__enumerate-and-zip",
+      "title": "Enumerate and Zip",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 4,
+      "moduleTitle": "Collections & Data Structures",
+      "slug": "python-programming__m04__mini-lab-summarise-product-ratings",
+      "title": "Mini Lab Summarise Product Ratings",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 5,
+      "moduleTitle": "Decisions & Loops",
+      "slug": "python-programming__m05__if-statements",
+      "title": "IF Statements",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 5,
+      "moduleTitle": "Decisions & Loops",
+      "slug": "python-programming__m05__elif-and-else-branches",
+      "title": "Elif and Else Branches",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 5,
+      "moduleTitle": "Decisions & Loops",
+      "slug": "python-programming__m05__compound-conditions",
+      "title": "Compound Conditions",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 5,
+      "moduleTitle": "Decisions & Loops",
+      "slug": "python-programming__m05__nested-decisions",
+      "title": "Nested Decisions",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 5,
+      "moduleTitle": "Decisions & Loops",
+      "slug": "python-programming__m05__conditional-expressions",
+      "title": "Conditional Expressions",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 5,
+      "moduleTitle": "Decisions & Loops",
+      "slug": "python-programming__m05__for-loops-over-collections",
+      "title": "For Loops Over Collections",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 5,
+      "moduleTitle": "Decisions & Loops",
+      "slug": "python-programming__m05__range-for-counted-loops",
+      "title": "Range for Counted Loops",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 5,
+      "moduleTitle": "Decisions & Loops",
+      "slug": "python-programming__m05__while-loops",
+      "title": "While Loops",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 5,
+      "moduleTitle": "Decisions & Loops",
+      "slug": "python-programming__m05__break-and-continue",
+      "title": "Break and Continue",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 5,
+      "moduleTitle": "Decisions & Loops",
+      "slug": "python-programming__m05__looping-through-dictionaries",
+      "title": "Looping Through Dictionaries",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 5,
+      "moduleTitle": "Decisions & Loops",
+      "slug": "python-programming__m05__common-loop-patterns",
+      "title": "Common Loop Patterns",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 5,
+      "moduleTitle": "Decisions & Loops",
+      "slug": "python-programming__m05__mini-lab-flag-unusual-transactions",
+      "title": "Mini Lab Flag Unusual Transactions",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 6,
+      "moduleTitle": "Functions & Reusable Code",
+      "slug": "python-programming__m06__define-and-call-a-function",
+      "title": "Define and Call a Function",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 6,
+      "moduleTitle": "Functions & Reusable Code",
+      "slug": "python-programming__m06__parameters-and-arguments",
+      "title": "Parameters and Arguments",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 6,
+      "moduleTitle": "Functions & Reusable Code",
+      "slug": "python-programming__m06__return-values",
+      "title": "Return Values",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 6,
+      "moduleTitle": "Functions & Reusable Code",
+      "slug": "python-programming__m06__default-arguments",
+      "title": "Default Arguments",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 6,
+      "moduleTitle": "Functions & Reusable Code",
+      "slug": "python-programming__m06__keyword-arguments",
+      "title": "Keyword Arguments",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 6,
+      "moduleTitle": "Functions & Reusable Code",
+      "slug": "python-programming__m06__variable-length-arguments-with-args",
+      "title": "Variable Length Arguments with Args",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 6,
+      "moduleTitle": "Functions & Reusable Code",
+      "slug": "python-programming__m06__keyword-collections-with-kwargs",
+      "title": "Keyword Collections with Kwargs",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 6,
+      "moduleTitle": "Functions & Reusable Code",
+      "slug": "python-programming__m06__local-and-global-scope",
+      "title": "Local and Global Scope",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 6,
+      "moduleTitle": "Functions & Reusable Code",
+      "slug": "python-programming__m06__lambda-functions",
+      "title": "Lambda Functions",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 6,
+      "moduleTitle": "Functions & Reusable Code",
+      "slug": "python-programming__m06__functions-as-values",
+      "title": "Functions as Values",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 6,
+      "moduleTitle": "Functions & Reusable Code",
+      "slug": "python-programming__m06__type-hints",
+      "title": "Type Hints",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 6,
+      "moduleTitle": "Functions & Reusable Code",
+      "slug": "python-programming__m06__docstrings",
+      "title": "Docstrings",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 6,
+      "moduleTitle": "Functions & Reusable Code",
+      "slug": "python-programming__m06__generators-and-yield",
+      "title": "Generators and Yield",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 6,
+      "moduleTitle": "Functions & Reusable Code",
+      "slug": "python-programming__m06__decorator-intuition",
+      "title": "Decorator Intuition",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 6,
+      "moduleTitle": "Functions & Reusable Code",
+      "slug": "python-programming__m06__mini-lab-reusable-kpi-functions",
+      "title": "Mini Lab Reusable KPI Functions",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 7,
+      "moduleTitle": "Errors, Debugging & Testing",
+      "slug": "python-programming__m07__common-python-exceptions",
+      "title": "Common Python Exceptions",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 7,
+      "moduleTitle": "Errors, Debugging & Testing",
+      "slug": "python-programming__m07__try-and-except",
+      "title": "Try and Except",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 7,
+      "moduleTitle": "Errors, Debugging & Testing",
+      "slug": "python-programming__m07__else-and-finally",
+      "title": "Else and Finally",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 7,
+      "moduleTitle": "Errors, Debugging & Testing",
+      "slug": "python-programming__m07__raise-your-own-exceptions",
+      "title": "Raise Your Own Exceptions",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 7,
+      "moduleTitle": "Errors, Debugging & Testing",
+      "slug": "python-programming__m07__assertions-for-assumptions",
+      "title": "Assertions for Assumptions",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 7,
+      "moduleTitle": "Errors, Debugging & Testing",
+      "slug": "python-programming__m07__debug-with-print-and-breakpoints",
+      "title": "Debug with Print and Breakpoints",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 7,
+      "moduleTitle": "Errors, Debugging & Testing",
+      "slug": "python-programming__m07__use-logging-instead-of-scattered-prints",
+      "title": "Use Logging Instead of Scattered Prints",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 7,
+      "moduleTitle": "Errors, Debugging & Testing",
+      "slug": "python-programming__m07__write-a-small-unit-test",
+      "title": "Write a Small Unit Test",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 7,
+      "moduleTitle": "Errors, Debugging & Testing",
+      "slug": "python-programming__m07__test-edge-cases",
+      "title": "Test Edge Cases",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 7,
+      "moduleTitle": "Errors, Debugging & Testing",
+      "slug": "python-programming__m07__mini-lab-validate-incoming-records",
+      "title": "Mini Lab Validate Incoming Records",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 8,
+      "moduleTitle": "Files & Data Formats",
+      "slug": "python-programming__m08__paths-with-pathlib",
+      "title": "Paths with Pathlib",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 8,
+      "moduleTitle": "Files & Data Formats",
+      "slug": "python-programming__m08__read-a-text-file",
+      "title": "Read a Text File",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 8,
+      "moduleTitle": "Files & Data Formats",
+      "slug": "python-programming__m08__write-a-text-file",
+      "title": "Write a Text File",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 8,
+      "moduleTitle": "Files & Data Formats",
+      "slug": "python-programming__m08__context-managers-with-with",
+      "title": "Context Managers with with",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 8,
+      "moduleTitle": "Files & Data Formats",
+      "slug": "python-programming__m08__read-and-write-csv-with-csv",
+      "title": "Read and Write CSV with CSV",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 8,
+      "moduleTitle": "Files & Data Formats",
+      "slug": "python-programming__m08__read-and-write-json",
+      "title": "Read and Write JSON",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 8,
+      "moduleTitle": "Files & Data Formats",
+      "slug": "python-programming__m08__work-with-folders-and-glob-patterns",
+      "title": "Work with Folders and Glob Patterns",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 8,
+      "moduleTitle": "Files & Data Formats",
+      "slug": "python-programming__m08__file-encodings",
+      "title": "File Encodings",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 8,
+      "moduleTitle": "Files & Data Formats",
+      "slug": "python-programming__m08__create-a-simple-data-export",
+      "title": "Create a Simple Data Export",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 8,
+      "moduleTitle": "Files & Data Formats",
+      "slug": "python-programming__m08__mini-lab-load-and-summarise-a-csv",
+      "title": "Mini Lab Load and Summarise a CSV",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 9,
+      "moduleTitle": "Modules, Packages & Environments",
+      "slug": "python-programming__m09__import-and-from-import",
+      "title": "Import and from Import",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 9,
+      "moduleTitle": "Modules, Packages & Environments",
+      "slug": "python-programming__m09__useful-standard-library-modules",
+      "title": "Useful Standard Library Modules",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 9,
+      "moduleTitle": "Modules, Packages & Environments",
+      "slug": "python-programming__m09__create-your-own-module",
+      "title": "Create Your Own Module",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 9,
+      "moduleTitle": "Modules, Packages & Environments",
+      "slug": "python-programming__m09__understand-packages",
+      "title": "Understand Packages",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 9,
+      "moduleTitle": "Modules, Packages & Environments",
+      "slug": "python-programming__m09__install-packages-with-pip",
+      "title": "Install Packages with Pip",
+      "language": "bash",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 9,
+      "moduleTitle": "Modules, Packages & Environments",
+      "slug": "python-programming__m09__virtual-environments",
+      "title": "Virtual Environments",
+      "language": "bash",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 9,
+      "moduleTitle": "Modules, Packages & Environments",
+      "slug": "python-programming__m09__requirements-txt-and-reproducible-dependencies",
+      "title": "Requirements Txt and Reproducible Dependencies",
+      "language": "bash",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 9,
+      "moduleTitle": "Modules, Packages & Environments",
+      "slug": "python-programming__m09__project-folder-structure",
+      "title": "Project Folder Structure",
+      "language": "text",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 9,
+      "moduleTitle": "Modules, Packages & Environments",
+      "slug": "python-programming__m09__name-main",
+      "title": "Name Main",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 9,
+      "moduleTitle": "Modules, Packages & Environments",
+      "slug": "python-programming__m09__mini-lab-turn-a-script-into-a-small-package",
+      "title": "Mini Lab Turn a Script Into a Small Package",
+      "language": "python",
+      "visualType": "python"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 10,
+      "moduleTitle": "NumPy for Numerical Computing",
+      "slug": "python-programming__m10__why-numpy-arrays-matter",
+      "title": "Why NumPy Arrays Matter",
+      "language": "python",
+      "visualType": "array"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 10,
+      "moduleTitle": "NumPy for Numerical Computing",
+      "slug": "python-programming__m10__create-arrays",
+      "title": "Create Arrays",
+      "language": "python",
+      "visualType": "array"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 10,
+      "moduleTitle": "NumPy for Numerical Computing",
+      "slug": "python-programming__m10__shape-ndim-and-dtype",
+      "title": "Shape Ndim and Dtype",
+      "language": "python",
+      "visualType": "array"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 10,
+      "moduleTitle": "NumPy for Numerical Computing",
+      "slug": "python-programming__m10__index-and-slice-arrays",
+      "title": "INDEX and Slice Arrays",
+      "language": "python",
+      "visualType": "array"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 10,
+      "moduleTitle": "NumPy for Numerical Computing",
+      "slug": "python-programming__m10__vectorised-arithmetic",
+      "title": "Vectorised Arithmetic",
+      "language": "python",
+      "visualType": "array"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 10,
+      "moduleTitle": "NumPy for Numerical Computing",
+      "slug": "python-programming__m10__boolean-masks",
+      "title": "Boolean Masks",
+      "language": "python",
+      "visualType": "array"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 10,
+      "moduleTitle": "NumPy for Numerical Computing",
+      "slug": "python-programming__m10__aggregation-functions",
+      "title": "Aggregation Functions",
+      "language": "python",
+      "visualType": "array"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 10,
+      "moduleTitle": "NumPy for Numerical Computing",
+      "slug": "python-programming__m10__reshape-and-transpose",
+      "title": "Reshape and Transpose",
+      "language": "python",
+      "visualType": "array"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 10,
+      "moduleTitle": "NumPy for Numerical Computing",
+      "slug": "python-programming__m10__broadcasting-intuition",
+      "title": "Broadcasting Intuition",
+      "language": "python",
+      "visualType": "array"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 10,
+      "moduleTitle": "NumPy for Numerical Computing",
+      "slug": "python-programming__m10__random-number-generation",
+      "title": "Random Number Generation",
+      "language": "python",
+      "visualType": "array"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 10,
+      "moduleTitle": "NumPy for Numerical Computing",
+      "slug": "python-programming__m10__nan-and-missing-numeric-values",
+      "title": "NaN and Missing Numeric Values",
+      "language": "python",
+      "visualType": "array"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 10,
+      "moduleTitle": "NumPy for Numerical Computing",
+      "slug": "python-programming__m10__basic-linear-algebra",
+      "title": "Basic Linear Algebra",
+      "language": "python",
+      "visualType": "array"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 10,
+      "moduleTitle": "NumPy for Numerical Computing",
+      "slug": "python-programming__m10__save-and-load-arrays",
+      "title": "Save and Load Arrays",
+      "language": "python",
+      "visualType": "array"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 10,
+      "moduleTitle": "NumPy for Numerical Computing",
+      "slug": "python-programming__m10__mini-lab-analyse-sensor-readings",
+      "title": "Mini Lab Analyse Sensor Readings",
+      "language": "python",
+      "visualType": "array"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 11,
+      "moduleTitle": "pandas for Tabular Data",
+      "slug": "python-programming__m11__series-and-dataframe",
+      "title": "Series and Dataframe",
+      "language": "python",
+      "visualType": "table"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 11,
+      "moduleTitle": "pandas for Tabular Data",
+      "slug": "python-programming__m11__create-a-dataframe",
+      "title": "Create a Dataframe",
+      "language": "python",
+      "visualType": "table"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 11,
+      "moduleTitle": "pandas for Tabular Data",
+      "slug": "python-programming__m11__read-csv-data",
+      "title": "Read CSV Data",
+      "language": "python",
+      "visualType": "table"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 11,
+      "moduleTitle": "pandas for Tabular Data",
+      "slug": "python-programming__m11__inspect-head-shape-and-dtypes",
+      "title": "Inspect Head Shape and Dtypes",
+      "language": "python",
+      "visualType": "table"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 11,
+      "moduleTitle": "pandas for Tabular Data",
+      "slug": "python-programming__m11__select-columns-and-rows",
+      "title": "Select Columns and Rows",
+      "language": "python",
+      "visualType": "table"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 11,
+      "moduleTitle": "pandas for Tabular Data",
+      "slug": "python-programming__m11__filter-rows",
+      "title": "Filter Rows",
+      "language": "python",
+      "visualType": "table"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 11,
+      "moduleTitle": "pandas for Tabular Data",
+      "slug": "python-programming__m11__sort-values",
+      "title": "Sort Values",
+      "language": "python",
+      "visualType": "table"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 11,
+      "moduleTitle": "pandas for Tabular Data",
+      "slug": "python-programming__m11__create-and-transform-columns",
+      "title": "Create and Transform Columns",
+      "language": "python",
+      "visualType": "table"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 11,
+      "moduleTitle": "pandas for Tabular Data",
+      "slug": "python-programming__m11__handle-missing-values",
+      "title": "Handle Missing Values",
+      "language": "python",
+      "visualType": "table"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 11,
+      "moduleTitle": "pandas for Tabular Data",
+      "slug": "python-programming__m11__groupby-and-aggregation",
+      "title": "Groupby and Aggregation",
+      "language": "python",
+      "visualType": "table"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 11,
+      "moduleTitle": "pandas for Tabular Data",
+      "slug": "python-programming__m11__merge-dataframes",
+      "title": "Merge Dataframes",
+      "language": "python",
+      "visualType": "table"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 11,
+      "moduleTitle": "pandas for Tabular Data",
+      "slug": "python-programming__m11__pivot-tables",
+      "title": "Pivot Tables",
+      "language": "python",
+      "visualType": "table"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 11,
+      "moduleTitle": "pandas for Tabular Data",
+      "slug": "python-programming__m11__reshape-with-melt",
+      "title": "Reshape with Melt",
+      "language": "python",
+      "visualType": "table"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 11,
+      "moduleTitle": "pandas for Tabular Data",
+      "slug": "python-programming__m11__work-with-dates",
+      "title": "Work with Dates",
+      "language": "python",
+      "visualType": "table"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 11,
+      "moduleTitle": "pandas for Tabular Data",
+      "slug": "python-programming__m11__work-with-text-columns",
+      "title": "Work with Text Columns",
+      "language": "python",
+      "visualType": "table"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 11,
+      "moduleTitle": "pandas for Tabular Data",
+      "slug": "python-programming__m11__export-clean-data",
+      "title": "Export Clean Data",
+      "language": "python",
+      "visualType": "table"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 11,
+      "moduleTitle": "pandas for Tabular Data",
+      "slug": "python-programming__m11__mini-lab-analyse-monthly-sales",
+      "title": "Mini Lab Analyse Monthly Sales",
+      "language": "python",
+      "visualType": "table"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 12,
+      "moduleTitle": "Matplotlib & Visualisation",
+      "slug": "python-programming__m12__figure-and-axes-objects",
+      "title": "Figure and Axes Objects",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 12,
+      "moduleTitle": "Matplotlib & Visualisation",
+      "slug": "python-programming__m12__create-a-line-chart",
+      "title": "Create a Line Chart",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 12,
+      "moduleTitle": "Matplotlib & Visualisation",
+      "slug": "python-programming__m12__create-a-bar-chart",
+      "title": "Create a Bar Chart",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 12,
+      "moduleTitle": "Matplotlib & Visualisation",
+      "slug": "python-programming__m12__create-a-scatter-plot",
+      "title": "Create a Scatter Plot",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 12,
+      "moduleTitle": "Matplotlib & Visualisation",
+      "slug": "python-programming__m12__create-a-histogram",
+      "title": "Create a Histogram",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 12,
+      "moduleTitle": "Matplotlib & Visualisation",
+      "slug": "python-programming__m12__create-a-box-plot",
+      "title": "Create a Box Plot",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 12,
+      "moduleTitle": "Matplotlib & Visualisation",
+      "slug": "python-programming__m12__multiple-plots-with-subplots",
+      "title": "Multiple Plots with Subplots",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 12,
+      "moduleTitle": "Matplotlib & Visualisation",
+      "slug": "python-programming__m12__titles-labels-and-legends",
+      "title": "Titles Labels and Legends",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 12,
+      "moduleTitle": "Matplotlib & Visualisation",
+      "slug": "python-programming__m12__annotations-and-reference-lines",
+      "title": "Annotations and Reference Lines",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 12,
+      "moduleTitle": "Matplotlib & Visualisation",
+      "slug": "python-programming__m12__accessible-colour-and-visual-hierarchy",
+      "title": "Accessible Colour and Visual Hierarchy",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 12,
+      "moduleTitle": "Matplotlib & Visualisation",
+      "slug": "python-programming__m12__save-a-figure",
+      "title": "Save a Figure",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 12,
+      "moduleTitle": "Matplotlib & Visualisation",
+      "slug": "python-programming__m12__mini-lab-build-an-eda-figure",
+      "title": "Mini Lab Build an EDA Figure",
+      "language": "python",
+      "visualType": "plot"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 13,
+      "moduleTitle": "Object-Oriented Python",
+      "slug": "python-programming__m13__objects-and-classes",
+      "title": "Objects and Classes",
+      "language": "python",
+      "visualType": "oop"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 13,
+      "moduleTitle": "Object-Oriented Python",
+      "slug": "python-programming__m13__init-and-instance-attributes",
+      "title": "Init and Instance Attributes",
+      "language": "python",
+      "visualType": "oop"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 13,
+      "moduleTitle": "Object-Oriented Python",
+      "slug": "python-programming__m13__instance-methods",
+      "title": "Instance Methods",
+      "language": "python",
+      "visualType": "oop"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 13,
+      "moduleTitle": "Object-Oriented Python",
+      "slug": "python-programming__m13__class-and-static-methods",
+      "title": "Class and Static Methods",
+      "language": "python",
+      "visualType": "oop"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 13,
+      "moduleTitle": "Object-Oriented Python",
+      "slug": "python-programming__m13__inheritance-basics",
+      "title": "Inheritance Basics",
+      "language": "python",
+      "visualType": "oop"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 13,
+      "moduleTitle": "Object-Oriented Python",
+      "slug": "python-programming__m13__composition-over-inheritance",
+      "title": "Composition Over Inheritance",
+      "language": "python",
+      "visualType": "oop"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 13,
+      "moduleTitle": "Object-Oriented Python",
+      "slug": "python-programming__m13__dataclasses-for-data-containers",
+      "title": "Dataclasses for Data Containers",
+      "language": "python",
+      "visualType": "oop"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 13,
+      "moduleTitle": "Object-Oriented Python",
+      "slug": "python-programming__m13__properties-and-controlled-attributes",
+      "title": "Properties and Controlled Attributes",
+      "language": "python",
+      "visualType": "oop"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 13,
+      "moduleTitle": "Object-Oriented Python",
+      "slug": "python-programming__m13__dunder-methods-intuition",
+      "title": "Dunder Methods Intuition",
+      "language": "python",
+      "visualType": "oop"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 13,
+      "moduleTitle": "Object-Oriented Python",
+      "slug": "python-programming__m13__iterators-and-iterable-objects",
+      "title": "Iterators and Iterable Objects",
+      "language": "python",
+      "visualType": "oop"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 13,
+      "moduleTitle": "Object-Oriented Python",
+      "slug": "python-programming__m13__separate-pure-logic-from-i-o",
+      "title": "Separate Pure Logic from I O",
+      "language": "python",
+      "visualType": "oop"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 13,
+      "moduleTitle": "Object-Oriented Python",
+      "slug": "python-programming__m13__refactor-duplicated-code",
+      "title": "Refactor Duplicated Code",
+      "language": "python",
+      "visualType": "oop"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 13,
+      "moduleTitle": "Object-Oriented Python",
+      "slug": "python-programming__m13__mini-lab-model-a-small-experiment-run",
+      "title": "Mini Lab Model a Small Experiment Run",
+      "language": "python",
+      "visualType": "oop"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 14,
+      "moduleTitle": "Capstone: A Small Data Project",
+      "slug": "python-programming__m14__plan-a-small-data-project",
+      "title": "Plan a Small Data Project",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 14,
+      "moduleTitle": "Capstone: A Small Data Project",
+      "slug": "python-programming__m14__load-raw-files-safely",
+      "title": "Load Raw Files Safely",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 14,
+      "moduleTitle": "Capstone: A Small Data Project",
+      "slug": "python-programming__m14__validate-schema-and-types",
+      "title": "Validate Schema and Types",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 14,
+      "moduleTitle": "Capstone: A Small Data Project",
+      "slug": "python-programming__m14__clean-and-transform-records",
+      "title": "Clean and Transform Records",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 14,
+      "moduleTitle": "Capstone: A Small Data Project",
+      "slug": "python-programming__m14__write-reusable-analysis-functions",
+      "title": "Write Reusable Analysis Functions",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 14,
+      "moduleTitle": "Capstone: A Small Data Project",
+      "slug": "python-programming__m14__create-summary-tables",
+      "title": "Create Summary Tables",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 14,
+      "moduleTitle": "Capstone: A Small Data Project",
+      "slug": "python-programming__m14__create-a-plot",
+      "title": "Create a Plot",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 14,
+      "moduleTitle": "Capstone: A Small Data Project",
+      "slug": "python-programming__m14__handle-expected-errors",
+      "title": "Handle Expected Errors",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 14,
+      "moduleTitle": "Capstone: A Small Data Project",
+      "slug": "python-programming__m14__add-tests",
+      "title": "Add Tests",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 14,
+      "moduleTitle": "Capstone: A Small Data Project",
+      "slug": "python-programming__m14__write-a-main-entry-point",
+      "title": "Write a Main Entry Point",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 14,
+      "moduleTitle": "Capstone: A Small Data Project",
+      "slug": "python-programming__m14__export-results",
+      "title": "Export Results",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 14,
+      "moduleTitle": "Capstone: A Small Data Project",
+      "slug": "python-programming__m14__document-how-to-run-the-project",
+      "title": "Document How to Run the Project",
+      "language": "python",
+      "visualType": "workflow"
+    },
+    {
+      "course": "Python Programming",
+      "courseId": "python-programming",
+      "module": 14,
+      "moduleTitle": "Capstone: A Small Data Project",
+      "slug": "python-programming__m14__final-checklist-and-next-learning-paths",
+      "title": "Final Checklist and Next Learning Paths",
+      "language": "python",
+      "visualType": "workflow"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "public_release": "DV1.1.6",
+  "baseline": "DV1.0.0",
+  "phase2": "DV1.1.2",
+  "html_pages": 1385,
+  "broken_local_refs": 0,
+  "duplicate_id_pages": 0,
+  "json_files": 11,
+  "json_parse_failures": 0,
+  "javascript_files_total": 65,
+  "javascript_files_assets_js": 63,
+  "javascript_syntax_failures": 0,
+  "course_lessons": 446,
+  "course_lessons_with_deeper_textbook_walkthrough": 446,
+  "course_dynamic_process_flows": 321,
+  "course_topics_without_process_flow": 125,
+  "course_visual_demonstrations": 144,
+  "explore_experience_pages": 36,
+  "explore_dynamic_process_flows": 30,
+  "explore_visual_demonstrations": 18,
+  "python_blocks_parseable_in_DV1_1_5": 849,
+  "python_blocks_parseable_in_DV1_1_6": 849,
+  "python_syntax_regressions": 0,
+  "parseable_python_blocks_with_step_comments": 849,
+  "step_comments_in_parseable_python_blocks": 6760,
+  "old_version_label_html_files": 0,
+  "learner_source_reference_hits": 0,
+  "phase2_preservation": {
+    "correlation_core_js": true,
+    "code_visual_sync_js": true,
+    "correlation_feature_selection_lab": true,
+    "correlation_explore": true
+  },
+  "passed": true,
+  "details": {
+    "errors": []
+  }
+}

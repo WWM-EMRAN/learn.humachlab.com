@@ -1,0 +1,13 @@
+customer_id,segment,age,spend,visits,region
+A01,New,24,120,3,East
+A02,New,31,85,2,West
+A03,Loyal,42,210,7,East
+A04,Loyal,38,195,6,North
+A05,New,27,92,2,West
+A06,At risk,51,61,1,North
+A07,Loyal,44,240,8,East
+A08,At risk,36,55,1,West
+A09,New,29,132,4,East
+A10,Loyal,47,205,7,North
+A11,At risk,40,70,2,West
+A12,New,33,118,3,East
